@@ -1,7 +1,7 @@
 .footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 500;
     color: #FFFFFF;
     background-color: #343A40;
@@ -26,10 +26,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer {
-        font-size: .75rem;
-    }
-
     .footer__rodape {
         display: flex;
         flex-direction: row;
