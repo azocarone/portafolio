@@ -1,9 +1,10 @@
-import { valida } from "./validacion.js";
+import { validaCampos, enabledBoton } from "./validacion.js";
 
 const inputs = document.querySelectorAll('[data-tipo]');
 
 inputs.forEach(input => {
     input.addEventListener('blur', (input) => {
-        valida(input.target);
+        validaCampos(input.target);
+        enabledBoton(inputs);
     })
 });

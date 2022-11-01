@@ -1,4 +1,4 @@
-export function valida(input) {
+export function validaCampos(input) {
     const tipoInput = input.dataset.tipo;
 
     if (validadores[tipoInput]) {
@@ -14,6 +14,25 @@ export function valida(input) {
     };
 };
 
+export function enabledBoton(inputs) {
+    const boton = document.querySelector('.formcontato__botao');
+    let camposValidos = 0;
+
+    inputs.forEach(input => {
+        if (input.validity.valid) {
+            camposValidos++;
+        };
+    });
+
+    if (camposValidos == 4) {
+        boton.disabled = false;
+        boton.classList.add('formcontato__botao--enabled')
+    } else {
+        boton.disabled = true;
+        boton.classList.remove('formcontato__botao--enabled')
+    }
+};
+
 const validadores = {
     mensaje: (input) => validarMensaje(input)
 }
@@ -21,9 +40,11 @@ const validadores = {
 function validarMensaje(input) {
     const mensaje = input.value;
     let errorMensaje = '';
+
     if (mensaje.length > 0 && mensaje.trim() === '') {
         errorMensaje = 'El campo mensaje solo tiene espacios en blanco.';
     }
+
     input.setCustomValidity(errorMensaje);
 }
 
@@ -55,10 +76,12 @@ const mensajesError = {
 
 function mostrarMensajeError(tipoInput, input) {
     let errorMensaje = '';
+
     tipoErrores.forEach((error) => {
         if (input.validity[error]) {
             errorMensaje = mensajesError[tipoInput][error];
         }
     });
+
     return errorMensaje;
 };

@@ -97,11 +97,14 @@
 .formcontato__botao {
     width: 8.313rem;
     height: 2.5rem;
+}
+
+.formcontato__botao--enabled {
     color: var(--fuente-botao-demo);
     background: var(--fondo-botao--demo);
 }
 
-.formcontato__botao:hover {
+.formcontato__botao--enabled:hover {
     background: var(--fondo-botao-demo-hover);
 }
 
