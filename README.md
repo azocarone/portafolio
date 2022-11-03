@@ -17,7 +17,7 @@ Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
 ```
 - Foto de perfil;
 - Enlaces a redes sociales;
-- Datos personales: nombre, ~~edad, nacionalidad,~~ biografía.
+- Datos personales: nombre, ~~edad~~, ~~nacionalidad~~, biografía.
 ```
 
 - Sección de Soft Skills y Hobbies:
@@ -44,7 +44,7 @@ Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
 **Validaciones JavaScript:**
 
 - Los campos no debe estar en blanco o vacíos;
-- EL e-mail debe contener el carácter especial @ seguido de un dominio;
+- El e-mail debe contener el carácter especial @ seguido de un dominio;
 - Longitud máxima caracteres;
 - Mostrar mensajes de error específicos, cuando las condiciones no se cumplan;
 - El botón enviar, solo se activará, cuando todos los campos del formulario estén llenos;
