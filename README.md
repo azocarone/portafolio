@@ -8,16 +8,16 @@
 
 Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
 
-**Requisitos:**
+**Requisitos HTML y CSS:**
 
 - Menú de navegación;
-- Imagen a utilizar como banner;
+- ~~Imagen a utilizar como banner;~~
 - Sección sobre mí:
 
 ```
 - Foto de perfil;
 - Enlaces a redes sociales;
-- Datos personales: nombre, edad, nacionalidad, biografía.
+- Datos personales: nombre, ~~edad, nacionalidad,~~ biografía.
 ```
 
 - Sección de Soft Skills y Hobbies:
@@ -32,14 +32,23 @@ Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
 - Formulario de contacto, con los siguientes campos:
 
 ```
-- Correo electrónico
 - Nombre
+- Correo electrónico
 - Asunto
 - Mensaje
 ```
 
 - Pie de página con la información del desarrollador del portafolio.
 - El portafolio debe ser responsivo.
+
+**Validaciones JavaScript:**
+
+- Los campos no debe estar en blanco o vacíos;
+- EL e-mail debe contener el carácter especial @ seguido de un dominio;
+- Longitud máxima caracteres;
+- Mostrar mensajes de error específicos, cuando las condiciones no se cumplan;
+- El botón enviar, solo se activará, cuando todos los campos del formulario estén llenos;
+- Se debe enviar el mensaje.
 
 **Extra:**
 
