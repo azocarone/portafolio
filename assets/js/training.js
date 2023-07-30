@@ -2,23 +2,23 @@
 const imagesData = [
     {
         id: "alura",
-        originalImage: "../assets/img/logos/alura.png",
-        hoverImage: "../assets/img/training/alura.jpeg"
+        originalImage: "assets/img/logos/alura.png",
+        hoverImage: "assets/img/training/alura.jpeg"
     },
     {
         id: "uc3m",
-        originalImage: "../assets/img/logos/uc3m.png",
-        hoverImage: "../assets/img/training/uc3m.jpeg"
+        originalImage: "assets/img/logos/uc3m.png",
+        hoverImage: "assets/img/training/uc3m.jpeg"
     },
     {
         id: "uah",
-        originalImage: "../assets/img/logos/uah.png",
-        hoverImage: "../assets/img/training/uah.jpeg"
+        originalImage: "assets/img/logos/uah.png",
+        hoverImage: "assets/img/training/uah.jpeg"
     },
     {
         id: "iunp",
-        originalImage: "../assets/img/logos/iunp.png",
-        hoverImage: "../assets/img/training/iunp.jpeg"
+        originalImage: "assets/img/logos/iunp.png",
+        hoverImage: "assets/img/training/iunp.jpeg"
     }
 ];
 
