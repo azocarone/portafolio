@@ -1,0 +1,92 @@
+.interests,
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.interests__title,
+.skills__title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.interests__list,
+.skills__list {
+    display: flex;
+    align-self: stretch;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.interests__list__item,
+.skills__list__item {
+    /* Posicionamiento y diseño */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5rem;
+    flex: 1 1 35%;
+    /* Dimensiones y modelo de caja */
+    height: 7.375rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    box-shadow: 0 1.25rem 2.5rem -.875rem rgba(0, 0, 0, 0.5);
+    /* Contenido */
+    color: #000000;
+    background: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.interests__list__item:hover,
+.skills__list__item:hover {
+    color: #127765;
+}
+
+.interests__item__name,
+.skills__item__name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.interests__item__icon,
+.skills__item__icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .interests,
+    .skills {
+        padding: 2rem;
+    }
+
+    .interests__list__item,
+    .skills__list__item {
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .interests,
+    .skills {
+        padding: 5.5rem;
+    }
+
+    .interests__title,
+    .skills__title {
+        font-size: 2rem;
+
+    }
+
+    .interests__list__item,
+    .skills__list__item {
+        height: 10.875rem;
+        flex-basis: 15%;
+    }
+}

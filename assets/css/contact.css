@@ -1,0 +1,128 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contact__image {
+    display: none;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__form__header {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.contact__header__title {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.contact__header__subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact__form__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact__fieldset__field {
+    display: flex;
+    flex-direction: column;
+    gap: .4375rem;
+    padding: .5rem .75rem 0 .75rem;
+    border-radius: .25rem;
+    background-color: #FFFFFF;
+}
+
+.contact__field__label {
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: black;
+}
+
+.contact__field__input,
+.contact__field__textarea {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    border: solid .0625rem transparent;
+    outline: none;
+    color: black;
+}
+
+.contact__field__input:focus,
+.contact__field__textarea:focus {
+    border-bottom-color: #127765;
+}
+
+.contact__field__error {
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    padding-bottom: .5rem;
+    color: red;
+}
+
+.contact__form__button {
+    width: max-content;
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: .3125rem;
+    font-size: .875rem;
+    font-weight: 400;
+    color: #FEFAEB;
+    background: #127765;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact__form__button::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    margin-left: .625rem;
+    content: "\f1d8";
+}
+
+.contact__form__button:hover {
+    filter: invert(.20);
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 4rem;
+    }
+
+    .contact__image {
+        display: flex;
+        width: 29rem;
+        height: 37.0625rem;
+        box-shadow: 
+        0 0 10px 5px rgba(28, 32, 31, 0.5),
+        inset 0 0 10px 5px rgba(28, 32, 31, 0.5);
+    }
+
+    .contact__header__title {
+        font-size: 2rem;
+    }
+
+    .contact__form__fieldset {
+        flex-grow: 1;
+    }
+}
