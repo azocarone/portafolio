@@ -3,7 +3,7 @@
 **Challenge ONE G3 | Front End - Sprint 1**
 
 <p align="center">
-    <img width="600" heigth="600" src="https://github.com/azocarone/challenge-one-portafolio/blob/main/img/portafolio_print.png">
+    <img width="600" heigth="600" src="https://github.com/azocarone/portafolio-challenge-one/blob/main/assets/img/projects/portafolio.png">
 </p>
 
 Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
