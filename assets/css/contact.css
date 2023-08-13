@@ -55,8 +55,7 @@
     color: black;
 }
 
-.contact__field__input,
-.contact__field__textarea {
+.contact__field__input {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.25rem;
@@ -65,9 +64,12 @@
     color: black;
 }
 
-.contact__field__input:focus,
-.contact__field__textarea:focus {
+.contact__field__input:focus {
     border-bottom-color: #127765;
+}
+
+.contact__field__input--invalid {
+    border-bottom-color: red;
 }
 
 .contact__field__error {
@@ -98,7 +100,7 @@
     content: "\f1d8";
 }
 
-.contact__form__button:hover {
+.contact__form__button--enabled:hover {
     filter: invert(.20);
 }
 
