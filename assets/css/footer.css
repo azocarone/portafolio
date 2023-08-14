@@ -94,7 +94,7 @@
 
 @media screen and (min-width: 1024px) {
     .footer {
-        padding: 2rem;
+        padding: 2rem 2rem 1rem 2rem;
     }
 
     .footer__title {

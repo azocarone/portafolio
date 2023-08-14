@@ -89,6 +89,7 @@
     font-weight: 400;
     color: #FEFAEB;
     background: #127765;
+    opacity: .5;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -98,6 +99,10 @@
     font-weight: 400;
     margin-left: .625rem;
     content: "\f1d8";
+}
+
+.contact__form__button--enabled {
+    opacity: unset;
 }
 
 .contact__form__button--enabled:hover {
