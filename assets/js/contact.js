@@ -15,5 +15,5 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     form.reset();
     validarButton(inputs, button);
-    alert("Los datos fueron enviados ... \nmuchas gracias por su interés en contactarme.");
+    alert("Los datos fueron enviados ... \nMuchas gracias por tu interés en contactarme.");
 });

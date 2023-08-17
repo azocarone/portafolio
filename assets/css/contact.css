@@ -11,6 +11,7 @@
 .contact__form {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 2rem;
 }
 
@@ -72,6 +73,10 @@
     border-bottom-color: red;
 }
 
+.contact__field__input--textarea {
+    resize: none;
+}
+
 .contact__field__error {
     font-size: .75rem;
     font-weight: 400;
@@ -127,9 +132,5 @@
 
     .contact__header__title {
         font-size: 2rem;
-    }
-
-    .contact__form__fieldset {
-        flex-grow: 1;
     }
 }
