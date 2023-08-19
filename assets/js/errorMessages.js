@@ -2,7 +2,7 @@
 export const mensajesDeError = {
     nombre: {
         valueMissing: 'El nombre no puede estar vacío.',
-        patternMismatch: 'El nombre solo puede contener letras y espacios.'
+        patternMismatch: 'El nombre no puede contener solo espacios.'
     },
     email: {
         valueMissing: 'El e-mail no puede estar vacío.',
@@ -10,10 +10,10 @@ export const mensajesDeError = {
     },
     asunto: {
         valueMissing: 'El asunto no puede estar vacío.',
-        patternMismatch: 'El asunto solo puede contener letras y espacios.'
+        patternMismatch: 'El asunto no puede contener solo espacios.'
     },
     mensaje: {
         valueMissing: 'El mensaje no puede estar vacío.',
-        customError: 'El mensaje solo puede contener letras y espacios.'
+        customError: 'El mensaje no puede contener solo espacios.'
     }
 };

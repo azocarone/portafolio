@@ -3,19 +3,17 @@ import { mensajesDeError } from './errorMessages.js';
 
 // Función para validar campos de entrada individualmente
 export function validarCampos(input) {
-    const { tipo } = input.dataset;
+    const { tipo: tipoDeInput } = input.dataset;
     const campoInvalidoClass = 'contact__field__input--invalid';
     const errorElement = input.parentElement.querySelector('.contact__field__error');
 
-    if (!validadores[tipo]) {
-        console.error(`Validador para ${tipo} no encontrado.`);
-        return;
+    if (validadores[tipoDeInput]) {
+        validadores[tipoDeInput](input); // Aplica el validador correspondiente
     } else {
-        validadores[tipo](input); // Aplica el validador correspondiente
+        console.warn(`Validador para ${tipoDeInput} no encontrado.`);
     }
 
-    input.classList.toggle(campoInvalidoClass, !input.validity.valid);
-    errorElement.innerHTML = input.validity.valid ? "" : mostrarMensajeDeError(tipo, input);
+    actualizarEstadoCampo(input, tipoDeInput, campoInvalidoClass, errorElement);
 }
 
 // Función para validar el estado del botón de envío
@@ -52,8 +50,16 @@ function validarMensaje(input) {
     input.setCustomValidity(errorMensaje);
 };
 
+//  Actualiza el estado del posible mensaje de error del campo de entrada
+function actualizarEstadoCampo(input, tipoDeInput, campoInvalidoClass, errorElement) {
+    const isValid = input.validity.valid;
+
+    input.classList.toggle(campoInvalidoClass, !isValid);
+    errorElement.innerHTML = isValid ? "" : mostrarMensajeDeError(input, tipoDeInput);
+}
+
 // Función para mostrar mensajes de error
-function mostrarMensajeDeError(tipoDeInput, input) {
+function mostrarMensajeDeError(input, tipoDeInput) {
     const error = tipoDeErrores.find(error => input.validity[error]);
 
     return error ? mensajesDeError[tipoDeInput][error] : '';
