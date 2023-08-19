@@ -1,68 +1,38 @@
-// Exportar función para validar campos de entrada
+// Importa mensajes de error desde el archivo errorMessages.js
+import { mensajesDeError } from './errorMessages.js';
+
+// Función para validar campos de entrada individualmente
 export function validarCampos(input) {
-    const tipoDeInput = input.dataset.tipo;
+    const { tipo } = input.dataset;
+    const campoInvalidoClass = 'contact__field__input--invalid';
+    const errorElement = input.parentElement.querySelector('.contact__field__error');
 
-    if (validadores[tipoDeInput]) {
-        validadores[tipoDeInput](input); // Llamar a la función de validación específica
-    }
-
-    // Actualizar clases y mensajes de error en función de la validez del campo
-    if (input.validity.valid) {
-        input.classList.remove('contact__field__input--invalid');
-        input.parentElement.querySelector('.contact__field__error').innerHTML = "";
+    if (!validadores[tipo]) {
+        console.error(`Validador para ${tipo} no encontrado.`);
+        return;
     } else {
-        input.classList.add('contact__field__input--invalid');
-        input.parentElement.querySelector('.contact__field__error').innerHTML = mostrarMensajeDeError(tipoDeInput, input);
+        validadores[tipo](input); // Aplica el validador correspondiente
     }
+
+    input.classList.toggle(campoInvalidoClass, !input.validity.valid);
+    errorElement.innerHTML = input.validity.valid ? "" : mostrarMensajeDeError(tipo, input);
 }
 
-// Exportar función para validar y habilitar/deshabilitar el botón
+// Función para validar el estado del botón de envío
 export function validarButton(inputs, button) {
-    let camposValidos = 0;
+    const camposValidos = [...inputs].map(input => input.validity.valid);
+    const camposValidosCount = camposValidos.reduce((count, isValid) => count + (isValid ? 1 : 0), 0);
 
-    // Contar los campos de entrada válidos
-    inputs.forEach(input => {
-        if (input.validity.valid) {
-            camposValidos++;
-        }
-    });
-
-    // Habilitar o deshabilitar el botón según el número de campos válidos
-    if (camposValidos === 4) {
-        button.disabled = false;
-        button.classList.add('contact__form__button--enabled');
-    } else {
-        button.disabled = true;
-        button.classList.remove('contact__form__button--enabled');
-    }
+    button.disabled = camposValidosCount !== 4;
+    button.classList.toggle('contact__form__button--enabled', camposValidosCount === 4);
 }
 
-// Objeto que contiene funciones de validación específicas para diferentes tipos de campo
+// Definición de validadores para tipos de campo específicos
 const validadores = {
     mensaje: (input) => validarMensaje(input)
 };
 
-// Objeto que almacena los mensajes de error para diferentes tipos de campo y errores
-const mensajesDeError = {
-    nombre: {
-        valueMissing: 'El nombre no puede estar vacío.',
-        patternMismatch: 'El nombre solo puede contener letras y espacios.'
-    },
-    email: {
-        valueMissing: 'El e-mail no puede estar vacío.',
-        typeMismatch: 'Ingresa un e-mail válido.'
-    },
-    asunto: {
-        valueMissing: 'El asunto no puede estar vacío.',
-        patternMismatch: 'El asunto solo puede contener letras y espacios.'
-    },
-    mensaje: {
-        valueMissing: 'El mensaje no puede estar vacío.',
-        customError: 'El mensaje solo puede contener letras y espacios.'
-    }
-};
-
-// Lista de tipos de errores posibles
+// Tipos de errores posibles
 const tipoDeErrores = [
     'valueMissing',
     'patternMismatch',
@@ -80,17 +50,11 @@ function validarMensaje(input) {
     }
 
     input.setCustomValidity(errorMensaje);
-}
+};
 
-// Función para generar mensajes de error basados en el tipo de campo y el tipo de error
+// Función para mostrar mensajes de error
 function mostrarMensajeDeError(tipoDeInput, input) {
-    let mensaje = '';
+    const error = tipoDeErrores.find(error => input.validity[error]);
 
-    tipoDeErrores.forEach(error => {
-        if (input.validity[error]) {
-            mensaje = mensajesDeError[tipoDeInput][error];
-        }
-    });
-
-    return mensaje;
-}
+    return error ? mensajesDeError[tipoDeInput][error] : '';
+};

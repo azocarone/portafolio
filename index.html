@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/profile.css">
   <link rel="stylesheet" href="assets/css/about.css">
   <link rel="stylesheet" href="assets/css/training.css">
@@ -40,62 +41,45 @@
 <body>
   <header class="header">
     <h1 class="header__title">Mí Portafolio</h1>
-    <ul class="header__menu">
-      <li class="header__menu__item">
-        <a class="header__menu__link" href="#about">Acerca de ...</a>
-      </li>
-      <li class="header__menu__item">
-        <a class="header__menu__link" href="#training">Formación</a>
-      </li>
-      <li class="header__menu__item">
-        <a class="header__menu__link" href="#interests">Intereses</a>
-      </li>
-      <li class="header__menu__item">
-        <a class="header__menu__link" href="#skills">Competencias</a>
-      </li>
-      <li class="header__menu__item">
-        <a class="header__menu__link" href="#projects">Proyectos</a>
-      </li>
-      <li class="header__menu__item header__menu__item--contact">
-        <a class="header__menu__link" href="#contact">Contacto</a>
-      </li>
-    </ul>
+    <nav class="header__menu">
+      <ul class="header__menu__list">
+        <li class="header__menu__item"><a class="header__menu__link" href="#about">Acerca de ...</a></li>
+        <li class="header__menu__item"><a class="header__menu__link" href="#training">Formación</a></li>
+        <li class="header__menu__item"><a class="header__menu__link" href="#interests">Intereses</a></li>
+        <li class="header__menu__item"><a class="header__menu__link" href="#skills">Competencias</a></li>
+        <li class="header__menu__item"><a class="header__menu__link" href="#projects">Proyectos</a></li>
+        <li class="header__menu__item header__menu__item--contact"><a class="header__menu__link"
+            href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="main">
 
     <!-- Perfil -->
-    <section class="profile">
+    <section class="main__section profile">
       <img class="profile__image" src="assets/img/logos/ja.svg">
       <div class="profile__info">
         <h2 class="profile__info__name">José AZÓCAR</h2>
-        <h3 class="profile__info__description">Ing. en Informática | Dev Trainee/Junior | Data Science</h3>
-        <ul class="profile__info__social-list">
-          <li class="profile__social-list__item">
-            <a class="profile__social-list__link"
+        <h3 class="profile__info__title">Ing. en Informática | Dev Trainee/Junior | Data Science</h3>
+        <ul class="profile__info__online-list">
+          <li class="profile__online-list__item"><a class="profile__online-list__link"
               href="https://azocarone.github.io/curriculum-vitae-jose-azocar/index.html" target="_blank"
-              rel="noopener noreferrer">Currículum</a>
-          </li>
-          <li class="profile__social-list__item">
-            <a class="profile__social-list__link" href="https://www.linkedin.com/in/azocarone" target="_blank"
-              rel="noopener noreferrer">LinkedIn</a>
-          </li>
-          <li class="profile__social-list__item">
-            <a class="profile__social-list__link" href="https://github.com/azocarone" target="_blank"
-              rel="noopener noreferrer">GitHub</a>
-          </li>
-          <li class="profile__social-list__item">
-            <a class="profile__social-list__link" href="https://www.instagram.com/azocarone" target="_blank"
-              rel="noopener noreferrer">Instagram</a>
-          </li>
+              rel="noopener noreferrer">Currículum</a></li>
+          <li class="profile__online-list__item"><a class="profile__online-list__link"
+              href="https://www.linkedin.com/in/azocarone" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li class="profile__online-list__item"><a class="profile__online-list__link" href="https://github.com/azocarone"
+              target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li class="profile__online-list__item"><a class="profile__online-list__link"
+              href="https://www.instagram.com/azocarone" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
       </div>
     </section>
 
     <!-- Acerca de ... -->
-    <section class="about" id="about">
+    <section class="main__section about" id="about">
       <h2 class="about__title">Acerca de ...</h2>
-      <p class="about__paragraph">Soy ingeniero informático con un máster en e-Commerce y más de 13 años de experiencia
+      <p class="about__description">Soy ingeniero informático con un máster en e-Commerce y más de 13 años de experiencia
         en el sector. Presto asesoramiento y servicios especializados en TI, ofreciendo soluciones innovadoras para
         satisfacer las necesidades de los clientes. Me mantengo en contacto con programas como el ONE - Oracle Next
         Education, con el propósito de aprovechar mi formación para incrementar el éxito y aportar valor a los proyectos en
@@ -104,42 +88,38 @@
     </section>
 
     <!-- Formación -->
-    <section class="training" id="training">
+    <section class="main__section training" id="training">
       <h2 class="training__title">Formación Académica</h2>
       <ul class="training__list">
         <li class="training__item" data-item-id="alura">
-          <div class="training__item__logo" data-logo-id="alura">
-            <img class="training__logo__image" src="assets/img/logos/alura.png" alt="Logo Alura">
-          </div>
+          <div class="training__item__logo" data-logo-id="alura"><img class="training__logo__image"
+              src="assets/img/logos/alura.png" alt="Logo Alura"></div>
           <h3 class="training__item__title">ONE - Oracle Next Education</h3>
-          <h4 class="training__item__subtitle">2023 - Alura Latam</h4>
+          <h4 class="training__item__details">2023 - Alura Latam</h4>
         </li>
         <li class="training__item" data-item-id="uc3m">
-          <div class="training__item__logo" data-logo-id="uc3m">
-            <img class="training__logo__image" src="assets/img/logos/uc3m.png" alt="Logo UC3M">
-          </div>
+          <div class="training__item__logo" data-logo-id="uc3m"><img class="training__logo__image"
+              src="assets/img/logos/uc3m.png" alt="Logo UC3M"></div>
           <h3 class="training__item__title">Máster en Comercio Electrónico</h3>
-          <h4 class="training__item__subtitle">2006 - Universidad "Carlos III de Madrid"</h4>
+          <h4 class="training__item__details">2006 - Universidad "Carlos III de Madrid"</h4>
         </li>
         <li class="training__item" data-item-id="uah">
-          <div class="training__item__logo" data-logo-id="uah">
-            <img class="training__logo__image" src="assets/img/logos/uah.png" alt="Logo UAH">
-          </div>
+          <div class="training__item__logo" data-logo-id="uah"><img class="training__logo__image"
+              src="assets/img/logos/uah.png" alt="Logo UAH"></div>
           <h3 class="training__item__title">Ingeniería Informática</h3>
-          <h4 class="training__item__subtitle">2004 - Universidad "Alejandro de Humboldt"</h4>
+          <h4 class="training__item__details">2004 - Universidad "Alejandro de Humboldt"</h4>
         </li>
         <li class="training__item" data-item-id="iunp">
-          <div class="training__item__logo" data-logo-id="iunp">
-            <img class="training__logo__image" src="assets/img/logos/iunp.png" alt="Logo IUNP">
-          </div>
+          <div class="training__item__logo" data-logo-id="iunp"><img class="training__logo__image"
+              src="assets/img/logos/iunp.png" alt="Logo IUNP"></div>
           <h3 class="training__item__title">Computación</h3>
-          <h4 class="training__item__subtitle">1992 - Instituto Universitario de "Nuevas Profesiones"</h4>
+          <h4 class="training__item__details">1992 - Instituto Universitario de "Nuevas Profesiones"</h4>
         </li>
       </ul>
     </section>
 
     <!-- Intereses -->
-    <section class="interests" id="interests">
+    <section class="main__section interests" id="interests">
       <h2 class="interests__title">Intereses Personales</h2>
       <ul class="interests__list">
         <li class="interests__list__item">
@@ -162,7 +142,7 @@
     </section>
 
     <!-- Competencias -->
-    <section class="skills" id="skills">
+    <section class="main__section skills" id="skills">
       <h2 class="skills__title">Competencias Tecnológicas Aplicadas</h2>
       <ul class="skills__list">
         <li class="skills__list__item">
@@ -213,7 +193,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="projects" id="projects">
+    <section class="main__section projects" id="projects">
       <h2 class="projects__title">Proyectos Implementados</h2>
       <ul class="projects__list">
         <li class="projects__list__item">
@@ -250,7 +230,7 @@
     </section>
 
     <!-- Contacto -->
-    <section class="contact" id="contact">
+    <section class="main__section contact" id="contact">
       <img class="contact__image" src="assets/img/contact/093703.png" alt="">
       <form class="contact__form" action="#" method="POST" name="form">
         <div class="contact__form__header">
@@ -347,7 +327,7 @@
   </footer>
 
   <!-- Script JavaScript -->
-  <script src="./assets/js/training.js"></script>
+  <script src="./assets/js/training.js" type="module"></script>
   <script src="./assets/js/contact.js" type="module"></script>
 </body>
 

@@ -47,7 +47,7 @@
         padding: 2rem 1rem;
     }
 
-    .header__menu {
+    .header__menu__list {
         display: flex;
         align-items: center;
         gap: 2rem;

@@ -29,28 +29,28 @@
     font-weight: 700;
 }
 
-.profile__info__description {
+.profile__info__title {
     font-size: .875rem;
     font-weight: 400;
 }
 
-.profile__info__social-list {
+.profile__info__online-list {
     display: flex;
     gap: .5rem;
 }
 
-.profile__social-list__item {
+.profile__online-list__item {
     display: flex;
     align-items: center;
 }
 
-.profile__social-list__link {
+.profile__online-list__link {
     font-size: .875rem;
     font-weight: 600;
     color: unset;
 }
 
-.profile__social-list__link::after {
+.profile__online-list__link::after {
     font-family: "Font Awesome 6 Free";
     font-weight: 700;
     margin-left: .25rem;
@@ -76,15 +76,15 @@
         gap: .5rem;
     }
 
-    .profile__info__description {
+    .profile__info__title {
         font-size: 1rem;
     }
 
-    .profile__info__social-list {
+    .profile__info__online-list {
         gap: 2rem;
     }
 
-    .profile__social-list__link {
+    .profile__online-list__link {
         font-size: 1rem;
         font-weight: 500;
     }
@@ -104,7 +104,7 @@
         font-size: 3.25rem;
     }
 
-    .profile__info__description {
+    .profile__info__title {
         font-size: 1.375rem;
     }
 }

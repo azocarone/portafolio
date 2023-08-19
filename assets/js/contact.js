@@ -1,25 +1,23 @@
-// Importar las funciones de validación desde validations.js
+// Importa las funciones de validación desde el archivo validations.js
 import { validarCampos, validarButton } from "./validations.js";
 
-// Seleccionar el formulario y los elementos de entrada
+// Selecciona elementos del formulario
 const form = document.querySelector('.contact__form');
 const inputs = document.querySelectorAll("[data-tipo]");
 const button = document.querySelector('.contact__form__button');
 
-// Agregar eventos de escucha a los campos de entrada
+// Agrega eventos a los campos de entrada para la validación en tiempo real
 inputs.forEach(input => {
-    input.addEventListener('blur', (inputEvent) => {
-        validarCampos(inputEvent.target); // Llamar a la función de validación de campos
-        validarButton(inputs, button); // Actualizar el estado del botón
+    input.addEventListener('input', () => {
+        validarCampos(input); // Valida el campo actual
+        validarButton(inputs, button); // Valida el estado del botón
     })
 });
 
-// Agregar un evento de escucha al formulario para prevenir el envío por defecto
+// Agrega un evento al formulario para manejar el envío
 form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
-    form.reset(); // Restablecer el formulario después del envío
-    validarButton(inputs, button); // Actualizar el estado del botón
+    event.preventDefault(); // Previene el envío por defecto
+    form.reset(); // Reinicia el formulario
+    validarButton(inputs, button); // Valida el estado del botón después de restablecer
     alert("Los datos fueron enviados ...\nMuchas gracias por tu interés en contactarme.");
 });
-
-// validations.js se encarga de exportar las funciones necesarias
