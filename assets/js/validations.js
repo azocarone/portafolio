@@ -6,14 +6,10 @@ export function validarCampos(input) {
     const { tipo: tipoDeInput } = input.dataset;
     const campoInvalidoClass = 'contact__field__input--invalid';
     const errorElement = input.parentElement.querySelector('.contact__field__error');
+    const tieneValidadorEspecial = validadores[tipoDeInput];
 
-    if (validadores[tipoDeInput]) {
-        validadores[tipoDeInput](input); // Aplica el validador correspondiente
-    } else {
-        console.warn(`Validador para ${tipoDeInput} no encontrado.`);
-    }
-
-    actualizarEstadoCampo(input, tipoDeInput, campoInvalidoClass, errorElement);
+    tieneValidadorEspecial ? validadores[tipoDeInput](input) : console.warn(`Validador para ${tipoDeInput} no encontrado.`);
+    actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement);
 }
 
 // Función para validar el estado del botón de envío
@@ -41,21 +37,19 @@ const tipoDeErrores = [
 // Función para validar el campo "mensaje"
 function validarMensaje(input) {
     const mensaje = input.value;
+    const esSoloEspacios = mensaje.length > 0 && mensaje.trim() === '';
     let errorMensaje = '';
 
-    if (mensaje.length > 0 && mensaje.trim() === '') {
-        errorMensaje = mensajesDeError.mensaje.customError;
-    }
-
+    errorMensaje = esSoloEspacios ? mensajesDeError.mensaje.customError : errorMensaje;
     input.setCustomValidity(errorMensaje);
 };
 
 //  Actualiza el estado del posible mensaje de error del campo de entrada
-function actualizarEstadoCampo(input, tipoDeInput, campoInvalidoClass, errorElement) {
-    const isValid = input.validity.valid;
+function actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement) {
+    const esValido = input.validity.valid;
 
-    input.classList.toggle(campoInvalidoClass, !isValid);
-    errorElement.innerHTML = isValid ? "" : mostrarMensajeDeError(input, tipoDeInput);
+    input.classList.toggle(campoInvalidoClass, !esValido);
+    errorElement.innerHTML = esValido ? "" : mostrarMensajeDeError(input, tipoDeInput);
 }
 
 // Función para mostrar mensajes de error
