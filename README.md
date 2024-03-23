@@ -1,6 +1,8 @@
 # Portafolio 
 
-**Challenge ONE G3 | Front End - Sprint 1**
+**José AZÓCAR**
+
+**Ing. en Informática / Computer Engr | Dev Trainee/Junior | Data Science**
 
 <p align="center">
     <img width="600" heigth="600" src="https://github.com/azocarone/portafolio-challenge-one/blob/main/assets/img/projects/portafolio.png">
@@ -8,7 +10,7 @@
 
 Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
 
-**Requisitos HTML y CSS:**
+## Requisitos HTML y CSS
 
 - Menú de navegación
 - Imagen a utilizar como banner
@@ -41,7 +43,7 @@ Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
 - Pie de página con la información del desarrollador del portafolio.
 - El portafolio debe ser responsivo.
 
-**Validaciones JavaScript:**
+## Validaciones JavaScript
 
 - Los campos no debe estar en blanco o vacíos;
 - El e-mail debe contener el carácter especial @ seguido de un dominio;
@@ -50,6 +52,6 @@ Construcción de un portafolio, para mostrar proyectos a posibles reclutadores.
 - El botón enviar, solo se activará, cuando todos los campos del formulario estén llenos;
 - Se debe enviar el mensaje.
 
-**Extra:**
+## Extra
 
 - Animaciones para darle al portafolio más interactividad.
