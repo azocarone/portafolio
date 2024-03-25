@@ -1,8 +1,4 @@
 export const imagesData = {
-  alura: {
-    originalImage: "assets/img/logos/alura.png",
-    hoverImage: "assets/img/training/alura.jpeg",
-  },
   uc3m: {
     originalImage: "assets/img/logos/uc3m.png",
     hoverImage: "assets/img/training/uc3m.jpeg",
