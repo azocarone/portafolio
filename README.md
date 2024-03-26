@@ -2,7 +2,7 @@
 
 **José AZÓCAR**
 
-*Ing. en Informática / Computer Engr | Dev Trainee/Junior | Data Science*
+*Ing. en Informática / Computer Engr | Data Science | Dev Trainee/Junior*
 
 <p align="center">
     <img width="600" heigth="600" src="https://github.com/azocarone/portafolio-challenge-one/blob/main/assets/img/projects/portafolio.png">
