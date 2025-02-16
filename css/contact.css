@@ -1,0 +1,142 @@
+.contact {
+  display: flex;
+  flex-direction: column; /* Por defecto, en dispositivos pequeños */
+  align-items: stretch; /* Asegura que los elementos ocupen todo el ancho disponible */
+  padding: 2rem;
+  gap: 1rem; /* Espacio entre la imagen y el formulario */
+}
+
+/* Element */
+.contact__image {
+  display: none; /* Oculto por defecto en dispositivos pequeños */
+  width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+  height: auto; /* Altura automática basada en el aspect ratio */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  border-radius: 0.5rem; /* Bordes redondeados opcionales */
+  box-shadow: 0 0 10px 5px rgba(28, 32, 31, 0.5),
+    inset 0 0 10px 5px rgba(28, 32, 31, 0.5); /* Sombra decorativa */
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que el formulario crezca para llenar el espacio restante */
+  gap: 2rem;
+}
+
+.contact__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__title {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.contact__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375rem;
+  padding: 0.5rem 0.75rem 0 0.75rem;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.contact__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: black;
+}
+
+.contact__input {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  border: solid 0.0625rem transparent;
+  outline: none;
+  color: black;
+}
+
+.contact__input:focus {
+  border-bottom-color: #127765;
+}
+
+.contact__input--invalid {
+  border-bottom-color: red;
+}
+
+.contact__input--textarea {
+  resize: none;
+}
+
+.contact__error {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  padding-bottom: 0.5rem;
+  color: red;
+}
+
+.contact__button {
+  width: max-content;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.3125rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #fefaeb;
+  background: #127765;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact__button::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  margin-left: 0.625rem;
+  content: "\f1d8";
+}
+
+.contact__button--enabled {
+  opacity: unset;
+}
+
+.contact__button--enabled:hover {
+  filter: invert(0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    flex-direction: row; /* Cambia a disposición horizontal en pantallas grandes */
+    gap: 2rem; /* Espacio entre la imagen y el formulario */
+  }
+
+  .contact__image {
+    display: block; /* Muestra la imagen en pantallas grandes */
+    flex: 1; /* La imagen ocupa una parte del espacio disponible */
+    height: 100%; /* La altura se ajusta automáticamente al contenedor padre */
+    aspect-ratio: 3 / 4; /* Proporción fija de 3:4 (puedes ajustar según tus necesidades) */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+  }
+
+  .contact__title {
+    font-size: 2rem;
+  }
+
+  .contact__form {
+    flex: 2; /* El formulario ocupa más espacio que la imagen */
+  }
+}

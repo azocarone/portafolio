@@ -1,0 +1,80 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222222;
+  z-index: 100;
+  padding: var(--header-padding);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header__title::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f0f2";
+  opacity: 0.7;
+  margin-right: 0.5rem;
+}
+
+.header__nav {}
+
+.header__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Para pantallas mayores a 1024px */
+  gap: 2rem;
+  align-items: center;
+}
+
+.header__menu-item {
+  display: none; /* Ocultar en móviles por defecto */
+}
+
+.header__menu-item--contact {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.header__menu-link {
+  color: white;
+  text-decoration: none; /* Quitar subrayado por defecto */
+}
+
+.header__menu-link:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-item--contact {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --header-padding: 2rem;
+  }
+
+  .header__menu-item:nth-child(-n + 5) {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

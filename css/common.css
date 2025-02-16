@@ -1,0 +1,31 @@
+:root {
+  --width: calc((100% - 940px) / 2);
+  --header-padding: 1rem;
+  --color-text: #fefaeb;
+  --color-background: #444444;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin-top: calc(var(--header-padding) * 2.5);
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    font-size: calc(12px + 0.5vw);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    font-size: calc(14px + 0.5vw);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}

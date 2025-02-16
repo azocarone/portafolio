@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <meta name="description" content="Página web de mi portafolio en línea." />
+  <meta name="author" content="José Antonio Azócar Marcano" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/img/icons/favicon.svg" />
+  <link rel="icon" type="image/png" href="./assets/img/icons/favicon.png" />
+
+  <!-- "Google Fonts": Raleway -->
+  <!-- Light 300; Regular 400; Medium 500; Bold 700; Black 900 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- "Font Awesome 6 Free": Install local -->
+  <link href="./css/solid.min.css" rel="stylesheet" />
+  <link href="./css/regular.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Referencias CSS -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/profile.css" />
+  <link rel="stylesheet" href="./css/about.css" />
+  <link rel="stylesheet" href="./css/education.css" />
+  <link rel="stylesheet" href="./css/projects.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body>
+  <!-- Header - Navbar -->
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">José AZÓCAR</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#about">Sobre Mí</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#education">Educación</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#services">Servicios</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="header__menu-item header__menu-item--contact">
+            <a class="header__menu-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Perfil -->
+    <section class="main__section profile">
+      <img class="profile__image" src="./assets/img/logos/azocarone.svg" alt="José Antonio Azócar Marcano" />
+      <div class="profile__content">
+        <h2 class="profile__name">José Antonio Azócar Marcano</h2>
+        <h3 class="profile__title">Informática | Ciberseguridad | Datascience | Java/Python | Backend | Troubleshooting
+        </h3>
+        <ul class="profile__links">
+          <li class="profile__link-item">
+            <a class="profile__link" href="https://azocarone.github.io/curriculum" target="_blank"
+              rel="noopener noreferrer">Currículum</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="main__section about" id="about">
+      <h2 class="about__title">Sobre Mí</h2>
+      <p class="about__description">"Ingeniero en Informática con un Máster en Comercio Electrónico y amplia experiencia
+        en Tecnologías de la Información. Especializado en ofrecer asesoría y soluciones tecnológicas a empresas y
+        personas, con un enfoque en administración de sistemas, redes, seguridad informática y proyectos innovadores.
+        Interesado en ciencia de datos, programación en Java y Python, y desarrollo backend. Destaca por su capacidad de
+        adaptación, resolución de problemas y enfoque en la mejora continua."</p>
+    </section>
+
+    <!-- Educación -->
+    <section class="main__section education" id="education">
+      <h2 class="education__title">Educación</h2>
+      <ul class="education__list">
+        <li class="education__item" data-item-id="uc3m">
+          <div class="education__item-logo" data-logo-id="uc3m">
+            <img class="education__item-logo-image" src="./assets/img/logos/uc3m.png" alt="Logo UC3M" />
+          </div>
+          <h3 class="education__item-institution">Univ. "Carlos III de Madrid"</h3>
+          <h4 class="education__item-title">Mtr. en Comercio Electrónico</h4>
+        </li>
+        <li class="education__item" data-item-id="uah">
+          <div class="education__item-logo" data-logo-id="uah">
+            <img class="education__item-logo-image" src="./assets/img/logos/uah.png" alt="Logo UAH" />
+          </div>
+          <h3 class="education__item-institution">Univ. "Alejandro de Humboldt"</h3>
+          <h4 class="education__item-title">Ing. en Informática</h4>
+        </li>
+        <li class="education__item" data-item-id="iunp">
+          <div class="education__item-logo" data-logo-id="iunp">
+            <img class="education__item-logo-image" src="./assets/img/logos/iunp.png" alt="Logo IUNP" />
+          </div>
+          <h3 class="education__item-institution">Inst. Univ. de "Nuevas Profesiones"</h3>
+          <h4 class="education__item-title">TSU. en Computación</h4>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="main__section projects" id="projects">
+      <h2 class="projects__title">Proyectos</h2>
+      <ul class="projects__list">
+        
+        <!-- Portafolio -->
+        <li class="projects__item">
+          <img class="projects__image" src="./assets/img/projects/portafolio.png" alt="Portafolio" />
+          <div class="projects__info">
+            <h3 class="projects__name">Portafolio</h3>
+            <p class="projects__description">Aportando valor a través de la experiencia.</p>
+            <div class="projects__keypad">
+              <a class="projects__button projects__button--github"
+                href="https://github.com/azocarone/portafolio" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-github"></i> GitHub</a>
+              <a class="projects__button projects__button--demo"
+                href="https://azocarone.github.io/portafolio" target="_blank" rel="noopener noreferrer"><i
+                  class="fas fa-eye"></i> Demo</a>
+            </div>
+          </div>
+        </li>
+        
+        <!-- Juego del Ahorcado -->
+        <li class="projects__item">
+          <img class="projects__image" src="./assets/img/projects/ahorcado.png" alt="Juego del Ahorcado" />
+          <div class="projects__info">
+            <h3 class="projects__name">Juego del Ahorcado</h3>
+            <p class="projects__description">Vía web un clásico del lápiz y papel.</p>
+            <div class="projects__keypad">
+              <a class="projects__button projects__button--github"
+                href="https://github.com/azocarone/ahorcado-challenge-one" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-github"></i> GitHub</a>
+              <a class="projects__button projects__button--demo"
+                href="https://azocarone.github.io/ahorcado-challenge-one/" target="_blank" rel="noopener noreferrer"><i
+                  class="fas fa-eye"></i> Demo</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section class="main__section contact" id="contact">
+      <img class="contact__image" src="./assets/img/contact/093703.png" alt="" />
+      <form class="contact__form" action="#" method="POST" name="form">
+        <div class="contact__header">
+          <h2 class="contact__title">Contacto</h2>
+          <p>¿Busca un especialista en Tecnologías de la Información para su próximo desafío?</p>
+          <p>Le invito a completar el formulario. A la brevedad, me pondré en contacto con usted para programar una
+            entrevista en la que abordaremos sus necesidades y cómo puedo contribuir con mi experiencia a su proyecto.
+          </p>
+        </div>
+        <fieldset class="contact__fieldset" aria-label="Formulario de Contacto">
+          <div class="contact__field">
+            <label class="contact__label" for="nombre">Nombre</label>
+            <input class="contact__input" type="text" id="nombre" name="nombre" placeholder="Ej.: Nombre Apellido"
+              required pattern="^(?!\s*$).+" maxlength="50" data-tipo="nombre" />
+            <span class="contact__error"></span>
+          </div>
+          <div class="contact__field">
+            <label class="contact__label" for="email">e-mail</label>
+            <input class="contact__input" type="email" id="email" name="email" placeholder="Ej.: usuario@dominio.tld"
+              required data-tipo="email" />
+            <span class="contact__error"></span>
+          </div>
+          <div class="contact__field">
+            <input class="contact__input" type="text" id="asunto" name="asunto" placeholder="Asunto" required
+              pattern="^(?!\s*$).+" maxlength="50" data-tipo="asunto" />
+            <span class="contact__error"></span>
+          </div>
+          <div class="contact__field">
+            <textarea class="contact__input contact__input--textarea" id="mensaje" name="mensaje" placeholder="Mensaje"
+              required rows="6" maxlength="300" data-tipo="mensaje"></textarea>
+            <span class="contact__error"></span>
+          </div>
+        </fieldset>
+        <button class="contact__button" type="submit" disabled>Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <h2 class="footer__title">Portafolio</h2>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://www.linkedin.com/in/azocarone" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://github.com/azocarone" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://www.instagram.com/azocarone" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">
+        &copy; 2022-2025 José Antonio Azócar Marcano. Todos los derechos reservados.
+      </p>
+      <img class="footer__copyright-logo" src="./assets/img/logos/azocarone.svg" alt="Logo José AZÓCAR (azocarone)" />
+    </div>
+  </footer>
+
+  <!-- Script JavaScript -->
+  <script src="./js/education.js" type="module"></script>
+  <script src="./js/contact.js" type="module"></script>
+</body>
+
+</html>
