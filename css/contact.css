@@ -97,7 +97,7 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: #fefaeb;
-  background: #127765;
+  background: #0D1117;
   opacity: 0.5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -115,7 +115,7 @@
 }
 
 .contact__button--enabled:hover {
-  filter: invert(0.2);
+  filter: brightness(0.7);
 }
 
 @media screen and (min-width: 1024px) {

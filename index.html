@@ -17,15 +17,18 @@
   <!-- Light 300; Regular 400; Medium 500; Bold 700; Black 900 -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap" />
 
   <!-- "Font Awesome 6 Free": Install local -->
-  <link href="./css/solid.min.css" rel="stylesheet" />
-  <link href="./css/regular.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/solid.min.css" />
+  <link rel="stylesheet" href="./css/regular.min.css" />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <!-- Referencias CSS -->
   <link rel="stylesheet" href="./css/normalize.css" />
@@ -36,6 +39,7 @@
   <link rel="stylesheet" href="./css/profile.css" />
   <link rel="stylesheet" href="./css/about.css" />
   <link rel="stylesheet" href="./css/education.css" />
+  <link rel="stylesheet" href="./css/services.css" />
   <link rel="stylesheet" href="./css/projects.css" />
   <link rel="stylesheet" href="./css/contact.css" />
   <link rel="stylesheet" href="./css/footer.css" />
@@ -52,13 +56,13 @@
             <a class="header__menu-link" href="#about">Sobre Mí</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#education">Educación</a>
+            <a class="header__menu-link" href="#education">Formación</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#services">Servicios</a>
+            <a class="header__menu-link" href="#services">Asesorías</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#projects">Proyectos</a>
+            <a class="header__menu-link" href="#projects">Challenges</a>
           </li>
           <li class="header__menu-item header__menu-item--contact">
             <a class="header__menu-link" href="#contact">Contacto</a>
@@ -74,7 +78,7 @@
       <img class="profile__image" src="./assets/img/logos/azocarone.svg" alt="José Antonio Azócar Marcano" />
       <div class="profile__content">
         <h2 class="profile__name">José Antonio Azócar Marcano</h2>
-        <h3 class="profile__title">Informática | Ciberseguridad | Datascience | Java/Python | Backend | Troubleshooting
+        <h3 class="profile__title">Informática | Ciberseguridad | Datascience | Java / Python | Backend | Troubleshooting
         </h3>
         <ul class="profile__links">
           <li class="profile__link-item">
@@ -87,7 +91,7 @@
 
     <!-- Sobre Mí -->
     <section class="main__section about" id="about">
-      <h2 class="about__title">Sobre Mí</h2>
+      <h2 class="about__title">Sobre Mí ...</h2>
       <p class="about__description">"Ingeniero en Informática con un Máster en Comercio Electrónico y amplia experiencia
         en Tecnologías de la Información. Especializado en ofrecer asesoría y soluciones tecnológicas a empresas y
         personas, con un enfoque en administración de sistemas, redes, seguridad informática y proyectos innovadores.
@@ -97,7 +101,7 @@
 
     <!-- Educación -->
     <section class="main__section education" id="education">
-      <h2 class="education__title">Educación</h2>
+      <h2 class="education__title">Formación Académica</h2>
       <ul class="education__list">
         <li class="education__item" data-item-id="uc3m">
           <div class="education__item-logo" data-logo-id="uc3m">
@@ -123,11 +127,49 @@
       </ul>
     </section>
 
+    <!-- Servicios -->
+    <section class="main__section services" id="services" data-aos="fade-up">
+      <h2 class="services__title">Asesorías IT</h2>
+      <ul class="services__list services__grid">
+        <li class="services__item" data-aos="flip-left">
+          <i class="services__item-icon fas fa-lightbulb fa-2x"></i>
+          <h3 class="services__item-title">Informática</h3>
+          <p class="services__item-description">Asesoramiento estratégico para implementar soluciones tecnológicas innovadoras.</p>
+        </li>
+        <li class="services__item" data-aos="flip-left">
+          <i class="services__item-icon fas fa-shield-alt fa-2x"></i>
+          <h3 class="services__item-title">Ciberseguridad</h3>
+          <p class="services__item-description">Protección de sistemas y datos mediante estrategias de ciberseguridad avanzadas.</p>
+        </li>
+        <li class="services__item" data-aos="flip-left">
+          <i class="services__item-icon fas fa-chart-line fa-2x"></i>
+          <h3 class="services__item-title">Datascience</h3>
+          <p class="services__item-description">Análisis de datos y modelado predictivo para tomar decisiones basadas en datos.</p>
+        </li>
+        <li class="services__item" data-aos="flip-left">
+          <i class="services__item-icon fab fa-java fa-2x"></i>
+          <h3 class="services__item-title">Java / Python</h3>
+          <p class="services__item-description">Desarrollo de aplicaciones robustas utilizando Java y Python.</p>
+        </li>
+        <li class="services__item" data-aos="flip-left">
+          <i class="services__item-icon fas fa-server fa-2x"></i>
+          <h3 class="services__item-title">Backend</h3>
+          <p class="services__item-description">Creación de APIs y sistemas backend escalables y eficientes.</p>
+        </li>
+        <li class="services__item" data-aos="flip-left">
+          <i class="services__item-icon fas fa-cogs fa-2x"></i>
+          <h3 class="services__item-title">Troubleshooting</h3>
+          <p class="services__item-description">Optimización continua de procesos y sistemas para maximizar el rendimiento.
+          </p>
+        </li>
+      </ul>
+    </section>
+
     <!-- Proyectos -->
     <section class="main__section projects" id="projects">
-      <h2 class="projects__title">Proyectos</h2>
+      <h2 class="projects__title">Challenges</h2>
       <ul class="projects__list">
-        
+
         <!-- Portafolio -->
         <li class="projects__item">
           <img class="projects__image" src="./assets/img/projects/portafolio.png" alt="Portafolio" />
@@ -135,16 +177,14 @@
             <h3 class="projects__name">Portafolio</h3>
             <p class="projects__description">Aportando valor a través de la experiencia.</p>
             <div class="projects__keypad">
-              <a class="projects__button projects__button--github"
-                href="https://github.com/azocarone/portafolio" target="_blank" rel="noopener noreferrer"><i
-                  class="fab fa-github"></i> GitHub</a>
-              <a class="projects__button projects__button--demo"
-                href="https://azocar.one" target="_blank" rel="noopener noreferrer"><i
-                  class="fas fa-eye"></i> Demo</a>
+              <a class="projects__button projects__button--github" href="https://github.com/azocarone/portafolio"
+                target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+              <a class="projects__button projects__button--demo" href="https://azocar.one" target="_blank"
+                rel="noopener noreferrer"><i class="fas fa-eye"></i> Demo</a>
             </div>
           </div>
         </li>
-        
+
         <!-- Juego del Ahorcado -->
         <li class="projects__item">
           <img class="projects__image" src="./assets/img/projects/ahorcado.png" alt="Juego del Ahorcado" />
@@ -237,7 +277,9 @@
   </footer>
 
   <!-- Script JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/education.js" type="module"></script>
+  <script src="./js/services.js" type="module"></script>
   <script src="./js/contact.js" type="module"></script>
 </body>
 
