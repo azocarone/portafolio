@@ -17,8 +17,7 @@
   <!-- Light 300; Regular 400; Medium 500; Bold 700; Black 900 -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap" />
 
   <!-- "Font Awesome 6 Free": Install local -->
   <link rel="stylesheet" href="./css/solid.min.css" />
@@ -27,7 +26,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-  <!-- AOS Library -->
+  <!-- Animate On Scroll Library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <!-- Referencias CSS -->
@@ -74,7 +73,7 @@
 
   <main class="main">
     <!-- Perfil -->
-    <section class="main__section profile">
+    <section class="main__section profile" data-aos="fade-down">
       <img class="profile__image" src="./assets/img/logos/azocarone.svg" alt="José Antonio Azócar Marcano" />
       <div class="profile__content">
         <h2 class="profile__name">José Antonio Azócar Marcano</h2>
@@ -90,7 +89,7 @@
     </section>
 
     <!-- Sobre Mí -->
-    <section class="main__section about" id="about">
+    <section class="main__section about" id="about" data-aos="fade-up">
       <h2 class="about__title">Sobre Mí ...</h2>
       <p class="about__description">"Ingeniero en Informática con un Máster en Comercio Electrónico y amplia experiencia
         en Tecnologías de la Información. Especializado en ofrecer asesoría y soluciones tecnológicas a empresas y
@@ -100,7 +99,7 @@
     </section>
 
     <!-- Educación -->
-    <section class="main__section education" id="education">
+    <section class="main__section education" id="education" data-aos="fade-up">
       <h2 class="education__title">Formación Académica</h2>
       <ul class="education__list">
         <li class="education__item" data-item-id="uc3m">
@@ -166,7 +165,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="main__section projects" id="projects">
+    <section class="main__section projects" id="projects" data-aos="fade-up">
       <h2 class="projects__title">Challenges</h2>
       <ul class="projects__list">
 
@@ -205,7 +204,7 @@
     </section>
 
     <!-- Contacto -->
-    <section class="main__section contact" id="contact">
+    <section class="main__section contact" id="contact" data-aos="fade-up">
       <img class="contact__image" src="./assets/img/contact/093703.png" alt="" />
       <form class="contact__form" action="#" method="POST" name="form">
         <div class="contact__header">
@@ -278,8 +277,8 @@
 
   <!-- Script JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/aos.js" type="module"></script>
   <script src="./js/education.js" type="module"></script>
-  <script src="./js/services.js" type="module"></script>
   <script src="./js/contact.js" type="module"></script>
 </body>
 
