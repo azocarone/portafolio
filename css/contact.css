@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column; /* Por defecto, en dispositivos pequeños */
   align-items: stretch; /* Asegura que los elementos ocupen todo el ancho disponible */
-  padding: 2rem;
   gap: 1rem; /* Espacio entre la imagen y el formulario */
+  padding: 2rem;
 }
 
-/* Element */
 .contact__image {
   display: none; /* Oculto por defecto en dispositivos pequeños */
   width: 100%; /* La imagen ocupa el ancho completo del contenedor */
