@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.main__section {
+  scroll-margin-top: 80px;
+}
+
 .main__section:nth-child(odd) {
   background-color: #373737;
   /* #3C3C3C; */
