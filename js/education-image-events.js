@@ -21,7 +21,7 @@ export function setupImageEvents() {
 // Cambia la fuente de la imagen según el evento
 function changeImageSource(elementId, newImage) {
   const element = document.querySelector(
-    `[data-logo-id="${elementId}"] .education__item-logo-image`
+    `[data-logo-id="${elementId}"] .education__logo-image`
   );
   element.src = newImage;
 }

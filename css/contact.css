@@ -1,26 +1,45 @@
+:root {
+  --contact-max-width: 1200px;
+  --contact-gap-small: 1rem;
+  --contact-gap-medium: 2rem;
+  --contact-padding-small: 2rem;
+  --contact-padding-large: 4rem;
+  --contact-font-size-small: 0.75rem;
+  --contact-font-size-medium: 1rem;
+  --contact-font-size-large: 1.375rem;
+  --contact-font-size-xlarge: 2rem;
+  --contact-input-border-color: #127765;
+  --contact-error-color: red;
+  --contact-button-bg: #0D1117;
+  --contact-button-text-color: #fefaeb;
+  --contact-shadow: 0 0 10px 5px rgba(28, 32, 31, 0.5), inset 0 0 10px 5px rgba(28, 32, 31, 0.5);
+}
+
 .contact {
   display: flex;
-  flex-direction: column; /* Por defecto, en dispositivos pequeños */
-  align-items: stretch; /* Asegura que los elementos ocupen todo el ancho disponible */
-  gap: 1rem; /* Espacio entre la imagen y el formulario */
-  padding: 2rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--contact-gap-small);
+  padding: var(--contact-padding-small);
+  width: 90%;
+  max-width: var(--contact-max-width);
+  margin: 0 auto;
 }
 
 .contact__image {
-  display: none; /* Oculto por defecto en dispositivos pequeños */
-  width: 100%; /* La imagen ocupa el ancho completo del contenedor */
-  height: auto; /* Altura automática basada en el aspect ratio */
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
-  border-radius: 0.5rem; /* Bordes redondeados opcionales */
-  box-shadow: 0 0 10px 5px rgba(28, 32, 31, 0.5),
-    inset 0 0 10px 5px rgba(28, 32, 31, 0.5); /* Sombra decorativa */
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: var(--contact-shadow);
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Permite que el formulario crezca para llenar el espacio restante */
-  gap: 2rem;
+  gap: var(--contact-gap-medium);
+  flex-grow: 1;
 }
 
 .contact__header {
@@ -30,14 +49,14 @@
 }
 
 .contact__title {
-  font-size: 1.375rem;
+  font-size: var(--contact-font-size-large);
   font-weight: 700;
 }
 
 .contact__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--contact-gap-medium);
   border: none;
   padding: 0;
   margin: 0;
@@ -47,33 +66,32 @@
   display: flex;
   flex-direction: column;
   gap: 0.4375rem;
-  padding: 0.5rem 0.75rem 0 0.75rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 0.25rem;
   background-color: #ffffff;
 }
 
 .contact__label {
-  font-size: 0.75rem;
+  font-size: var(--contact-font-size-small);
   font-weight: 400;
-  line-height: 1rem;
   color: black;
 }
 
 .contact__input {
-  font-size: 1rem;
+  font-size: var(--contact-font-size-medium);
   font-weight: 400;
-  line-height: 1.25rem;
   border: solid 0.0625rem transparent;
   outline: none;
   color: black;
+  transition: border-bottom-color 0.3s ease;
 }
 
 .contact__input:focus {
-  border-bottom-color: #127765;
+  border-bottom-color: var(--contact-input-border-color);
 }
 
 .contact__input--invalid {
-  border-bottom-color: red;
+  border-bottom-color: var(--contact-error-color);
 }
 
 .contact__input--textarea {
@@ -81,11 +99,9 @@
 }
 
 .contact__error {
-  font-size: 0.75rem;
+  font-size: var(--contact-font-size-small);
   font-weight: 400;
-  line-height: 1rem;
-  padding-bottom: 0.5rem;
-  color: red;
+  color: var(--contact-error-color);
 }
 
 .contact__button {
@@ -93,12 +109,12 @@
   padding: 0.75rem 1rem;
   border: none;
   border-radius: 0.3125rem;
-  font-size: 0.875rem;
+  font-size: var(--contact-font-size-small);
   font-weight: 400;
-  color: #fefaeb;
-  background: #0D1117;
+  color: var(--contact-button-text-color);
+  background: var(--contact-button-bg);
   opacity: 0.5;
-  cursor: pointer;
+  cursor: not-allowed;
   transition: all 0.3s ease;
 }
 
@@ -109,33 +125,34 @@
   content: "\f1d8";
 }
 
-.contact__button--enabled {
-  opacity: unset;
+.contact__button:enabled {
+  opacity: 1;
+  cursor: pointer;
 }
 
-.contact__button--enabled:hover {
+.contact__button:enabled:hover {
   filter: brightness(0.7);
 }
 
 @media screen and (min-width: 1024px) {
   .contact {
-    flex-direction: row; /* Cambia a disposición horizontal en pantallas grandes */
-    gap: 2rem; /* Espacio entre la imagen y el formulario */
+    flex-direction: row;
+    gap: var(--contact-gap-medium);
   }
 
   .contact__image {
-    display: block; /* Muestra la imagen en pantallas grandes */
-    flex: 1; /* La imagen ocupa una parte del espacio disponible */
-    height: 100%; /* La altura se ajusta automáticamente al contenedor padre */
-    aspect-ratio: 3 / 4; /* Proporción fija de 3:4 (puedes ajustar según tus necesidades) */
-    object-fit: cover; /* Asegura que la imagen no se deforme */
+    display: block;
+    flex: 1;
+    height: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
   }
 
   .contact__title {
-    font-size: 2rem;
+    font-size: var(--contact-font-size-xlarge);
   }
 
   .contact__form {
-    flex: 2; /* El formulario ocupa más espacio que la imagen */
+    flex: 2;
   }
 }

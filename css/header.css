@@ -1,9 +1,19 @@
+:root {
+  --header-padding: 1rem;
+  --header-background-color: #222222;
+  --header-text-color: white;
+  --header-gap: 2rem;
+  --header-font-size-small: 0.875rem;
+  --header-font-size-medium: 1rem;
+  --header-font-size-large: 1.25rem;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #222222;
+  background-color: var(--header-background-color);
   z-index: 100;
   padding: var(--header-padding);
 }
@@ -18,9 +28,9 @@
 }
 
 .header__title {
-  font-size: 1rem;
+  font-size: var(--header-font-size-medium);
   font-weight: 700;
-  color: white;
+  color: var(--header-text-color);
 }
 
 .header__title::before {
@@ -30,39 +40,37 @@
   margin-right: 0.5rem;
 }
 
-.header__nav {}
-
 .header__menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Para pantallas mayores a 1024px */
-  gap: 2rem;
+  display: flex;
+  gap: var(--header-gap);
   align-items: center;
 }
 
 .header__menu-item {
-  display: none; /* Ocultar en móviles por defecto */
+  display: none;
 }
 
 .header__menu-item--contact {
   display: block;
-  font-size: 0.875rem;
+  font-size: var(--header-font-size-small);
   font-weight: 400;
 }
 
 .header__menu-link {
-  color: white;
-  text-decoration: none; /* Quitar subrayado por defecto */
+  color: var(--header-text-color);
+  text-decoration: none;
 }
 
 .header__menu-link:hover {
-  text-decoration: underline; /* Subrayado al pasar el ratón */
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
   .header__menu-item--contact {
-    font-size: 1rem;
+    font-size: var(--header-font-size-medium);
     font-weight: 700;
   }
 }
@@ -74,7 +82,7 @@
 
   .header__menu-item:nth-child(-n + 5) {
     display: block;
-    font-size: 1rem;
+    font-size: var(--header-font-size-medium);
     font-weight: 500;
   }
 }

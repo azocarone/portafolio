@@ -18,5 +18,5 @@ form.addEventListener("submit", (event) => {
   event.preventDefault(); // Previene el envío por defecto
   form.reset(); // Reinicia el formulario
   validarButton(inputs, button); // Valida el estado del botón después de restablecer
-  alert("El mensaje fue enviado con éxito, gracias por contactarme..");
+  alert("El mensaje fue enviado con éxito, gracias por contactarme.");
 });

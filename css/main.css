@@ -9,7 +9,6 @@
 
 .main__section:nth-child(odd) {
   background-color: #373737;
-  /* #3C3C3C; */
 }
 
 @media screen and (min-width: 1024px) {

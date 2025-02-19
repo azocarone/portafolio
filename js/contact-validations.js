@@ -4,14 +4,15 @@ import { mensajesDeError } from "./data/contact-validations-error.js";
 export function validarCampos(input) {
   const { tipo: tipoDeInput } = input.dataset;
   const campoInvalidoClass = "contact__input--invalid";
-  const errorElement = input.parentElement.querySelector(
-    ".contact__error"
-  );
+  const errorElement = input.parentElement.querySelector(".contact__error");
   const tieneValidadorEspecial = validadores[tipoDeInput];
 
-  tieneValidadorEspecial
-    ? validadores[tipoDeInput](input)
-    : console.warn(`Validador para ${tipoDeInput} no encontrado.`);
+  if (tieneValidadorEspecial) {
+    validadores[tipoDeInput](input);
+  } else {
+    console.warn(`Validador para ${tipoDeInput} no encontrado.`);
+  }
+
   actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement);
 }
 
@@ -23,11 +24,8 @@ export function validarButton(inputs, button) {
     0
   );
 
-  button.disabled = camposValidosCount !== 4;
-  button.classList.toggle(
-    "contact__button--enabled",
-    camposValidosCount === 4
-  );
+  button.disabled = camposValidosCount !== inputs.length;
+  button.classList.toggle("contact__button--enabled", camposValidosCount === inputs.length);
 }
 
 // Definición de validadores para tipos de campo específicos
@@ -49,30 +47,27 @@ function validarMensaje(input) {
   const esSoloEspacios = mensaje.length > 0 && mensaje.trim() === "";
   let errorMensaje = "";
 
-  errorMensaje = esSoloEspacios
-    ? mensajesDeError.mensaje.customError
-    : errorMensaje;
+  if (esSoloEspacios) {
+    errorMensaje = mensajesDeError.mensaje.customError;
+  }
+
   input.setCustomValidity(errorMensaje);
 }
 
-//  Actualiza el estado del posible mensaje de error del campo de entrada
-function actualizarEstadoDeCampo(
-  input,
-  tipoDeInput,
-  campoInvalidoClass,
-  errorElement
-) {
+// Actualiza el estado del posible mensaje de error del campo de entrada
+function actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement) {
   const esValido = input.validity.valid;
-
   input.classList.toggle(campoInvalidoClass, !esValido);
-  errorElement.innerHTML = esValido
-    ? ""
-    : mostrarMensajeDeError(input, tipoDeInput);
+
+  if (!esValido) {
+    errorElement.textContent = mostrarMensajeDeError(input, tipoDeInput);
+  } else {
+    errorElement.textContent = "";
+  }
 }
 
 // Función para mostrar mensajes de error
 function mostrarMensajeDeError(input, tipoDeInput) {
   const error = tipoDeErrores.find((error) => input.validity[error]);
-
   return error ? mensajesDeError[tipoDeInput][error] : "";
 }
