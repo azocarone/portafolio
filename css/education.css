@@ -4,9 +4,9 @@
   --education-gap-large: 2rem;
   --education-padding-small: 2rem;
   --education-padding-large: 4rem;
-  --education-font-size-small: 0.875rem;
+  --education-font-size-small: 0.8rem;
   --education-font-size-medium: 1rem;
-  --education-font-size-large: 1.375rem;
+  --education-font-size-large: 1.3rem;
   --education-font-size-xlarge: 2rem;
   --education-logo-size-small: 4.375rem;
   --education-logo-size-medium: 5.25rem;
@@ -71,7 +71,7 @@
 }
 
 .education__institution {
-  font-size: var(--education-font-size-medium);
+  font-size: var(--education-font-size-small);
   font-weight: 700;
 }
 
