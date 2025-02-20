@@ -243,54 +243,11 @@
     </section>
 
     <!-- Contacto -->
-    <!--
-    <section class="main__section contact" id="contact" data-aos="fade-up">
-      <img class="contact__image" src="./assets/img/contact/093703.png" alt="Imagen de contacto" />
-      <form class="contact__form" action="#" method="POST" name="form" aria-label="Formulario de contacto">
-        <div class="contact__header">
-          <h2 class="contact__title">Contacto</h2>
-          <p>¿Busca un especialista en Tecnologías de la Información para su próximo desafío?</p>
-          <p>Le invito a completar el formulario. A la brevedad, me pondré en contacto con usted para programar una
-            entrevista en la que abordaremos sus necesidades y cómo puedo contribuir con mi experiencia a su proyecto.
-          </p>
-        </div>
-        <fieldset class="contact__fieldset" aria-label="Formulario de Contacto">
-          <div class="contact__field">
-            <label class="contact__label" for="nombre">Nombre</label>
-            <input class="contact__input" type="text" id="nombre" name="nombre" placeholder="Ej.: Nombre Apellido"
-              required pattern="^(?!\s*$).+" maxlength="50" data-tipo="nombre" />
-            <span class="contact__error" role="alert"></span>
-          </div>
-          <div class="contact__field">
-            <label class="contact__label" for="email">e-mail</label>
-            <input class="contact__input" type="email" id="email" name="email" placeholder="Ej.: usuario@dominio.tld"
-              required data-tipo="email" />
-            <span class="contact__error" role="alert"></span>
-          </div>
-          <div class="contact__field">
-            <label class="contact__label" for="asunto">Asunto</label>
-            <input class="contact__input" type="text" id="asunto" name="asunto" placeholder="Asunto" required
-              pattern="^(?!\s*$).+" maxlength="50" data-tipo="asunto" />
-            <span class="contact__error" role="alert"></span>
-          </div>
-          <div class="contact__field">
-            <label class="contact__label" for="mensaje">Mensaje</label>
-            <textarea class="contact__input contact__input--textarea" id="mensaje" name="mensaje" placeholder="Mensaje"
-              required rows="6" maxlength="300" data-tipo="mensaje"></textarea>
-            <span class="contact__error" role="alert"></span>
-          </div>
-        </fieldset>
-        <button class="contact__button" type="submit" disabled>Enviar mensaje</button>
-      </form>
-    </section>
-    -->
-
-    <!-- Contacto -->
     <section class="main__section contact" id="contact" data-aos="fade-up">
       <div class="contact__header">
         <h2 class="contact__title">Contacto</h2>
-        <p>¿Busca un especialista en Tecnologías de la Información para su próximo desafío?</p>
-        <p>Le invito a completar el formulario. A la brevedad, me pondré en contacto con usted para programar una
+        <p class="contact__description">¿Busca un especialista en Tecnologías de la Información para su próximo desafío?</p>
+        <p class="contact__description">Le invito a completar el formulario. A la brevedad, me pondré en contacto con usted para programar una
           entrevista en la que abordaremos sus necesidades y cómo puedo contribuir con mi experiencia a su proyecto.
         </p>
       </div>
@@ -301,32 +258,32 @@
             <div class="contact__field">
               <label class="contact__label" for="nombre">Nombre</label>
               <input class="contact__input" type="text" id="nombre" name="nombre"
-                placeholder="Ingresa tu nombre completo" required pattern="^(?!\s*$).+" maxlength="50"
+                placeholder="Ingrese su nombre completo." required pattern="^(?!\s*$).+" maxlength="50"
                 data-tipo="nombre" />
               <span class="contact__error" role="alert"></span>
             </div>
             <div class="contact__field">
               <label class="contact__label" for="email">e-mail</label>
-              <input class="contact__input" type="email" id="email" name="email" placeholder="Ej.: usuario@dominio.tld"
+              <input class="contact__input" type="email" id="email" name="email" placeholder="Proporcione su dirección de correo electrónico."
                 required data-tipo="email" />
               <span class="contact__error" role="alert"></span>
             </div>
             <div class="contact__field">
               <label class="contact__label" for="asunto">Asunto</label>
-              <input class="contact__input" type="text" id="asunto" name="asunto" placeholder="Asunto" required
+              <input class="contact__input" type="text" id="asunto" name="asunto" placeholder="Indique el motivo de su mensaje." required
                 pattern="^(?!\s*$).+" maxlength="50" data-tipo="asunto" />
               <span class="contact__error" role="alert"></span>
             </div>
             <div class="contact__field">
               <label class="contact__label" for="mensaje">Mensaje</label>
               <textarea class="contact__input contact__input--textarea" id="mensaje" name="mensaje"
-                placeholder="Escribe tu mensaje aquí" required rows="6" maxlength="300" data-tipo="mensaje"></textarea>
+                placeholder="Escriba aquí su mensaje." required rows="6" maxlength="300" data-tipo="mensaje"></textarea>
               <span class="contact__error" role="alert"></span>
             </div>
           </fieldset>
           <button class="contact__button" type="submit" disabled>
             Enviar mensaje
-            <span class="contact__button-hint">(Completa todos los campos)</span>
+            <span class="contact__button-hint">(Complete todos los campos)</span>
           </button>
         </form>
       </div>
