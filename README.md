@@ -18,7 +18,10 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 
 - HTML, CSS, y JavaScript;
 - Git y GitHub;
-- Block Element Modifier (BEM), Estructura de carpetas, Módulos ES6.
+- Block Element Modifier (BEM), Estructura de carpetas, Módulos ES6;
+- Google Fonts;
+- Font Awesome;
+- Animate On Scroll Library (AOS).
 
 ## Instalación y ejecución
 
