@@ -136,18 +136,12 @@
 .contact__button:enabled {
   opacity: 1;
   cursor: pointer;
-  background: linear-gradient(45deg, #127765, #0D1117);
+  background: linear-gradient(45deg, #0D1117, #00887a); 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact__button:enabled:hover {
   filter: brightness(0.7);
-}
-
-.contact__button-hint {
-  font-size: var(--contact-font-size-small);
-  margin-left: 0.5rem;
-  opacity: 0.7;
 }
 
 @media screen and (min-width: 768px) {
