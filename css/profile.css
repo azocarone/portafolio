@@ -1,11 +1,6 @@
 :root {
-  --profile-gap-small: 0.5rem;
-  --profile-gap-medium: 1rem;
-  --profile-gap-large: 2rem;
-  --profile-font-size-small: 0.875rem;
-  --profile-font-size-medium: 1rem;
-  --profile-font-size-large: 1.375rem;
-  --profile-font-size-xlarge: 3.25rem;
+  --profile-gap: clamp(0.5rem, 1vw, 2rem); /* Unifica gaps pequeños, medianos y grandes */
+  --profile-font-size: clamp(0.875rem, 2vw, 3.25rem); /* Escalado responsivo para fuentes */
   --profile-background-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
                                  linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
                                  url("../assets/img/banner.jpg");
@@ -14,8 +9,8 @@
 .profile {
   display: flex;
   flex-direction: column;
-  gap: var(--profile-gap-medium);
-  padding: var(--profile-gap-medium);
+  gap: var(--profile-gap);
+  padding: var(--profile-gap);
   background: var(--profile-background-gradient);
   background-size: cover;
   background-position: center;
@@ -28,38 +23,38 @@
 }
 
 .profile__image {
-  width: 6.125rem;
-  height: 6.125rem;
+  width: clamp(6.125rem, 10vw, 15rem); /* Escalado responsivo */
+  height: auto; /* Mantener proporción */
   filter: brightness(0.9);
-  padding: 0.5rem 0.5rem;
+  padding: clamp(0.5rem, 1vw, 1rem); /* Escalado responsivo */
 }
 
 .profile__content {
   display: flex;
   flex-direction: column;
-  gap: var(--profile-gap-small);
+  gap: var(--profile-gap);
 }
 
 .profile__name {
-  font-size: var(--profile-font-size-large);
+  font-size: clamp(1.375rem, 3vw, 3.25rem); /* Escalado responsivo */
   font-weight: 700;
 }
 
 .profile__title {
-  font-size: var(--profile-font-size-small);
+  font-size: clamp(0.875rem, 2vw, 1.375rem); /* Escalado responsivo */
   font-weight: 400;
 }
 
 .profile__links {
   display: flex;
-  gap: var(--profile-gap-small);
+  gap: var(--profile-gap);
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .profile__link {
-  font-size: var(--profile-font-size-small);
+  font-size: clamp(0.875rem, 2vw, 1rem); /* Escalado responsivo */
   font-weight: 600;
   color: inherit;
   text-decoration: none;
@@ -77,53 +72,13 @@
   .profile {
     justify-content: space-between;
     flex-direction: row-reverse;
-    gap: var(--profile-gap-large);
-    padding: var(--profile-gap-large);
   }
-
-  .profile__image {
-    width: 9.125rem;
-    height: 9.125rem;
-  }
-
   .profile__content {
     justify-content: center;
-    gap: var(--profile-gap-small);
-  }
-
-  .profile__title {
-    font-size: var(--profile-font-size-medium);
-  }
-
-  .profile__links {
-    gap: var(--profile-gap-large);
-  }
-
-  .profile__link {
-    font-size: var(--profile-font-size-medium);
-    font-weight: 500;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__image {
-    max-width: 15rem;
-    height: 15rem;
-    object-fit: contain;
-  }
-
-  .profile__content {
-    gap: var(--profile-gap-medium);
-  }
-
-  .profile__name {
-    font-size: var(--profile-font-size-xlarge);
-  }
-
-  .profile__title {
-    font-size: var(--profile-font-size-large);
-  }
-
   .profile__container {
     justify-content: space-between;
     align-items: center;

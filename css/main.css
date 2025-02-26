@@ -1,18 +1,19 @@
+:root {
+  --main-gap: clamp(1rem, 2vw, 2rem); /* Espaciado responsivo */
+  --main-scroll-margin: 80px; /* Margen de desplazamiento */
+  --main-bg-color-odd: #373737; /* Color de fondo para secciones impares */
+}
+
 .main {
   display: flex;
   flex-direction: column;
+  gap: var(--main-gap); /* Espaciado entre secciones */
 }
 
 .main__section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: var(--main-scroll-margin); /* Margen de desplazamiento */
 }
 
 .main__section:nth-child(odd) {
-  background-color: #373737;
-}
-
-@media screen and (min-width: 1024px) {
-  .main {
-    gap: 2rem;
-  }
+  background-color: var(--main-bg-color-odd); /* Fondo para secciones impares */
 }
