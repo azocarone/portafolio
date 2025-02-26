@@ -55,8 +55,8 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
     <nav>
       <ul>
         <li><a href="#about">Sobre Mí</a></li>
-        <li><a href="#education">Formación</a></li>
         <li><a href="#services">Asesorías</a></li>
+        <li><a href="#education">Formación</a></li>
         <li><a href="#projects">Challenges</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
@@ -68,15 +68,6 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
     <p>Ingeniero en Informática, con un Máster en Comercio Electrónico...</p>
   </section>
 
-  <section id="education">
-    <h2>Formación Académica</h2>
-    <ul>
-      <li>Univ. "Carlos III de Madrid" - Mtr. en Comercio Electrónico</li>
-      <li>Univ. "Alejandro de Humboldt" - Ing. en Informática</li>
-      <li>Inst. Univ. de "Nuevas Profesiones" - TSU. en Computación</li>
-    </ul>
-  </section>
-
   <section id="services">
     <h2>Asesorías IT</h2>
     <ul>
@@ -86,6 +77,15 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
       <li>Java / Python Developer: Programación de aplicaciones robustas...</li>
       <li>Backend: Optimización de bases de datos y lógica...</li>
       <li>Troubleshooting: Resolución eficaz de incidentes...</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Formación Académica</h2>
+    <ul>
+      <li>Univ. "Carlos III de Madrid" - Mtr. en Comercio Electrónico</li>
+      <li>Univ. "Alejandro de Humboldt" - Ing. en Informática</li>
+      <li>Inst. Univ. de "Nuevas Profesiones" - TSU. en Computación</li>
     </ul>
   </section>
 
