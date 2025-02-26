@@ -122,10 +122,9 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 
 ## Mejoras futuras
 
-- **Optimización del SEO**: Mejorar el posicionamiento del sitio en motores de búsqueda mediante metaetiquetas y palabras clave.
 - **Integración con APIs**: Agregar funcionalidades dinámicas, como un chatbot o integración con redes sociales.
 - **Soporte multilingüe**: Añadir soporte para otros idiomas, como inglés, para ampliar el alcance del portafolio.
 - **Hosting en la nube**: Publicar el sitio en plataformas como Netlify o Vercel para facilitar el acceso y mantenimiento.
 
 ---
-azocarone 😉😄
+<div align="right"><br>😉 azocarone 😄</div>
