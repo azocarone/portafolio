@@ -1,5 +1,5 @@
 :root {
-  --profile-gap: clamp(0.5rem, 1vw, 2rem); /* Unifica gaps pequeños, medianos y grandes */
+  --profile-gap: clamp(1rem, 2vw, 2rem); /* Unifica gaps pequeños, medianos y grandes */
   --profile-font-size: clamp(0.875rem, 2vw, 3.25rem); /* Escalado responsivo para fuentes */
   --profile-background-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
                                  linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
@@ -20,6 +20,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .profile__image {
@@ -82,9 +85,6 @@
   .profile__container {
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
     flex-direction: row-reverse;
   }
 }
