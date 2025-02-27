@@ -71,12 +71,12 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
   <section id="services">
     <h2>Asesorías IT</h2>
     <ul>
-      <li>Informática: Administración de servidores con GNU/Linux...</li>
-      <li>Ciberseguridad: Diseño e implementación de estrategias...</li>
-      <li>Datascience: Análisis de datos con Python...</li>
-      <li>Java / Python Developer: Programación de aplicaciones robustas...</li>
-      <li>Backend: Optimización de bases de datos y lógica...</li>
-      <li>Troubleshooting: Resolución eficaz de incidentes...</li>
+      <li>Informática: Administración de servidores y estaciones ...</li>
+      <li>Ciberseguridad: Diseño e implementación de estrategias ...</li>
+      <li>Datascience: Desarrollo de soluciones basadas en el ...</li>
+      <li>Java/Python Developer: Programación de aplicaciones robustas y ...</li>
+      <li>Backend: Diseño y optimización de la lógica, las ...</li>
+      <li>Troubleshooting: Resolución eficaz de incidentes ...</li>
     </ul>
   </section>
 
@@ -123,7 +123,7 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 ## Mejoras futuras
 
 - **Integración con APIs**: Agregar funcionalidades dinámicas, como un chatbot o integración con redes sociales.
-- **Soporte multilingüe**: Añadir soporte para otros idiomas, como inglés, para ampliar el alcance del portafolio.
+- **Soporte multilingüe**: Añadir soporte para otros idiomas, para ampliar el alcance del portafolio.
 - **Hosting en la nube**: Publicar el sitio en plataformas como Netlify o Vercel para facilitar el acceso y mantenimiento.
 
 ---
