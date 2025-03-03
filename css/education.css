@@ -1,78 +1,78 @@
 :root {
-  --education-gap: clamp(0.5rem, 1vw, 2rem); /* Espaciado responsivo */
-  --education-padding: clamp(2rem, 3vw, 4rem); /* Padding responsivo */
-  --education-font-size: clamp(0.8rem, 2vw, 2rem); /* Escalado responsivo para fuentes */
-  --education-logo-size: clamp(5rem, 10vw, 15rem); /* Escalado responsivo para logos */
+    --education-gap: clamp(0.5rem, 1vw, 2rem); /* Espaciado responsivo */
+    --education-padding: clamp(2rem, 3vw, 4rem); /* Padding responsivo */
+    --education-font-size: clamp(0.8rem, 2vw, 2rem); /* Escalado responsivo para fuentes */
+    --education-logo-size: clamp(5rem, 10vw, 15rem); /* Escalado responsivo para logos */
 }
 
 .education {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--education-gap);
-  padding: var(--education-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--education-gap);
+    padding: var(--education-padding);
 }
 
 .education__title {
-  font-size: clamp(1.3rem, 3vw, 2rem); /* Escalado responsivo */
-  font-weight: 700;
-  text-align: center;
+    font-size: clamp(1.3rem, 3vw, 2rem); /* Escalado responsivo */
+    font-weight: 700;
+    text-align: center;
 }
 
 .education__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--education-gap);
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--education-gap);
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .education__item {
-  display: flex;
-  flex-direction: column;
-  gap: var(--education-gap);
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--education-gap);
+    align-items: center;
 }
 
 .education__logo {
-  width: auto;
-  height: clamp(7.375rem, 15vw, 17.875rem); /* Escalado responsivo */
-  padding: clamp(1rem, 1.5vw, 2rem); /* Escalado responsivo */
-  border-radius: 0.25rem;
-  box-shadow: 0 1.25rem 2.5rem -0.875rem rgba(0, 0, 0, 0.5);
-  background: #F5F5F5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
+    width: auto;
+    height: clamp(7.375rem, 15vw, 17.875rem); /* Escalado responsivo */
+    padding: clamp(1rem, 1.5vw, 2rem); /* Escalado responsivo */
+    border-radius: 0.25rem;
+    box-shadow: 0 1.25rem 2.5rem -0.875rem rgba(0, 0, 0, 0.5);
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
 
 .education__logo:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .education__logo-image {
-  width: var(--education-logo-size);
-  height: auto;
-  transition: all 0.3s ease;
+    width: var(--education-logo-size);
+    height: auto;
+    transition: all 0.3s ease;
 }
 
 .education__item:hover .education__logo-image {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .education__institution,
 .education__degree {
-  font-size: clamp(0.8rem, 2vw, 1rem); /* Escalado responsivo */
+    font-size: clamp(0.8rem, 2vw, 1rem); /* Escalado responsivo */
 }
 
 .education__institution {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .education__degree {
-  font-weight: 500;
+    font-weight: 500;
 }

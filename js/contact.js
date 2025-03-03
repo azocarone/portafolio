@@ -7,16 +7,16 @@ const button = document.querySelector(".contact__button");
 
 // Agrega eventos a los campos de entrada para la validación en tiempo real
 inputs.forEach((input) => {
-  input.addEventListener("input", () => {
-    validarCampos(input); // Valida el campo actual
-    validarButton(inputs, button); // Valida el estado del botón
-  });
+    input.addEventListener("input", () => {
+        validarCampos(input); // Valida el campo actual
+        validarButton(inputs, button); // Valida el estado del botón
+    });
 });
 
 // Agrega un evento al formulario para manejar el envío
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Previene el envío por defecto
-  form.reset(); // Reinicia el formulario
-  validarButton(inputs, button); // Valida el estado del botón después de restablecer
-  alert("El mensaje fue enviado con éxito, gracias por contactarme.");
+    event.preventDefault(); // Previene el envío por defecto
+    form.reset(); // Reinicia el formulario
+    validarButton(inputs, button); // Valida el estado del botón después de restablecer
+    alert("El mensaje fue enviado con éxito, gracias por contactarme.");
 });

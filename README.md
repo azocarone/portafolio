@@ -1,8 +1,8 @@
-# Portafolio 
+# Portafolio
 
-Este proyecto es un portafolio personal diseñado para destacar la experiencia profesional, habilidades técnicas y proyectos de José Antonio Azócar Marcano. El sitio web está estructurado para proporcionar información sobre su formación académica, servicios de asesorías IT, desafíos (challenges) y una forma fácil de contacto. Es una herramienta ideal para mostrar su experiencia en áreas como la informática, ciberseguridad, ciencia de datos, desarrollo backend y programación en Java/Python. 
+Este proyecto es un portafolio personal diseñado para destacar la experiencia profesional, habilidades técnicas y proyectos de José Antonio Azócar Marcano. El sitio web está estructurado para proporcionar información sobre su formación académica, servicios de asesorías IT, desafíos (challenges) y una forma fácil de contacto. Es una herramienta ideal para mostrar su experiencia en áreas como la informática, ciberseguridad, ciencia de datos, desarrollo backend y programación en Java/Python.
 
-El diseño del portafolio es minimalista pero funcional, con enlaces directos a proyectos en GitHub y demos interactivas, lo que permite a los visitantes explorar su trabajo de manera efectiva. 
+El diseño del portafolio es minimalista pero funcional, con enlaces directos a proyectos en GitHub y demos interactivas, lo que permite a los visitantes explorar su trabajo de manera efectiva.
 
 <div align="center"><img src="assets/img/screenshot.gif" alt="Portafolio" width="683" height="384" style="border-radius: 10px;"></div>
 
@@ -13,7 +13,7 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 - **Formulario de contacto**: Permite a los visitantes enviar mensajes directamente desde el sitio.
 - **Diseño responsive**: Adecuado para visualización en dispositivos móviles y escritorio.
 - **Información técnica detallada**: Resalta habilidades clave como Java, Python, backend, ciberseguridad y más.
-     
+
 ## Tecnologías y Metodologías empleadas
 
 - HTML, CSS, y JavaScript;
@@ -26,7 +26,7 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 ## Instalación y ejecución
 
 1. Clonar este repositorio:
-   
+
    ```bash
    git clone https://github.com/azocarone/portafolio.git
    ```
@@ -41,7 +41,7 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 
 ## Código Principal
 
-``` HTML
+```HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -127,4 +127,5 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 - **Hosting en la nube**: Publicar el sitio en plataformas como Netlify o Vercel para facilitar el acceso y mantenimiento.
 
 ---
+
 <div align="right"><br>😉 azocarone 😄</div>
