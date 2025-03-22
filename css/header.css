@@ -1,9 +1,10 @@
 :root {
-    --header-padding: clamp(1rem, 2vw, 2rem); /* Espaciado responsivo */
-    --header-background-color: #222222;
-    --header-text-color: white;
-    --header-gap: clamp(1rem, 2vw, 2rem); /* Espaciado responsivo */
     --header-font-size: clamp(0.875rem, 2vw, 1.25rem); /* Escalado responsivo para fuentes */
+    --header-text-color: white;
+    --header-background-color: #222222;
+    --header-height: 80px;
+    --header-padding: clamp(1rem, 2vw, 2rem); /* Espaciado responsivo */
+    --header-gap: clamp(1rem, 2vw, 2rem); /* Espaciado responsivo */
 }
 
 .header {
