@@ -1,6 +1,6 @@
 :root {
     --education-font-size: var(--font-size-base);
-    --education-logo-size: calc(var(--spacing) * 9);
+    --education-logo-size: calc(var(--spacing) * 8);
     --education-padding: var(--spacing);
     --education-gap: var(--spacing);
 }   
@@ -38,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(var(--spacing) * 12);
+    width: calc(var(--spacing) * 11);
     height: auto;
     background: #F5F5F5;
     border-radius: 0.25rem;
