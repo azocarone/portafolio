@@ -26,14 +26,17 @@
     flex-direction: column;
     gap: var(--projects-gap);
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .projects__item {
     display: flex;
     flex-direction: column;
     gap: var(--projects-gap);
+    margin-bottom: var(--spacing);
+}
+
+.projects__item:last-child {
+    margin-bottom: 0;
 }
 
 .projects__image {
@@ -46,34 +49,36 @@
 .projects__info {
     display: flex;
     flex-direction: column;
-    gap: clamp(0.5rem, 1vw, 1rem);
+    align-items: center;
+    gap: calc(var(--projects-gap) * 0.1);
 }
 
 .projects__name {
-    font-size: clamp(1rem, 2vw, 1.375rem);
+    font-size: calc(var(--services-font-size) * 1.2);
     font-weight: 700;
 }
 
 .projects__description {
-    font-size: clamp(0.875rem, 2vw, 1rem);
-    font-weight: 500;
+    font-size: var(--services-font-size);
+    font-weight: 400;
+    font-style: italic;
 }
 
 .projects__keypad {
     display: flex;
-    gap: clamp(1rem, 2vw, 2rem);
+    gap: var(--projects-gap);
 }
 
 .projects__button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
-    padding: clamp(0.5625rem, 1vw, 1rem) clamp(2.5rem, 3vw, 3rem);
-    border-radius: 0.3125rem;
-    font-size: clamp(0.875rem, 2vw, 1rem);
+    gap: var(--projects-gap);
+    font-size: var(--services-font-size);
     font-weight: 400;
     color: #fff;
+    border-radius: 0.3125rem;
+    padding: calc(var(--projects-padding) * 0.2) calc(var(--projects-padding) * 0.8);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -98,13 +103,16 @@
 
     .projects__item:nth-child(even) {
         flex-direction: row-reverse;
+        text-align: right;
+        margin-left: auto;
     }
 
     .projects__image {
-        width: clamp(30rem, 50vw, 47rem);
+        width: calc(var(--spacing) * 20);
     }
 
     .projects__info {
+        align-items: normal;
         flex: 1 0 0; /* Equivalente a: "Puede crecer (flex-grow: 1), no encoge (flex-shrink: 0) y sin tamaño base (flex-basis: 0) */
     }
 }
