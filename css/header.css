@@ -2,7 +2,7 @@
     --header-font-size: var(--font-size-base);
     --header-text-color: white;
     --header-background-color: #222222;
-    --header-height: 4rem; /* 80px */
+    --header-height: 4rem; /* 64px */
     --header-padding: var(--spacing);
     --header-gap: var(--spacing);
   }
