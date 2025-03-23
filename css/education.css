@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: calc(var(--education-gap) * 2);
+    gap: calc(var(--education-gap) * 4);
     flex-wrap: wrap;
     list-style: none;
 }
@@ -62,7 +62,7 @@
 }
 
 .education__degree {
-    font-size: calc(var(--services-font-size) * 1.1);    
+    font-size: calc(var(--services-font-size) * 1.2);    
     font-weight: 700;
     margin-top: var(--spacing);
 }

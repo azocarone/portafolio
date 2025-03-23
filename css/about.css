@@ -20,7 +20,7 @@
 }
 
 .about__description {
-    font-size: calc(var(--about-font-size) * 1.3);
+    font-size: calc(var(--about-font-size) * 1.2);
     font-weight: 400;
     font-style: italic;
     line-height: var( --line-height-base);

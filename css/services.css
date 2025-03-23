@@ -50,14 +50,15 @@
 }
 
 .services__item-title {
-    font-size: calc(var(--services-font-size) * 1.3);
+    font-size: calc(var(--services-font-size) * 1.2);
     font-weight: 700;
     color: var(--services-title-color);
 }
 
 .services__item-description {
-    font-size: calc(var(--services-font-size) * 1.1);
+    font-size: var(--services-font-size);
     font-weight: 400;
+    line-height: calc(var( --line-height-base) * 0.8);
     color: var(--services-text-color);
 }
 
