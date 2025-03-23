@@ -1,7 +1,7 @@
 :root {
-    --main-gap: clamp(1rem, 2vw, 2rem);
-    --main-scroll-margin: var(--header-height);
     --main-bg-color-odd: #373737;
+    --main-gap: var(--spacing);
+    --main-scroll-margin: var(--header-height);
 }
 
 .main {
