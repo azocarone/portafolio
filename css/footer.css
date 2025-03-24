@@ -1,30 +1,26 @@
 :root {
-    --footer-bg-color: #343a40;
-    --footer-text-color: #ffffff;
-    --footer-secondary-text-color: #cccccc;
-    --footer-icon-size: clamp(1.25rem, 2vw, 1.75rem); /* Escalado responsivo */
-    --footer-padding: clamp(1rem, 2vw, 2rem); /* Unifica padding pequeño y grande */
-    --footer-font-size-title: clamp(1rem, 2vw, 1.25rem); /* Escalado responsivo */
-    --footer-font-size-text: clamp(0.75rem, 1.5vw, 1rem); /* Escalado responsivo */
-    --footer-gap: clamp(0.5rem, 1vw, 1rem); /* Escalado responsivo */
-}
+    --footer-font-size: var(--font-size-base);
+    --footer-text-color: #FFFFFF;
+    --footer-secondary-text-color: #CCCCCC;
+    --footer-bg-color: #343A40;
+    --footer-gap: var(--spacing);
+    --footer-padding: var(--spacing);
+}   
 
 .footer {
-    background-color: var(--footer-bg-color);
-    padding: var(--footer-padding);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--footer-gap);
+    gap: calc(var(--footer-gap) * 0.2);
+    background-color: var(--footer-bg-color);
+    padding: var(--footer-padding);
 }
 
 .footer__title {
-    font-size: var(--footer-font-size-title);
-    font-weight: 600;
+    font-size: calc(var(--footer-font-size) * 1.2);
+    font-weight: 900;
     color: var(--footer-text-color);
-    margin-bottom: var(--footer-gap);
-    text-align: center;
 }
 
 .footer__title::before {
@@ -35,16 +31,16 @@
 }
 
 .footer__social-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     gap: var(--footer-gap);
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer__social-link {
-    font-size: var(--footer-icon-size);
+    font-size: calc(var(--footer-font-size) * 1.2);
     color: var(--footer-text-color);
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -59,18 +55,16 @@
     flex-direction: column;
     align-items: center;
     gap: var(--footer-gap);
-    padding-top: var(--footer-gap);
-    text-align: center;
 }
 
 .footer__copyright-text {
-    font-size: var(--footer-font-size-text);
+    font-size: calc(var(--footer-font-size) * 0.9);
     font-weight: 400;
     color: var(--footer-secondary-text-color);
     margin: 0;
 }
 
 .footer__copyright-logo {
-    width: var(--footer-icon-size);
-    height: var(--footer-icon-size);
+    width: calc(var(--spacing) * 1.2);
+    height: calc(var(--spacing) * 1.2);
 }
