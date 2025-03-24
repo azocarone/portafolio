@@ -66,14 +66,14 @@
 
 .projects__keypad {
     display: flex;
-    gap: var(--projects-gap);
+    gap: calc(var(--projects-gap) * 0.5);
 }
 
 .projects__button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--projects-gap);
+    gap: calc(var(--projects-gap) * 0.5);
     font-size: var(--services-font-size);
     font-weight: 400;
     color: #fff;
