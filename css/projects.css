@@ -39,37 +39,49 @@
     margin-bottom: 0;
 }
 
-.projects__image {
+.projects__item-header {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--projects-gap) * 0.4);
+    background: #313131;
+    border-radius: 0.25rem;
+    box-shadow: var(--projects-shadow);
+    padding: calc(var(--projects-padding) * 0.6);
+}
+
+.projects__item-title {
+    font-size: calc(var(--services-font-size) * 1.2);
+    font-weight: 700;
+    margin-left: calc(var(--projects-padding) * 0.5);
+    margin-right: calc(var(--spacing) * 0.5);
+}
+
+.projects__item-image {
     width: 100%;
     height: auto;
     border-radius: 0.25rem;
     box-shadow: var(--projects-shadow);
 }
 
-.projects__info {
+.projects__item-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: calc(var(--projects-gap) * 0.1);
 }
 
-.projects__name {
-    font-size: calc(var(--services-font-size) * 1.2);
-    font-weight: 700;
-}
-
-.projects__description {
+.projects__item-description {
     font-size: var(--services-font-size);
     font-weight: 400;
     font-style: italic;
 }
 
-.projects__keypad {
+.projects__item-keypad {
     display: flex;
     gap: calc(var(--projects-gap) * 0.5);
 }
 
-.projects__button {
+.projects__item-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,15 +95,15 @@
     transition: all 0.3s ease;
 }
 
-.projects__button:hover {
+.projects__item-button:hover {
     filter: brightness(0.7);
 }
 
-.projects__button:nth-child(1) {
+.projects__item-button:nth-child(1) {
     background: var(--projects-button-github-bg);
 }
 
-.projects__button:nth-child(2) {
+.projects__item-button:nth-child(2) {
     background: var(--projects-button-demo-bg);
 }
 
@@ -107,11 +119,11 @@
         margin-left: auto;
     }
 
-    .projects__image {
+    .projects__item-image {
         width: calc(var(--spacing) * 20);
     }
 
-    .projects__info {
+    .projects__item-info {
         align-items: normal;
         flex: 1 0 0; /* Equivalente a: "Puede crecer (flex-grow: 1), no encoge (flex-shrink: 0) y sin tamaño base (flex-basis: 0) */
     }
