@@ -1,13 +1,13 @@
 :root {
-    --header-font-size: var(--font-size-base);
     --header-text-color: white;
     --header-background-color: #222222;
-    --header-height: 4rem; /* 64px */
+    --header-height: 4rem;
     --header-padding: var(--spacing);
     --header-gap: var(--spacing);
-  }
-  
-  .header {
+    --header-title-font-size: calc(var(--font-size-base) * 1.2);
+}
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,9 +15,9 @@
     background-color: var(--header-background-color);
     padding: var(--header-padding);
     z-index: 100;
-  }
-  
-  .header__container {
+}
+
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,50 +25,50 @@
     max-width: var(--max-width-container);
     margin: 0 auto;
 }
-  
-  .header__title {
+
+.header__title {
     font-size: calc(var(--header-font-size) * 1.2);
     font-weight: 900;
     color: var(--header-text-color);
-  }
-  
-  .header__title::before {
+}
+
+.header__title::before {
     font-family: "Font Awesome 6 Free";
     content: "\f0f2";
     opacity: 0.7;
     margin-right: 0.5rem;
-  }
-  
-  .header__menu {
+}
+
+.header__menu {
     display: flex;
     align-items: center;
     gap: var(--header-gap);
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .header__menu-item {
+}
+
+.header__menu-item {
     display: none;
-  }
-  
-  .header__menu-item--contact {
+}
+
+.header__menu-item--contact {
     display: block;
-  }
-  
-  .header__menu-link {
+}
+
+.header__menu-link {
     font-size: var(--header-font-size);
     font-weight: 400;
     color: var(--header-text-color);
     text-decoration: none;
-  }
-  
-  .header__menu-link:hover {
+}
+
+.header__menu-link:hover {
     text-decoration: underline;
-  }
-  
-  @media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) {
     .header__menu-item:nth-child(-n + 5) {
-      display: block;
+        display: block;
     }
-  }
+}

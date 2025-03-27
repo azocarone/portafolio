@@ -1,10 +1,15 @@
 :root {
-    --projects-font-size: var(--font-size-base);
     --projects-gap: var(--spacing);
     --projects-padding: var(--spacing);
+    --projects-shadow: 0 0 10px 5px rgba(28, 32, 31, 0.5), inset 0 0 10px 5px rgba(28, 32, 31, 0.5);
     --projects-button-github-bg: #1A7F37;
     --projects-button-demo-bg: #040642;
-    --projects-shadow: 0 0 10px 5px rgba(28, 32, 31, 0.5), inset 0 0 10px 5px rgba(28, 32, 31, 0.5);
+    --projects-title-font-size: calc(var(--font-size-base) * 2);
+    --projects-item-title-font-size: calc(var(--font-size-base) * 1.2);
+    --projects-item-header-padding: calc(var(--projects-padding) * 0.6);
+    --projects-item-title-margin-side: calc(var(--projects-padding) * 0.5);
+    --projects-item-keypad-gap: calc(var(--projects-gap) * 0.5);
+    --projects-item-button-padding: calc(var(--projects-padding) * 0.2) calc(var(--projects-padding) * 0.8);
 }
 
 .projects {
@@ -16,7 +21,7 @@
 }
 
 .projects__title {
-    font-size: calc(var(--services-font-size) * 2);
+    font-size: var(--projects-title-font-size);
     font-weight: 700;
     text-align: center;
 }
@@ -46,14 +51,14 @@
     background: #313131;
     border-radius: 0.25rem;
     box-shadow: var(--projects-shadow);
-    padding: calc(var(--projects-padding) * 0.6);
+    padding: var(--projects-item-header-padding);
 }
 
 .projects__item-title {
-    font-size: calc(var(--services-font-size) * 1.2);
+    font-size: var(--projects-item-title-font-size);
     font-weight: 700;
-    margin-left: calc(var(--projects-padding) * 0.5);
-    margin-right: calc(var(--spacing) * 0.5);
+    margin-left: var(--projects-item-title-margin-side);
+    margin-right: var(--projects-item-title-margin-side);
 }
 
 .projects__item-image {
@@ -71,26 +76,26 @@
 }
 
 .projects__item-description {
-    font-size: var(--services-font-size);
+    font-size: var(--font-size-base);
     font-weight: 400;
     font-style: italic;
 }
 
 .projects__item-keypad {
     display: flex;
-    gap: calc(var(--projects-gap) * 0.5);
+    gap: var(--projects-item-keypad-gap);
 }
 
 .projects__item-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: calc(var(--projects-gap) * 0.5);
-    font-size: var(--services-font-size);
+    gap: var(--projects-item-keypad-gap);
+    font-size: var(--font-size-base);
     font-weight: 400;
     color: #fff;
     border-radius: 0.3125rem;
-    padding: calc(var(--projects-padding) * 0.2) calc(var(--projects-padding) * 0.8);
+    padding: var(--projects-item-button-padding);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -125,6 +130,6 @@
 
     .projects__item-info {
         align-items: normal;
-        flex: 1 0 0; /* Equivalente a: "Puede crecer (flex-grow: 1), no encoge (flex-shrink: 0) y sin tamaño base (flex-basis: 0) */
+        flex: 1 0 0;
     }
 }

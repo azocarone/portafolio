@@ -1,10 +1,10 @@
 :root {
-    --font-size-base: clamp(0.75rem, 2vw, 1rem);  /* 12px - 2% - 16px */
+    --font-size-base: clamp(0.75rem, 2vw, 1rem);
     --line-height-base: 1.6;
     --text-color: #FEFAEB;
     --background-color: #444444;
     --container-width: 90%;
-    --max-width-container: 75rem; /* 1200px */
+    --max-width-container: 75rem;
     --spacing: clamp(1rem, 2vw, 2rem);
   }
   

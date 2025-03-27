@@ -1,12 +1,14 @@
 :root {
-    --services-font-size: var(--font-size-base);
+    --services-gap: var(--spacing);
+    --services-padding: var(--spacing);
     --services-title-color: #373737;
     --services-text-color: #444444;
     --services-item-bg: #F5F5F5;
     --services-item-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
     --services-icon-color: #222222;
-    --services-padding: var(--spacing);
-    --services-gap: var(--spacing);
+    --services-title-font-size: calc(var(--font-size-base) * 2);
+    --services-item-title-font-size: calc(var(--font-size-base) * 1.2);
+    --services-item-line-height: calc(var(--line-height-base) * 0.8);
 }
 
 .services {
@@ -18,7 +20,7 @@
 }
 
 .services__title {
-    font-size: calc(var(--services-font-size) * 2);
+    font-size: var(--services-title-font-size);
     font-weight: 700;
     text-align: center;
 }
@@ -50,15 +52,15 @@
 }
 
 .services__item-title {
-    font-size: calc(var(--services-font-size) * 1.2);
+    font-size: var(--services-item-title-font-size);
     font-weight: 700;
     color: var(--services-title-color);
 }
 
 .services__item-description {
-    font-size: var(--services-font-size);
+    font-size: var(--font-size-base);
     font-weight: 400;
-    line-height: calc(var( --line-height-base) * 0.8);
+    line-height: var(--services-item-line-height);
     color: var(--services-text-color);
 }
 
@@ -76,6 +78,6 @@
 
 @media screen and (min-width: 1024px) {
     .services__item {
-        flex: 1 1 calc(33% - var(--services-gap));
+        flex: 1 1 calc(33.333% - var(--services-gap));
     }
 }

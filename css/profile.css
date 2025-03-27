@@ -1,10 +1,13 @@
 :root {
-    --profile-font-size: var(--font-size-base);
+    --profile-padding: var(--spacing);
+    --profile-gap: var(--spacing);
+    --profile-image-size: calc(var(--spacing) * 7);
+    --profile-name-font-size: calc(var(--font-size-base) * 2.5);
+    --profile-title-font-size: calc(var(--font-size-base) * 1.2);
+    --profile-link-font-size: var(--font-size-base);
     --profile-background-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
         url("../assets/img/banner.jpg");
-    --profile-padding: var(--spacing);
-    --profile-gap: var(--spacing);
 }
 
 .profile {
@@ -14,6 +17,7 @@
     background: var(--profile-background-gradient);
     background-size: cover;
     background-position: center;
+    padding: var(--profile-padding);
 }
 
 .profile__container {
@@ -27,7 +31,7 @@
 }
 
 .profile__image {
-    width: calc(var(--spacing) * 7);
+    width: var(--profile-image-size);
     filter: brightness(0.9);
 }
 
@@ -38,12 +42,12 @@
 }
 
 .profile__name {
-    font-size: calc(var(--profile-font-size) * 2.5);
+    font-size: var(--profile-name-font-size);
     font-weight: 900;
 }
 
 .profile__title {
-    font-size: calc(var(--profile-font-size) * 1.2);
+    font-size: var(--profile-title-font-size);
     font-weight: 400;
     font-style: italic;
 }
@@ -57,7 +61,7 @@
 }
 
 .profile__link {
-    font-size: var(--profile-font-size);
+    font-size: var(--profile-link-font-size);
     font-weight: 700;
     color: inherit;
     text-decoration: none;

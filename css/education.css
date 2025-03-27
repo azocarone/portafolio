@@ -1,8 +1,10 @@
 :root {
-    --education-font-size: var(--font-size-base);
-    --education-logo-size: calc(var(--spacing) * 6);
-    --education-padding: var(--spacing);
     --education-gap: var(--spacing);
+    --education-padding: var(--spacing);
+    --education-title-font-size: calc(var(--font-size-base) * 2);
+    --education-logo-size: calc(var(--spacing) * 6);
+    --education-logo-container-width: calc(var(--spacing) * 9);
+    --education-degree-font-size: calc(var(--font-size-base) * 1.2);
 }   
 
 .education {
@@ -14,7 +16,7 @@
 }
 
 .education__title {
-    font-size: calc(var(--services-font-size) * 2);
+    font-size: var(--education-title-font-size);
     font-weight: 700;
     text-align: center;
 }
@@ -38,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(var(--spacing) * 9);
+    width: var(--education-logo-container-width);
     height: auto;
     background: #F5F5F5;
     border-radius: 0.25rem;
@@ -62,13 +64,13 @@
 }
 
 .education__degree {
-    font-size: calc(var(--services-font-size) * 1.2);    
+    font-size: var(--education-degree-font-size);
     font-weight: 700;
     margin-top: var(--spacing);
 }
 
 .education__institution {
-    font-size: var(--services-font-size);
+    font-size: var(--font-size-base);
     font-weight: 400;
     font-style: italic;
     margin: 0;

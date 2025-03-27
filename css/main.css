@@ -11,9 +11,11 @@
 }
 
 .main__section {
+    display: flex;
     justify-content: center;
     scroll-margin-top: var(--main-scroll-margin);
     min-height: calc(100vh - var(--header-height));
+    width: 100%;
 }
 
 .main__section:nth-child(odd) {
