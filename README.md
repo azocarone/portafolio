@@ -46,4 +46,4 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 
 ---
 
-<div align="right"><br>😉 azocarone 😄</div>
+<div align="right"><br>José AZÓCAR (azocarone)</div>
