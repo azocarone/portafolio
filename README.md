@@ -47,5 +47,3 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 ---
 
 <div align="right"><br>José AZÓCAR (azocarone)</div>
-
-<a href="https://www.ejemplo.com" target="_blank">Enlace que se abre en nueva pestaña</a>
