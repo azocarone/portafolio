@@ -42,10 +42,10 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 ## Mejoras futuras
 
 - **Integración con APIs**: Agregar funcionalidades dinámicas, como un chatbot o integración con redes sociales.
-- **Hosting en la nube**: Publicar el sitio en alguna plataforma para servir archivos estáticos como [Netlify](https://www.netlify.com/), [Cloudflare Pages](https://pages.cloudflare.com/), [Surge](https://surge.sh/){:target="_blank"} con la finalidad de facilitar el acceso y mantenimiento.
+- **Hosting en la nube**: Publicar el sitio en alguna plataforma para servir archivos estáticos como [Netlify](https://www.netlify.com/), [Cloudflare Pages](https://pages.cloudflare.com/), [Surge](https://surge.sh/) con la finalidad de facilitar el acceso y mantenimiento.
 
 ---
 
 <div align="right"><br>José AZÓCAR (azocarone)</div>
 
-<a href="https://www.netlify.com/" target="_blank">Netlify</a>
+<a href="https://www.ejemplo.com" target="_blank">Enlace que se abre en nueva pestaña</a>
