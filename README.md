@@ -42,7 +42,7 @@ El diseño del portafolio es minimalista pero funcional, con enlaces directos a 
 ## Mejoras futuras
 
 - **Integración con APIs**: Agregar funcionalidades dinámicas, como un chatbot o integración con redes sociales.
-- **Hosting en la nube**: Publicar el sitio en plataformas como Netlify o Vercel para facilitar el acceso y mantenimiento.
+- **Hosting en la nube**: Publicar el sitio en alguna plataforma para servir archivos estáticos como [Netlify](https://www.netlify.com/), [Cloudflare Pages](https://pages.cloudflare.com/), [Surge](https://surge.sh/) con la finalidad de facilitar el acceso y mantenimiento.
 
 ---
 
