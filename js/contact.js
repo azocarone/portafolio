@@ -20,7 +20,8 @@ form.addEventListener("submit", (event) => {
     const myForm = event.target;
     const formData = new FormData(myForm);
     
-    // AJAX - Doc Netlify
+    // ==== AJAX - Doc Netlify ====
+    
     fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -29,6 +30,8 @@ form.addEventListener("submit", (event) => {
         .then(() => alert("El mensaje fue enviado con éxito, gracias por contactarme."))
         .catch(error => alert(error));
     
+        // ===========================
+
     form.reset(); // Reinicia el formulario
     validarButton(inputs, button); // Valida el estado del botón después de restablecer
 });
