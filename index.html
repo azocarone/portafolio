@@ -298,7 +298,7 @@
                 <img class="contact__image" src="./assets/img/contact/wfh_02.png" alt="Imagen de contacto - Working from home">
             </div>
             <div class="contact__content">
-                <form class="contact__form" action="#" method="POST" name="form" aria-label="Formulario de contacto" data-netlify="true">
+                <form class="contact__form" action="#" method="POST" name="contact" aria-label="Formulario de contacto" data-netlify-recaptcha="true" data-netlify="true">
                     <fieldset class="contact__fieldset" aria-label="Formulario de Contacto">
                         <div class="contact__field">
                             <label class="contact__label" for="nombre">Nombre</label>
@@ -328,6 +328,7 @@
                             <span class="contact__error" role="alert"></span>
                         </div>
                     </fieldset>
+                    <div data-netlify-recaptcha="true"></div>
                     <button class="contact__button" type="submit" disabled>Enviar mensaje</button>
                 </form>
             </div>
