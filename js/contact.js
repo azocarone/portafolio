@@ -31,8 +31,11 @@ form.addEventListener("submit", (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString()
     })
-      .then(() => alert("Thank you for your submission"))
+      .then(() => alert("El mensaje fue enviado con éxito, gracias por contactarme."))
       .catch(error => alert(error));
+
+    form.reset(); // Reinicia el formulario
+    validarButton(inputs, button); // Valida el estado del botón después de restablecer
   
 
 
