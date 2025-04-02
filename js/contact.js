@@ -5,6 +5,55 @@ const form = document.querySelector(".contact__form");
 const inputs = document.querySelectorAll("[data-tipo]");
 const button = document.querySelector(".contact__button");
 
+async function manejarEnvioFormulario(event) {
+    event.preventDefault();
+
+    const recaptchaResponse = grecaptcha.getResponse();
+    const formData = new FormData(event.target);
+    const formDataObject = Object.fromEntries(formData);
+    formDataObject.recaptchaResponse = recaptchaResponse;
+
+    const recaptchaData = await verificarRecaptcha(formDataObject);
+
+    if (recaptchaData && recaptchaData.message === 'reCAPTCHA verified') {
+        await enviarFormularioNetlify(formData);
+        form.reset();
+        validarButton(inputs, button);
+    } else if (recaptchaData) {
+        alert(recaptchaData.message);
+    }
+}
+
+async function enviarFormularioNetlify(formData) {
+    try {
+        await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString(),
+        });
+        alert('Formulario enviado con éxito.');
+    } catch (error) {
+        console.error('Error al enviar el formulario:', error);
+        alert('Ocurrió un error al enviar el formulario.');
+    }
+}
+
+async function verificarRecaptcha(formDataObject) {
+    try {
+        const response = await fetch('/.netlify/functions/verify-recaptcha', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formDataObject),
+        });
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error al verificar reCAPTCHA:', error);
+        alert('Ocurrió un error al verificar reCAPTCHA.');
+        return null;
+    }
+}
+
 // Agrega eventos a los campos de entrada para la validación en tiempo real
 inputs.forEach((input) => {
     input.addEventListener("input", () => {
@@ -12,6 +61,8 @@ inputs.forEach((input) => {
         validarButton(inputs, button); // Valida el estado del botón
     });
 });
+
+form.addEventListener('submit', manejarEnvioFormulario);
 
 /* Agrega un evento al formulario para manejar el envío
 form.addEventListener("submit", (event) => {
@@ -35,36 +86,3 @@ form.addEventListener("submit", (event) => {
     form.reset(); // Reinicia el formulario
     validarButton(inputs, button); // Valida el estado del botón después de restablecer
 }); */
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const recaptchaResponse = grecaptcha.getResponse();
-    const formData = new FormData(event.target);
-    const formDataObject = Object.fromEntries(formData);
-    formDataObject.recaptchaResponse = recaptchaResponse;
-
-    fetch('/.netlify/functions/verify-recaptcha', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formDataObject),
-    })
-        .then((response) => response.json())
-        .then((data) => {
-            if (data.message === 'reCAPTCHA verified') {
-                // reCAPTCHA verificado con éxito, procesa el formulario
-                alert('Formulario enviado con éxito');
-                form.reset();
-            } else {
-                // Muestra el mensaje de error personalizado
-                alert(data.message);
-            }
-        })
-        .catch((error) => {
-            console.error(error);
-            alert('An error occurred');
-        });
-
-    form.reset(); // Reinicia el formulario
-    validarButton(inputs, button); // Valida el estado del botón después de restablecer
-});
