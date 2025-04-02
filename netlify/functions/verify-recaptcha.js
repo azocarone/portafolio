@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 exports.handler = async function (event) {
     if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed' };
@@ -11,17 +9,21 @@ exports.handler = async function (event) {
     const verificationURL = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptchaResponse}`;
 
     try {
+        // Usar import() dinámico
+        const fetchModule = await import('node-fetch');
+        const fetch = fetchModule.default;
+
         const response = await fetch(verificationURL, { method: 'POST' });
         const verificationData = await response.json();
 
         if (verificationData.success) {
             return { statusCode: 200, body: JSON.stringify({ message: 'reCAPTCHA verified' }) };
         } else {
-            console.error('reCAPTCHA verification failed:', verificationData); // Registra el error
+            console.error('reCAPTCHA verification failed:', verificationData);
             return { statusCode: 400, body: JSON.stringify({ message: 'reCAPTCHA verification failed. Por favor, asegúrese de completar el reCAPTCHA correctamente.', error: verificationData }) };
         }
     } catch (error) {
-        console.error('Error in Netlify Function:', error); // Registra el error
+        console.error('Error in Netlify Function:', error);
         return { statusCode: 500, body: JSON.stringify({ error: 'Internal Server Error', details: error.message }) };
     }
 };
