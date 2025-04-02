@@ -126,6 +126,11 @@
     filter: brightness(0.7);
 }
 
+.contact__recaptcha {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 768px) {
     .contact {
         flex-direction: row;
