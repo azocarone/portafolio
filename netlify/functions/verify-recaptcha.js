@@ -17,10 +17,11 @@ exports.handler = async function (event) {
         if (verificationData.success) {
             return { statusCode: 200, body: JSON.stringify({ message: 'reCAPTCHA verified' }) };
         } else {
-            // Mensaje de error personalizado
-            return { statusCode: 400, body: JSON.stringify({ message: 'reCAPTCHA verification failed. Por favor, asegúrese de completar el reCAPTCHA correctamente.' }) };
+            console.error('reCAPTCHA verification failed:', verificationData); // Registra el error
+            return { statusCode: 400, body: JSON.stringify({ message: 'reCAPTCHA verification failed. Por favor, asegúrese de completar el reCAPTCHA correctamente.', error: verificationData }) };
         }
     } catch (error) {
-        return { statusCode: 500, body: JSON.stringify({ error: 'Internal Server Error' }) };
+        console.error('Error in Netlify Function:', error); // Registra el error
+        return { statusCode: 500, body: JSON.stringify({ error: 'Internal Server Error', details: error.message }) };
     }
 };
