@@ -24,20 +24,6 @@ async function manejarEnvioFormulario(event) {
     }
 }
 
-async function enviarFormularioNetlify(formData) {
-    try {
-        await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(formData).toString(),
-        });
-        alert('Formulario enviado con éxito.');
-    } catch (error) {
-        console.error('Error al enviar el formulario:', error);
-        alert('Ocurrió un error al enviar el formulario.');
-    }
-}
-
 async function verificarRecaptcha(formDataObject) {
     try {
         const response = await fetch('/.netlify/functions/verify-recaptcha', {
@@ -53,6 +39,39 @@ async function verificarRecaptcha(formDataObject) {
         return null;
     }
 }
+
+/*async function enviarFormularioNetlify(formData) {
+    try {
+        await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString(),
+        });
+        alert('Formulario enviado con éxito.');
+    } catch (error) {
+        console.error('Error al enviar el formulario:', error);
+        alert('Ocurrió un error al enviar el formulario.');
+    }
+}*/
+
+async function enviarFormularioNetlify(formData) {
+    try {
+        const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString(),
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        alert('Formulario enviado con éxito.');
+    } catch (error) {
+        console.error('Error al enviar el formulario:', error);
+        alert('Ocurrió un error al enviar el formulario.');
+    }
+}
+
+
 
 // Agrega eventos a los campos de entrada para la validación en tiempo real
 inputs.forEach((input) => {
