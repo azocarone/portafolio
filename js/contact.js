@@ -16,8 +16,7 @@ async function manejarEnvioFormulario(event) {
     const recaptchaData = await verificarRecaptcha(formDataObject);
 
     if (recaptchaData && recaptchaData.message === 'reCAPTCHA verified') {
-        //await enviarFormularioNetlify(formData);
-        await enviarFormularioNetlify();
+        await enviarFormularioNetlify(formData);
         form.reset();
         validarButton(inputs, button);
     } else if (recaptchaData) {
@@ -41,42 +40,7 @@ async function verificarRecaptcha(formDataObject) {
     }
 }
 
-async function enviarFormularioNetlify() {
-    try {
-        const testData = new URLSearchParams({
-            nombre: 'Prueba',
-            email: 'prueba@example.com',
-            mensaje: 'Mensaje de prueba',
-        }).toString();
-
-        console.log('Datos de prueba enviados a Netlify:', testData);
-
-        const response = await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: testData,
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        alert('Formulario de prueba enviado con éxito.');
-    } catch (error) {
-        console.error('Error al enviar el formulario de prueba:', error);
-        alert('Ocurrió un error al enviar el formulario de prueba.');
-    }
-}
-
-
-
-
-
-
-
-
-
-/*async function enviarFormularioNetlify(formData) {
+async function enviarFormularioNetlify(formData) {
     try {
         const response = await fetch('/', {
             method: 'POST',
@@ -91,9 +55,7 @@ async function enviarFormularioNetlify() {
         console.error('Error al enviar el formulario:', error);
         alert('Ocurrió un error al enviar el formulario.');
     }
-}*/
-
-
+}
 
 // Agrega eventos a los campos de entrada para la validación en tiempo real
 inputs.forEach((input) => {
