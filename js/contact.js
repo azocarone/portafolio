@@ -8,52 +8,69 @@ const button = document.querySelector(".contact__button");
 async function manejarEnvioFormulario(event) {
     event.preventDefault();
 
-    const recaptchaResponse = grecaptcha.getResponse();
     const formData = new FormData(event.target);
-    const formDataObject = Object.fromEntries(formData);
-    formDataObject.recaptchaResponse = recaptchaResponse;
+    const recaptchaResponse = grecaptcha.getResponse(); // Obtiene el token de reCAPTCHA
 
-    const recaptchaData = await verificarRecaptcha(formDataObject);
+    if (!recaptchaResponse) {
+        alert("Por favor, completa el reCAPTCHA.");
+        return;
+    }
 
-    if (recaptchaData && recaptchaData.message === 'reCAPTCHA verified') {
-        await enviarFormularioNetlify(formData);
-        form.reset();
-        validarButton(inputs, button);
-    } else if (recaptchaData) {
-        alert(recaptchaData.message);
+    // Agrega el token de reCAPTCHA al FormData
+    formData.append("g-recaptcha-response", recaptchaResponse);
+
+    try {
+        const recaptchaData = await verificarRecaptcha(recaptchaResponse);
+
+        if (recaptchaData && recaptchaData.message === "reCAPTCHA verified") {
+            await enviarFormularioNetlify(formData); // Envía el formulario a Netlify
+            form.reset(); // Reinicia el formulario
+            validarButton(inputs, button); // Actualiza el estado del botón
+        } else {
+            alert(recaptchaData?.message || "Error al verificar el reCAPTCHA.");
+        }
+    } catch (error) {
+        console.error("Error al manejar el envío del formulario:", error);
+        alert("Ocurrió un error al enviar el formulario.");
     }
 }
 
-async function verificarRecaptcha(formDataObject) {
+async function verificarRecaptcha(recaptchaResponse) {
     try {
-        const response = await fetch('/.netlify/functions/verify-recaptcha', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formDataObject),
+        const response = await fetch("/.netlify/functions/verify-recaptcha", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ recaptchaResponse }),
         });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error al verificar reCAPTCHA:', error);
-        alert('Ocurrió un error al verificar reCAPTCHA.');
-        return null;
+        console.error("Error al verificar reCAPTCHA:", error);
+        throw new Error("Ocurrió un error al verificar el reCAPTCHA.");
     }
 }
 
 async function enviarFormularioNetlify(formData) {
     try {
-        const response = await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        const response = await fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         });
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        alert('Formulario enviado con éxito.');
+
+        alert("El mensaje fue enviado con éxito, gracias por contactarme.");
     } catch (error) {
-        console.error('Error al enviar el formulario:', error);
-        alert('Ocurrió un error al enviar el formulario.');
+        console.error("Error al enviar el formulario a Netlify:", error);
+        throw new Error("Ocurrió un error al enviar el formulario.");
     }
 }
 
