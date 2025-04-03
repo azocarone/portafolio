@@ -56,6 +56,7 @@ async function verificarRecaptcha(recaptchaResponse) {
 }
 
 async function enviarFormularioNetlify(formData) {
+    console.log(formData);
     try {
         const response = await fetch("/", {
             method: "POST",
@@ -74,11 +75,11 @@ async function enviarFormularioNetlify(formData) {
     }
 }
 
-// Agrega eventos a los campos de entrada para la validación en tiempo real
+// Agrega eventos a los elementos de entrada para su validación
 inputs.forEach((input) => {
     input.addEventListener("input", () => {
-        validarCampos(input); // Valida el campo actual
-        validarButton(inputs, button); // Valida el estado del botón
+        validarCampos(input);
+        validarButton(inputs, button);
     });
 });
 
