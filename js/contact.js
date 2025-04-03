@@ -8,9 +8,9 @@ const button = document.querySelector(".contact__button");
 
 /**
  * Obtiene el token de reCAPTCHA.
- * @returns {string} Token de reCAPTCHA o lanza un error si no está disponible.
+ * @returns {Promise<string>} Token de reCAPTCHA.
  */
-function obtenerRecaptchaToken() {
+async function obtenerRecaptchaToken() {
     const token = grecaptcha.getResponse();
     if (!token) throw new Error("Por favor, completa el reCAPTCHA.");
     return token;
@@ -29,41 +29,35 @@ async function verificarRecaptcha(recaptchaToken) {
     });
 
     if (!response.ok) throw new Error(`Error al verificar reCAPTCHA: ${response.status}`);
-    
+
     const data = await response.json();
     return data.message === "reCAPTCHA verified";
 }
 
 /**
- * Envía los datos del formulario al servidor (Netlify).
- * @param {FormData} formData - Datos del formulario.
- */
-async function enviarFormulario(formData) {
-    const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-    });
-
-    if (!response.ok) throw new Error(`Error al enviar el formulario: ${response.status}`);
-}
-
-/**
- * Maneja el envío del formulario.
+ * Maneja el envío del formulario a Netlify.
  * @param {Event} event - Evento de envío del formulario.
  */
 async function manejarEnvioFormulario(event) {
     event.preventDefault();
 
     try {
-        const recaptchaToken = obtenerRecaptchaToken();
+        const recaptchaToken = await obtenerRecaptchaToken();
         const recaptchaValido = await verificarRecaptcha(recaptchaToken);
         if (!recaptchaValido) throw new Error("Error al verificar el reCAPTCHA.");
 
+        // Agregar el token de reCAPTCHA a los datos del formulario
         const formData = new FormData(form);
         formData.append("g-recaptcha-response", recaptchaToken);
-        
-        await enviarFormulario(formData);
+
+        // Enviar los datos directamente, Netlify maneja la conversión automáticamente
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+        });
+
+        if (!response.ok) throw new Error(`Error al enviar el formulario: ${response.status}`);
+
         reiniciarFormulario();
         mostrarMensaje("success", "El mensaje fue enviado con éxito. ¡Gracias por contactarme!");
     } catch (error) {
