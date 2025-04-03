@@ -1,109 +1,101 @@
+// Módulo principal: Manejador del formulario
 import { validarCampos, validarButton } from "./contact-validations.js";
 
-// Selecciona elementos del formulario
+// Selección de elementos del DOM
 const form = document.querySelector(".contact__form");
 const inputs = document.querySelectorAll("[data-tipo]");
 const button = document.querySelector(".contact__button");
 
+/**
+ * Obtiene el token de reCAPTCHA.
+ * @returns {string} Token de reCAPTCHA o lanza un error si no está disponible.
+ */
+function obtenerRecaptchaToken() {
+    const token = grecaptcha.getResponse();
+    if (!token) throw new Error("Por favor, completa el reCAPTCHA.");
+    return token;
+}
+
+/**
+ * Verifica el token de reCAPTCHA con el backend.
+ * @param {string} recaptchaToken - Token de reCAPTCHA.
+ * @returns {Promise<boolean>} - True si el reCAPTCHA es válido, false en caso contrario.
+ */
+async function verificarRecaptcha(recaptchaToken) {
+    const response = await fetch("/.netlify/functions/verify-recaptcha", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ recaptchaResponse: recaptchaToken }),
+    });
+
+    if (!response.ok) throw new Error(`Error al verificar reCAPTCHA: ${response.status}`);
+    
+    const data = await response.json();
+    return data.message === "reCAPTCHA verified";
+}
+
+/**
+ * Envía los datos del formulario al servidor (Netlify).
+ * @param {FormData} formData - Datos del formulario.
+ */
+async function enviarFormulario(formData) {
+    const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+    });
+
+    if (!response.ok) throw new Error(`Error al enviar el formulario: ${response.status}`);
+}
+
+/**
+ * Maneja el envío del formulario.
+ * @param {Event} event - Evento de envío del formulario.
+ */
 async function manejarEnvioFormulario(event) {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
-    const recaptchaResponse = grecaptcha.getResponse(); // Obtiene el token de reCAPTCHA
-
-    if (!recaptchaResponse) {
-        alert("Por favor, completa el reCAPTCHA.");
-        return;
-    }
-
-    // Agrega el token de reCAPTCHA al FormData
-    formData.append("g-recaptcha-response", recaptchaResponse);
-
     try {
-        const recaptchaData = await verificarRecaptcha(recaptchaResponse);
+        const recaptchaToken = obtenerRecaptchaToken();
+        const recaptchaValido = await verificarRecaptcha(recaptchaToken);
+        if (!recaptchaValido) throw new Error("Error al verificar el reCAPTCHA.");
 
-        if (recaptchaData && recaptchaData.message === "reCAPTCHA verified") {
-            await enviarFormularioNetlify(formData); // Envía el formulario a Netlify
-            form.reset(); // Reinicia el formulario
-            validarButton(inputs, button); // Actualiza el estado del botón
-        } else {
-            alert(recaptchaData?.message || "Error al verificar el reCAPTCHA.");
-        }
+        const formData = new FormData(form);
+        formData.append("g-recaptcha-response", recaptchaToken);
+        
+        await enviarFormulario(formData);
+        reiniciarFormulario();
+        mostrarMensaje("success", "El mensaje fue enviado con éxito. ¡Gracias por contactarme!");
     } catch (error) {
-        console.error("Error al manejar el envío del formulario:", error);
-        alert("Ocurrió un error al enviar el formulario.");
+        console.error("Error en el envío del formulario:", error);
+        mostrarMensaje("error", error.message);
     }
 }
 
-async function verificarRecaptcha(recaptchaResponse) {
-    try {
-        const response = await fetch("/.netlify/functions/verify-recaptcha", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ recaptchaResponse }),
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error al verificar reCAPTCHA:", error);
-        throw new Error("Ocurrió un error al verificar el reCAPTCHA.");
-    }
+/**
+ * Reinicia el formulario y actualiza el estado del botón.
+ */
+function reiniciarFormulario() {
+    form.reset();
+    validarButton(inputs, button);
 }
 
-async function enviarFormularioNetlify(formData) {
-    console.log(formData);
-    try {
-        const response = await fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        alert("El mensaje fue enviado con éxito, gracias por contactarme.");
-    } catch (error) {
-        console.error("Error al enviar el formulario a Netlify:", error);
-        throw new Error("Ocurrió un error al enviar el formulario.");
-    }
+/**
+ * Muestra un mensaje de error o éxito en la UI.
+ * @param {"success" | "error"} tipo - Tipo de mensaje.
+ * @param {string} mensaje - Contenido del mensaje.
+ */
+function mostrarMensaje(tipo, mensaje) {
+    alert(mensaje); // Se puede reemplazar con un mensaje dinámico en la UI.
 }
 
-// Agrega eventos a los elementos de entrada para su validación
-inputs.forEach((input) => {
-    input.addEventListener("input", () => {
-        validarCampos(input);
+// Event delegation para validación de inputs
+form.addEventListener("input", (event) => {
+    if (event.target.matches("[data-tipo]")) {
+        validarCampos(event.target);
         validarButton(inputs, button);
-    });
+    }
 });
 
-form.addEventListener('submit', manejarEnvioFormulario);
-
-/* Agrega un evento al formulario para manejar el envío
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    
-    // ==== AJAX - Doc Netlify ====
-    
-    fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
-    })
-        .then(() => alert("El mensaje fue enviado con éxito, gracias por contactarme."))
-        .catch(error => alert(error));
-    
-        // ===========================
-
-    form.reset(); // Reinicia el formulario
-    validarButton(inputs, button); // Valida el estado del botón después de restablecer
-}); */
+// Evento de envío del formulario
+form.addEventListener("submit", manejarEnvioFormulario);
