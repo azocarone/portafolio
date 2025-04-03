@@ -1,65 +1,29 @@
-// Módulo principal: Manejador del formulario
 import { validarCampos, validarButton } from "./contact-validations.js";
 
-// Selección de elementos del DOM
 const form = document.querySelector(".contact__form");
 const inputs = document.querySelectorAll("[data-tipo]");
 const button = document.querySelector(".contact__button");
 
 /**
- * Obtiene el token de reCAPTCHA.
- * @returns {Promise<string>} Token de reCAPTCHA.
- */
-async function obtenerRecaptchaToken() {
-    const token = grecaptcha.getResponse();
-    if (!token) throw new Error("Por favor, completa el reCAPTCHA.");
-    return token;
-}
-
-/**
- * Verifica el token de reCAPTCHA con el backend.
- * @param {string} recaptchaToken - Token de reCAPTCHA.
- * @returns {Promise<boolean>} - True si el reCAPTCHA es válido, false en caso contrario.
- */
-async function verificarRecaptcha(recaptchaToken) {
-    const response = await fetch("/.netlify/functions/verify-recaptcha", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ recaptchaResponse: recaptchaToken }),
-    });
-
-    if (!response.ok) throw new Error(`Error al verificar reCAPTCHA: ${response.status}`);
-
-    const data = await response.json();
-    return data.message === "reCAPTCHA verified";
-}
-
-/**
- * Maneja el envío del formulario a Netlify.
+ * Maneja el envío del formulario, validando reCAPTCHA y dejando que Netlify procese la solicitud.
  * @param {Event} event - Evento de envío del formulario.
  */
 async function manejarEnvioFormulario(event) {
     event.preventDefault();
 
     try {
-        const recaptchaToken = await obtenerRecaptchaToken();
-        const recaptchaValido = await verificarRecaptcha(recaptchaToken);
-        if (!recaptchaValido) throw new Error("Error al verificar el reCAPTCHA.");
+        const recaptchaToken = grecaptcha.getResponse();
+        if (!recaptchaToken) throw new Error("Por favor, completa el reCAPTCHA.");
 
-        // Agregar el token de reCAPTCHA a los datos del formulario
-        const formData = new FormData(form);
-        formData.append("g-recaptcha-response", recaptchaToken);
+        // Agregar el token de reCAPTCHA manualmente al formulario
+        const recaptchaField = document.createElement("input");
+        recaptchaField.type = "hidden";
+        recaptchaField.name = "g-recaptcha-response";
+        recaptchaField.value = recaptchaToken;
+        form.appendChild(recaptchaField);
 
-        // Enviar los datos directamente, Netlify maneja la conversión automáticamente
-        const response = await fetch(form.action, {
-            method: form.method,
-            body: formData,
-        });
-
-        if (!response.ok) throw new Error(`Error al enviar el formulario: ${response.status}`);
-
-        reiniciarFormulario();
-        mostrarMensaje("success", "El mensaje fue enviado con éxito. ¡Gracias por contactarme!");
+        // 🔥 Permitir el envío nativo, sin fetch() 🔥
+        form.submit();
     } catch (error) {
         console.error("Error en el envío del formulario:", error);
         mostrarMensaje("error", error.message);
@@ -67,23 +31,15 @@ async function manejarEnvioFormulario(event) {
 }
 
 /**
- * Reinicia el formulario y actualiza el estado del botón.
- */
-function reiniciarFormulario() {
-    form.reset();
-    validarButton(inputs, button);
-}
-
-/**
- * Muestra un mensaje de error o éxito en la UI.
+ * Muestra un mensaje en la UI.
  * @param {"success" | "error"} tipo - Tipo de mensaje.
  * @param {string} mensaje - Contenido del mensaje.
  */
 function mostrarMensaje(tipo, mensaje) {
-    alert(mensaje); // Se puede reemplazar con un mensaje dinámico en la UI.
+    alert(mensaje); // Reemplázalo con un mensaje dinámico si lo prefieres.
 }
 
-// Event delegation para validación de inputs
+// Validación en tiempo real
 form.addEventListener("input", (event) => {
     if (event.target.matches("[data-tipo]")) {
         validarCampos(event.target);
