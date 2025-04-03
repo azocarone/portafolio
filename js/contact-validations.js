@@ -1,6 +1,9 @@
-import { mensajesDeError } from "./data/contact-validations-error.js";
+import { actualizarEstadoDeCampo } from "./contact-ui.js";
 
-// Función para validar campos de entrada individualmente
+const validadores = {
+    mensaje: (input) => validarMensaje(input),
+};
+
 export function validarCampos(input) {
     const { tipo: tipoDeInput } = input.dataset;
     const campoInvalidoClass = "contact__input--invalid";
@@ -16,7 +19,6 @@ export function validarCampos(input) {
     actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement);
 }
 
-// Función para validar el estado del botón de envío
 export function validarButton(inputs, button) {
     const camposValidos = [...inputs].map((input) => input.validity.valid);
     const camposValidosCount = camposValidos.reduce(
@@ -28,20 +30,6 @@ export function validarButton(inputs, button) {
     button.classList.toggle("contact__button--enabled", camposValidosCount === inputs.length);
 }
 
-// Definición de validadores para tipos de campo específicos
-const validadores = {
-    mensaje: (input) => validarMensaje(input),
-};
-
-// Tipos de errores posibles
-const tipoDeErrores = [
-    "valueMissing",
-    "patternMismatch",
-    "typeMismatch",
-    "customError",
-];
-
-// Función para validar el campo "mensaje"
 function validarMensaje(input) {
     const mensaje = input.value;
     const esSoloEspacios = mensaje.length > 0 && mensaje.trim() === "";
@@ -54,20 +42,10 @@ function validarMensaje(input) {
     input.setCustomValidity(errorMensaje);
 }
 
-// Actualiza el estado del posible mensaje de error del campo de entrada
-function actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement) {
-    const esValido = input.validity.valid;
-    input.classList.toggle(campoInvalidoClass, !esValido);
-
-    if (!esValido) {
-        errorElement.textContent = mostrarMensajeDeError(input, tipoDeInput);
-    } else {
-        errorElement.textContent = "";
+export async function validarRecaptcha() {
+    const recaptchaToken = grecaptcha.getResponse();
+    if (!recaptchaToken) {
+        throw new Error("Por favor, completa el reCAPTCHA.");
     }
-}
-
-// Función para mostrar mensajes de error
-function mostrarMensajeDeError(input, tipoDeInput) {
-    const error = tipoDeErrores.find((error) => input.validity[error]);
-    return error ? mensajesDeError[tipoDeInput][error] : "";
+    return recaptchaToken;
 }
