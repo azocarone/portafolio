@@ -19,7 +19,7 @@ export function reiniciarFormulario(form, inputs, button) {
 }
 
 export function mostrarMensaje(tipo, mensaje) {
-    const mensajeElement = document.createElement("div");
+    /*const mensajeElement = document.createElement("div");
     mensajeElement.classList.add("mensaje");
     mensajeElement.classList.add(`mensaje--${tipo}`);
     mensajeElement.textContent = mensaje;
@@ -28,7 +28,8 @@ export function mostrarMensaje(tipo, mensaje) {
 
     setTimeout(() => {
         mensajeElement.remove();
-    }, 3000);
+    }, 3000);*/
+    alert(mensaje); // Puedes mejorarlo con una notificación visual.
 }
 
 export function actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement) {
