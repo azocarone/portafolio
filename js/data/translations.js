@@ -57,7 +57,7 @@ const translations = {
         subject: "Subject",
         message: "Message",
         send: "Send message",
-        curriculum: "Currículum",
+        curriculum: "Curriculum",
         portafolio: "Portfolio",
         juegoDelAhorcado: "Juego del Ahorcado",
     }
