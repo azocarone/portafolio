@@ -27,6 +27,8 @@ const translations = {
         message: "Mensaje",
         send: "Enviar mensaje",
         curriculum: "Currículum",
+        portafolio: "Portafolio",
+        juegoDelAhorcado: "Juego del Ahorcado",
     },
     en: {
         siteTitle: "Portfolio",
@@ -55,6 +57,8 @@ const translations = {
         subject: "Subject",
         message: "Message",
         send: "Send message",
-        curriculum: "Curriculum",
+        curriculum: "Currículum",
+        portafolio: "Portfolio",
+        juegoDelAhorcado: "Juego del Ahorcado",
     }
 };

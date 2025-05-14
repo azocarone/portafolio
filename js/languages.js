@@ -52,8 +52,8 @@ function updateContent(language) {
         'label[for="mensaje"]': 'message',
         '.contact__button': 'send',
         '.projects__item:nth-child(1) .projects__item-title': 'curriculum',
-        '.projects__item:nth-child(2) .projects__item-title': 'curriculum',
-        '.projects__item:nth-child(3) .projects__item-title': 'curriculum',
+        '.projects__item:nth-child(2) .projects__item-title': 'portafolio',
+        '.projects__item:nth-child(3) .projects__item-title': 'juegoDelAhorcado',
     };
 
     // Actualizar el texto de los elementos usando el mapeo
