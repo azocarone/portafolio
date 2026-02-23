@@ -33,7 +33,7 @@
 }
 
 .header__title::before {
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 7 Free";
     content: "\f0f2";
     opacity: 0.7;
     margin-right: 0.5rem;

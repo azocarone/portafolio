@@ -25,11 +25,17 @@ function mostrarMensajeDeError(input, tipoDeInput) {
 
 export function reiniciarFormulario(form, inputs, button) {
     form.reset();
-    grecaptcha.reset();
+
+    if (typeof grecaptcha !== "undefined") {
+        grecaptcha.reset();
+    }
+
     inputs.forEach((input) => {
         input.classList.remove("contact__input--invalid");
-        input.parentElement.querySelector(".contact__error").textContent = "";
+        const errorSpan = input.parentElement.querySelector(".contact__error");
+        if(errorSpan) errorSpan.textContent = "";
     });
+    
     button.disabled = true;
     button.classList.remove("contact__button--enabled");
 }

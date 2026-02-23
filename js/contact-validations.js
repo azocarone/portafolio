@@ -8,44 +8,39 @@ export function validarCampos(input) {
     const { tipo: tipoDeInput } = input.dataset;
     const campoInvalidoClass = "contact__input--invalid";
     const errorElement = input.parentElement.querySelector(".contact__error");
-    const tieneValidadorEspecial = validadores[tipoDeInput];
 
-    if (tieneValidadorEspecial) {
+    // Si existe una validación personalizada (como para el mensaje), se ejecuta
+    if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input);
-    } else {
-        console.warn(`Validador para ${tipoDeInput} no encontrado.`);
     }
 
     actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement);
 }
 
 export function validarButton(inputs, button) {
-    const camposValidos = [...inputs].map((input) => input.validity.valid);
-    const camposValidosCount = camposValidos.reduce(
-        (count, isValid) => count + (isValid ? 1 : 0),
-        0
-    );
+    // Valida que todos los inputs cumplan con sus reglas HTML (required, pattern, etc)
+    const todosLosCamposValidos = [...inputs].every((input) => input.validity.valid);
+    
+    // Valida que el reCAPTCHA de Google tenga una respuesta activa
+    const recaptchaMarcado = typeof grecaptcha !== "undefined" && grecaptcha.getResponse().length > 0;
 
-    button.disabled = camposValidosCount !== inputs.length;
-    button.classList.toggle("contact__button--enabled", camposValidosCount === inputs.length);
+    const formularioListo = todosLosCamposValidos && recaptchaMarcado;
+
+    button.disabled = !formularioListo;
+    button.classList.toggle("contact__button--enabled", formularioListo);
 }
 
 function validarMensaje(input) {
     const mensaje = input.value;
     const esSoloEspacios = mensaje.length > 0 && mensaje.trim() === "";
+    
     let errorMensaje = "";
 
     if (esSoloEspacios) {
+        // Se usa el objeto de errores. Así, si se cambia el texto en el .js de errores, 
+        // se actualiza aquí automáticamente.
         errorMensaje = mensajesDeError.mensaje.customError;
     }
 
     input.setCustomValidity(errorMensaje);
-}
-
-export async function validarRecaptcha() {
-    const recaptchaToken = grecaptcha.getResponse();
-    if (!recaptchaToken) {
-        throw new Error("Por favor, completa el reCAPTCHA.");
-    }
-    return recaptchaToken;
 }

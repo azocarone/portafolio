@@ -26,7 +26,7 @@ const translations = {
         email: "e-mail",
         subject: "Asunto",
         message: "Mensaje",
-        send: "Enviar mensaje",
+        send: "Enviar a WhatsApp",
         resume: "Currículum",
         portfolio: "Portafolio",
     },
@@ -57,7 +57,7 @@ const translations = {
         email: "e-mail",
         subject: "Subject",
         message: "Message",
-        send: "Send message",
+        send: "Send to WhatsApp",
         resume: "Curriculum",
         portfolio: "Portfolio",
     }

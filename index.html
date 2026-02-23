@@ -42,9 +42,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome 7.x -->
     <script src="https://kit.fontawesome.com/76f0e7f5f8.js" crossorigin="anonymous"></script>
-
+    
     <!-- Estilos de terceros (vendor) -->
     <link rel="stylesheet" href="./css/vendor/normalize.css">
     <link rel="stylesheet" href="./css/vendor/reset.css">
@@ -257,8 +257,9 @@
                 <img class="contact__image" src="./assets/img/contact/wfh.png" alt="Imagen de contacto - Working from home">
             </div>
             <div class="contact__content">
-                <form class="contact__form" method="POST" name="contact" aria-label="Formulario de contacto" data-netlify-recaptcha="true" data-netlify="true">
+                <form class="contact__form" id="contactForm" aria-label="Formulario de contacto para WhatsApp">
                     <fieldset class="contact__fieldset" aria-label="Formulario de Contacto">
+                        
                         <div class="contact__field">
                             <label class="contact__label" for="nombre"></label>
                             <input class="contact__input" type="text" id="nombre" name="nombre"
@@ -266,12 +267,14 @@
                                 data-tipo="nombre">
                             <span class="contact__error" role="alert"></span>
                         </div>
+                        
                         <div class="contact__field">
-                            <label class="contact__label" for="email">e-</label>
+                            <label class="contact__label" for="email"></label>
                             <input class="contact__input" type="email" id="email" name="email"
                                 placeholder="Dirección de correo." required data-tipo="email">
                             <span class="contact__error" role="alert"></span>
                         </div>
+                        
                         <div class="contact__field">
                             <label class="contact__label" for="asunto"></label>
                             <input class="contact__input" type="text" id="asunto" name="asunto"
@@ -279,6 +282,7 @@
                                 data-tipo="asunto">
                             <span class="contact__error" role="alert"></span>
                         </div>
+                        
                         <div class="contact__field">
                             <label class="contact__label" for="mensaje"></label>
                             <textarea class="contact__input contact__input--textarea" id="mensaje" name="mensaje"
@@ -287,7 +291,11 @@
                             <span class="contact__error" role="alert"></span>
                         </div>
                     </fieldset>
-                    <div class="contact__recaptcha" data-netlify-recaptcha="true">
+
+                    <div class="contact__recaptcha">
+                        <div class="g-recaptcha" data-sitekey="6LegnwcrAAAAAFCSVxZPSTuVba6f3-tA69p8mnrb" data-callback="onRecaptchaSuccess"
+                            data-expired-callback="onRecaptchaExpired">
+                        </div>
                         <button class="contact__button" type="submit" disabled></button>
                     </div>
                 </form>
@@ -330,6 +338,7 @@
 
     <!-- Script JavaScript -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./js/aos.js" type="module"></script>
     <script src="./js/data/translations.js"></script>
     <script src="./js/languages.js" type="module"></script>
