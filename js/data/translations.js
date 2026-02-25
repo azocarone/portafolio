@@ -1,64 +1,182 @@
 const translations = {
     es: {
-        siteTitle: "Portafolio",
-        about: "Sobre Mí ...",
-        aboutDescription1: "Profesional con +20 años de trayectoria transformando la tecnología en un activo estratégico para los negocios. Mi experiencia abarca desde los fundamentos del comercio electrónico en Madrid hasta la coordinación de sistemas críticos en entornos de alta presión como el sector portuario venezolano.",
-        aboutDescription2: "Desde 2010, me desempeño como Asesor IT independiente, especializándome en la administración de ecosistemas GNU/Linux, seguridad informática y el diseño de redes escalables. Mi enfoque combina la robustez de la infraestructura tradicional con la innovación del hardware abierto (IoT con Arduino y Raspberry Pi), permitiéndome crear soluciones personalizadas donde la tecnología estándar no llega.",
-        services: "Asesor de Infraestructura Tecnológica",
-        systems: "Administración Linux",
-        systemsDescription: "Transformo la complejidad de los entornos GNU/Linux en estabilidad operativa. Mediante el bastionado (hardening) y la optimización de servidores Debian y Fedora, garantizo que su núcleo tecnológico sea rápido, seguro y esté disponible las 24 horas del día.",
-        networks: "Arquitectura de Redes",
-        networksDescription: "Diseño infraestructuras de red de alto rendimiento que eliminan los cuellos de botella. Optimizo la latencia y escalabilidad de su red corporativa, asegurando que el flujo de datos sea constante y eficiente, incluso en entornos de alta demanda.",
-        security: "Ciberseguridad y Forense",
-        securityDescription: "Protejo sus activos digitales frente a amenazas emergentes. Implemento perímetros de seguridad robustos y actúo con precisión quirúrgica en el análisis forense tras incidentes, identificando vulnerabilidades y blindando su infraestructura contra futuros ataques.",
-        infrastructure: "Infraestructura Data Center",
-        infrastructureDescription: "Garantizo la integridad de su hardware desde la base. Dirección técnica en cableado estructurado e instalaciones eléctricas especializadas, bajo estrictas normas de seguridad, para asegurar que su centro de datos opere en condiciones físicas óptimas.",
-        hosting: "Gestión de Hosting & SEO",
-        hostingDescription: "Potencio su presencia digital con infraestructura de nivel empresarial. Desde la gestión crítica de dominios hasta el despliegue en hostings optimizados, aseguro que sus plataformas web carguen al instante y escalen sin interrupciones.",
-        response: "Soporte Crítico N2 / N3",
-        responseDescription: "Especialista en la gestión de crisis tecnológicas y recuperación de servicios bajo presión. Lidero la resolución de incidentes complejos de segundo y tercer nivel, garantizando el restablecimiento inmediato de la continuidad del negocio y la disponibilidad de servicios críticos mediante diagnósticos técnicos avanzados.",
-        education: "Formación Académica",
-        projects: "Desarrollo",
-        contact: "Contacto",
-        contactDescription1: "¿Necesita un especialista en Tecnologías de la Información para su próximo proyecto?",
-        contactDescription2: "Le invito a completar el formulario. A la brevedad, me comunicaré con usted para concertar una entrevista, en la cual analizaremos sus requerimientos y el valor que mi experiencia puede aportar a su iniciativa.",
-        name: "Nombre",
-        email: "e-mail",
-        subject: "Asunto",
-        message: "Mensaje",
-        send: "Enviar a WhatsApp",
-        resume: "Currículum",
-        portfolio: "Portafolio",
+        nav: {
+            title: "Portafolio",
+            about: "Perfil",
+            services: "Asesoría",
+            education: "Formación",
+            projects: "Desarrollo",
+            contact: "Contacto",
+        },
+        profile: {
+            title: "Sistemas | Redes | Seguridad | Hardware | Cloud | Respuesta",
+            linkTitle: "Haga clic para ver Currículum"
+        },
+        about: {
+            title: "Perfil",
+            description1: "Con más de dos décadas de trayectoria, he dedicado mi carrera a transformar la tecnología en un activo estratégico. Mi evolución profesional conecta los fundamentos del comercio electrónico con la gestión de sistemas críticos en sectores de alta exigencia, como el de la logística portuaria.",
+            description2: "Como Asesor IT independiente desde 2010, me especializo en la administración de entornos GNU/Linux, ciberseguridad y arquitectura de redes de datos escalables. Mi valor diferencial reside en la convergencia: integro la solidez de la infraestructura convencional con la agilidad del hardware IoT, diseñando soluciones a medida para desafíos donde las herramientas genéricas resultan insuficientes.",
+        },
+        services: {
+            title: "Asesor de Infraestructura Tecnológica",
+            items: {
+                systems: {
+                    title: "Administración Linux",
+                    description: "Transformo la complejidad de los entornos GNU/Linux en estabilidad operativa. Mediante el bastionado (hardening) y la optimización de servidores Debian y Fedora, garantizo que su núcleo tecnológico sea rápido, seguro y esté disponible las 24 horas del día."
+                },
+                networks: {
+                    title: "Arquitectura de Redes",
+                    description: "Diseño infraestructuras de red de alto rendimiento que eliminan los cuellos de botella. Optimizo la latencia y escalabilidad de su red corporativa, asegurando que el flujo de datos sea constante y eficiente, incluso en entornos de alta demanda."
+                },
+                security: {
+                    title: "Ciberseguridad y Forense",
+                    description: "Protejo sus activos digitales frente a amenazas emergentes. Implemento perímetros de seguridad robustos y actúo con precisión quirúrgica en el análisis forense tras incidentes, identificando vulnerabilidades y blindando su infraestructura contra futuros ataques."
+                },
+                infrastructure: {
+                    title: "Infraestructura Data Center",
+                    description: "Garantizo la integridad de su hardware desde la base. Dirección técnica en cableado estructurado e instalaciones eléctricas especializadas, bajo estrictas normas de seguridad, para asegurar que su centro de datos opere en condiciones físicas óptimas."
+                },
+                hosting: {
+                    title: "Gestión de Hosting & SEO",
+                    description: "Potencio su presencia digital con infraestructura de nivel empresarial. Desde la gestión crítica de dominios hasta el despliegue en hostings optimizados, aseguro que sus plataformas web carguen al instante y escalen sin interrupciones."
+                },
+                response: {
+                    title: "Soporte Crítico N2 / N3",
+                    description: "Especialista en la gestión de crisis tecnológicas y recuperación de servicios bajo presión. Lidero la resolución de incidentes complejos de segundo y tercer nivel, garantizando el restablecimiento inmediato de la continuidad del negocio y la disponibilidad de servicios críticos mediante diagnósticos técnicos avanzados."
+                }
+            }
+        },
+        education: {
+            title: "Formación Académica",
+            items: {
+                uc3m: {
+                    degree: "Máster en Comercio Electrónico",
+                    institution: 'Universidad "Carlos III de Madrid"'
+                },
+                uah: {
+                    degree: "Ingeniería en Informática",
+                    institution: 'Universidad "Alejandro de Humboldt"' 
+                },
+                iunp: {
+                    degree: "Técnico Superior en Computación",
+                    institution: 'Instituto Universitario de "Nuevas Profesiones"'
+                },
+            }
+        },
+        projects: {
+            title: "Desarrollo",
+            items: {
+                resume: {
+                    title: "Currículum",
+                    description: "CV digital: Estilo Harvard, compatible ATS, multilingüe, JS."
+                },
+                portfolio: {
+                    title: "Portafolio",
+                    description: "Vitrina online de un Profesional IT."
+                }
+            },
+        },
+        contact: {
+            title: "Contacto",
+            promo1: "¿Necesita un especialista en Tecnologías de la Información para su próximo proyecto?",
+            promo2: "Le invito a completar el formulario. A la brevedad, me comunicaré con usted para concertar una entrevista.",
+            form: {
+                name: "Nombre",
+                email: "e-mail",
+                subject: "Asunto",
+                message: "Mensaje",
+                submit: "Enviar a WhatsApp"
+            }
+        }
     },
     en: {
-        siteTitle: "Portfolio",
-        about: "About Me ...",
-        aboutDescription1: "A professional with +20 years of experience transforming technology into a strategic business asset. My background ranges from the foundations of e-commerce in Madrid to coordinating critical systems in high-pressure environments, such as the Venezuelan port sector.",
-        aboutDescription2: "Since 2010, I have served as an independent IT Consultant, specializing in GNU/Linux ecosystem administration, cybersecurity, and scalable network design. My approach combines the robustness of traditional infrastructure with open-hardware innovation (IoT with Arduino and Raspberry Pi), allowing me to build custom solutions where standard technology falls short.",
-        services: "IT Infrastructure Advisor",
-        systems: "Linux Systems Admin",
-        systemsDescription: "I transform the complexity of GNU/Linux environments into operational stability. Through server hardening and optimization of Debian and Fedora systems, I ensure your technological core is fast, secure, and available 24/7.",
-        networks: "Network Architecture",
-        networksDescription: "I design high-performance network infrastructures that eliminate bottlenecks. I optimize the latency and scalability of your corporate network, ensuring a constant and efficient data flow, even in high-demand environments.",
-        security: "Cybersecurity & Forensics",
-        securityDescription: "I protect your digital assets against emerging threats. I implement robust security perimeters and perform surgical-precision forensic analysis following incidents, identifying vulnerabilities and shielding your infrastructure against future attacks.",
-        infrastructure: "Data Center Infrastructure",
-        infrastructureDescription: "I guarantee your hardware's integrity from the ground up. Technical direction in structured cabling and specialized electrical installations, under strict safety standards, to ensure your data center operates in optimal physical conditions.",
-        hosting: "Hosting & SEO Management",
-        hostingDescription: "I power your digital presence with enterprise-level infrastructure. From critical domain management to deployment on optimized hosting, I ensure your web platforms load instantly and scale without interruptions.",
-        response: "Critical Support L2 / L3",
-        responseDescription: "Specialist in technological crisis management and service recovery under pressure. I lead the resolution of complex Level 2 and Level 3 incidents, ensuring the immediate restoration of business continuity and critical service availability through advanced technical diagnostics.",
-        education: "Academic Education",
-        projects: "Development",
-        contact: "Contact",
-        contactDescription1: "Do you need an Information Technology specialist for your next project?",
-        contactDescription2: "I invite you to complete the form. I will contact you shortly to arrange an interview, in which we will analyze your requirements and the value that my experience can bring to your initiative.",
-        name: "Name",
-        email: "e-mail",
-        subject: "Subject",
-        message: "Message",
-        send: "Send to WhatsApp",
-        resume: "Curriculum",
-        portfolio: "Portfolio",
+        nav: {
+            title: "Portfolio",
+            about: "Profile",
+            services: "Advisory",
+            education: "Education",
+            projects: "Development",
+            contact: "Contact",
+        },
+        profile: {
+            title: "Systems | Networking | Security | Hardware | Cloud | Response",
+            linkTitle: "Click to view Résumé"
+        },
+        about: {
+            title: "Profile",
+            description1: "With over two decades of experience, I have dedicated my career to transforming technology into a strategic asset. My professional evolution bridges the fundamentals of e-commerce with the management of critical systems in high-stakes sectors, such as port logistics.",
+            description2: "As an independent IT Advisor since 2010, I specialize in GNU/Linux systems administration, cybersecurity, and scalable data network architecture. My unique value proposition lies in convergence: I integrate the robustness of conventional infrastructure with the agility of IoT hardware, designing tailor-made solutions for challenges where generic tools fall short.",
+        },
+        services: {
+            title: "IT Infrastructure Advisor",
+            items: {
+                systems: {
+                    title: "Linux Systems Admin",
+                    description: "I transform the complexity of GNU/Linux environments into operational stability. Through server hardening and optimization of Debian and Fedora systems, I ensure your technological core is fast, secure, and available 24/7."
+                },
+                networks: {
+                    title: "Network Architecture",
+                    description: "I design high-performance network infrastructures that eliminate bottlenecks. I optimize the latency and scalability of your corporate network, ensuring a constant and efficient data flow, even in high-demand environments."
+                },
+                security: {
+                    title: "Cybersecurity & Forensics",
+                    description: "I protect your digital assets against emerging threats. I implement robust security perimeters and perform surgical-precision forensic analysis following incidents, identifying vulnerabilities and shielding your infrastructure against future attacks."
+                },
+                infrastructure: {
+                    title: "Data Center Infrastructure",
+                    description: "I guarantee your hardware's integrity from the ground up. Technical direction in structured cabling and specialized electrical installations, under strict safety standards, to ensure your data center operates in optimal physical conditions."
+                },
+                hosting: {
+                    title: "Hosting & SEO Management",
+                    description: "I power your digital presence with enterprise-level infrastructure. From critical domain management to deployment on optimized hosting, I ensure your web platforms load instantly and scale without interruptions."
+                },
+                response: {
+                    title: "Critical Support L2 / L3",
+                    description: "Specialist in technological crisis management and service recovery under pressure. I lead the resolution of complex Level 2 and Level 3 incidents, ensuring the immediate restoration of business continuity and critical service availability through advanced technical diagnostics."
+                }
+            }
+        },
+        education: {
+            title: "Academic Education",
+            items: {
+                uc3m: {
+                    degree: "Master's in E-commerce",
+                    institution: 'University "Carlos III de Madrid"'
+                },
+                uah: {
+                    degree: "Computer Engineering",
+                    institution: 'University "Alejandro de Humboldt"'
+                },
+                iunp: {
+                    degree: "Advanced Technician in Computing",
+                    institution: 'University Institute of "Nuevas Profesiones"'
+                },
+            }
+        },
+        projects: {
+            title: "Development",
+            items: {
+                resume: {
+                    title: "Curriculum",
+                    description: "Digital CV: Harvard style, ATS-friendly, multilingual, JS."
+                },
+                portfolio: {
+                    title: "Portfolio",
+                    description: "Online portfolio for an IT Professional."
+                }
+            },
+        },
+        contact: {
+            title: "Contact",
+            promo1: "Do you need an Information Technology specialist for your next project?",
+            promo2: "I invite you to complete the form. I will contact you shortly to arrange an interview.",
+            form: {
+                name: "Name",
+                email: "e-mail",
+                subject: "Subject",
+                message: "Message",
+                submit: "Send to WhatsApp"
+            }
+        }
     }
-};
+}
