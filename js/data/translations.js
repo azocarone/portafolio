@@ -9,13 +9,13 @@ const translations = {
             contact: "Contacto",
         },
         profile: {
-            title: "Sistemas | Redes | Seguridad | Hardware | Cloud | Respuesta",
+            title: "Ingeniero Informático | Asesor IT | GNU/Linux & Ciberseguridad",
             linkTitle: "Haga clic para ver Currículum"
         },
         about: {
             title: "Perfil",
-            description1: "Con más de dos décadas de trayectoria, he dedicado mi carrera a transformar la tecnología en un activo estratégico. Mi evolución profesional conecta los fundamentos del comercio electrónico con la gestión de sistemas críticos en sectores de alta exigencia, como el de la logística portuaria.",
-            description2: "Como Asesor IT independiente desde 2010, me especializo en la administración de entornos GNU/Linux, ciberseguridad y arquitectura de redes de datos escalables. Mi valor diferencial reside en la convergencia: integro la solidez de la infraestructura convencional con la agilidad del hardware IoT, diseñando soluciones a medida para desafíos donde las herramientas genéricas resultan insuficientes.",
+            description1: "Ingeniero en Informática y Máster en e-Commerce, he dedicado más de veinte años de trayectoria profesional a transformar la tecnología en un activo estratégico. Mi evolución vincula los fundamentos del comercio electrónico y la gestión de sistemas críticos en entornos de alta responsabilidad, tales como el sector de la logística portuaria.",
+            description2: "En mi labor de asesor IT independiente iniciada en 2010, gestiono entornos GNU/Linux, ciberseguridad y arquitectura de redes de datos. Mi valor diferencial reside en la convergencia: integro la robustez de la infraestructura convencional y la versatilidad del hardware IoT, diseñando soluciones a la medida ante desafíos donde las herramientas genéricas resultan insuficientes.",
         },
         services: {
             title: "Asesor de Infraestructura Tecnológica",
@@ -99,13 +99,13 @@ const translations = {
             contact: "Contact",
         },
         profile: {
-            title: "Systems | Networking | Security | Hardware | Cloud | Response",
+            title: "IT Advisor | Linux Systems, Cybersecurity & IoT Solutions",
             linkTitle: "Click to view Résumé"
         },
         about: {
             title: "Profile",
-            description1: "With over two decades of experience, I have dedicated my career to transforming technology into a strategic asset. My professional evolution bridges the fundamentals of e-commerce with the management of critical systems in high-stakes sectors, such as port logistics.",
-            description2: "As an independent IT Advisor since 2010, I specialize in GNU/Linux systems administration, cybersecurity, and scalable data network architecture. My unique value proposition lies in convergence: I integrate the robustness of conventional infrastructure with the agility of IoT hardware, designing tailor-made solutions for challenges where generic tools fall short.",
+            description1: "As a Computer Engineer with a Master’s in e-Commerce, I have dedicated over twenty years of my professional career to transforming technology into a strategic asset. My evolution links the foundations of e-commerce to the management of mission-critical systems in high-responsibility environments, such as the port logistics sector.",
+            description2: "In my role as an independent IT Advisor since 2010, I manage GNU/Linux environments, cybersecurity, and data network architecture. My unique value lies in convergence: I integrate the robustness of traditional infrastructure with the versatility of IoT hardware, designing bespoke solutions for challenges where generic tools fall short.",
         },
         services: {
             title: "IT Infrastructure Advisor",
