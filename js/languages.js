@@ -45,13 +45,13 @@ function updateContent(language) {
         '.services__item:nth-child(2) .services__item-description': 'services.items.networks.description',
         '.services__item:nth-child(3) .services__item-title': 'services.items.security.title',
         '.services__item:nth-child(3) .services__item-description': 'services.items.security.description',
-        '.services__item:nth-child(4) .services__item-title': 'services.items.infrastructure.title',
-        '.services__item:nth-child(4) .services__item-description': 'services.items.infrastructure.description',
-        '.services__item:nth-child(5) .services__item-title': 'services.items.hosting.title',
-        '.services__item:nth-child(5) .services__item-description': 'services.items.hosting.description',
-        '.services__item:nth-child(6) .services__item-title': 'services.items.response.title',
-        '.services__item:nth-child(6) .services__item-description': 'services.items.response.description',
-
+        '.services__item:nth-child(4) .services__item-title': 'services.items.hosting.title',
+        '.services__item:nth-child(4) .services__item-description': 'services.items.hosting.description',
+        '.services__item:nth-child(5) .services__item-title': 'services.items.response.title',
+        '.services__item:nth-child(5) .services__item-description': 'services.items.response.description',
+        '.services__item:nth-child(6) .services__item-title': 'services.items.infrastructure.title',
+        '.services__item:nth-child(6) .services__item-description': 'services.items.infrastructure.description',
+      
         // Sección Educación
         '.education__title': 'education.title',
         '.education__item:nth-child(1) .education__degree': 'education.items.uc3m.degree',

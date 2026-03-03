@@ -15,7 +15,7 @@ const translations = {
         about: {
             title: "Perfil",
             description1: "Ingeniero en Informática y Máster en e-Commerce, he dedicado más de veinte años de trayectoria profesional a transformar la tecnología en un activo estratégico. Mi evolución vincula los fundamentos del comercio electrónico y la gestión de sistemas críticos en entornos de alta responsabilidad, tales como el sector de la logística portuaria.",
-            description2: "En mi labor de asesor IT independiente iniciada en 2010, gestiono entornos GNU/Linux, ciberseguridad y arquitectura de redes de datos. Mi valor diferencial reside en la convergencia: integro la robustez de la infraestructura convencional y la versatilidad del hardware IoT, diseñando soluciones a la medida ante desafíos donde las herramientas genéricas resultan insuficientes.",
+            description2: "En mi labor de asesor IT independiente iniciada en 2010, gestiono entornos GNU/Linux, arquitectura de redes de datos y ciberseguridad. Mi valor diferencial reside en la convergencia: integro la robustez de la infraestructura convencional y la versatilidad del hardware IoT, diseñando soluciones a la medida ante desafíos donde las herramientas genéricas resultan insuficientes.",
         },
         services: {
             title: "Asesor de Infraestructura Tecnológica",
@@ -29,21 +29,21 @@ const translations = {
                     description: "Diseño infraestructuras de red de alto rendimiento que eliminan los cuellos de botella. Optimizo la latencia y escalabilidad de su red corporativa, asegurando que el flujo de datos sea constante y eficiente, incluso en entornos de alta demanda."
                 },
                 security: {
-                    title: "Ciberseguridad y Forense",
+                    title: "Ciberseguridad",
                     description: "Protejo sus activos digitales frente a amenazas emergentes. Implemento perímetros de seguridad robustos y actúo con precisión quirúrgica en el análisis forense tras incidentes, identificando vulnerabilidades y blindando su infraestructura contra futuros ataques."
+                },
+                hosting: {
+                    title: "Gestión de Hosting",
+                    description: "Potencio su presencia digital con infraestructura de nivel empresarial. Desde la gestión crítica de dominios hasta el despliegue en hostings optimizados, aseguro que sus plataformas web carguen al instante y escalen sin interrupciones."
+                },
+                response: {
+                    title: "Soporte N2 / N3",
+                    description: "Especialista en la gestión de crisis tecnológicas y recuperación de servicios bajo presión. Lidero la resolución de incidentes complejos de segundo y tercer nivel, garantizando el restablecimiento inmediato de la continuidad del negocio y la disponibilidad de servicios críticos mediante diagnósticos técnicos avanzados."
                 },
                 infrastructure: {
                     title: "Infraestructura Data Center",
                     description: "Garantizo la integridad de su hardware desde la base. Dirección técnica en cableado estructurado e instalaciones eléctricas especializadas, bajo estrictas normas de seguridad, para asegurar que su centro de datos opere en condiciones físicas óptimas."
                 },
-                hosting: {
-                    title: "Gestión de Hosting & SEO",
-                    description: "Potencio su presencia digital con infraestructura de nivel empresarial. Desde la gestión crítica de dominios hasta el despliegue en hostings optimizados, aseguro que sus plataformas web carguen al instante y escalen sin interrupciones."
-                },
-                response: {
-                    title: "Soporte Crítico N2 / N3",
-                    description: "Especialista en la gestión de crisis tecnológicas y recuperación de servicios bajo presión. Lidero la resolución de incidentes complejos de segundo y tercer nivel, garantizando el restablecimiento inmediato de la continuidad del negocio y la disponibilidad de servicios críticos mediante diagnósticos técnicos avanzados."
-                }
             }
         },
         education: {
@@ -105,7 +105,7 @@ const translations = {
         about: {
             title: "Profile",
             description1: "As a Computer Engineer with a Master’s in e-Commerce, I have dedicated over twenty years of my professional career to transforming technology into a strategic asset. My evolution links the foundations of e-commerce to the management of mission-critical systems in high-responsibility environments, such as the port logistics sector.",
-            description2: "In my role as an independent IT Advisor since 2010, I manage GNU/Linux environments, cybersecurity, and data network architecture. My unique value lies in convergence: I integrate the robustness of traditional infrastructure with the versatility of IoT hardware, designing bespoke solutions for challenges where generic tools fall short.",
+            description2: "In my role as an independent IT Advisor since 2010, I manage GNU/Linux environments, data network architecture and cybersecurity. My unique value lies in convergence: I integrate the robustness of traditional infrastructure with the versatility of IoT hardware, designing bespoke solutions for challenges where generic tools fall short.",
         },
         services: {
             title: "IT Infrastructure Advisor",
@@ -119,20 +119,20 @@ const translations = {
                     description: "I design high-performance network infrastructures that eliminate bottlenecks. I optimize the latency and scalability of your corporate network, ensuring a constant and efficient data flow, even in high-demand environments."
                 },
                 security: {
-                    title: "Cybersecurity & Forensics",
+                    title: "Cybersecurity",
                     description: "I protect your digital assets against emerging threats. I implement robust security perimeters and perform surgical-precision forensic analysis following incidents, identifying vulnerabilities and shielding your infrastructure against future attacks."
+                },
+                hosting: {
+                    title: "Hosting Management",
+                    description: "I power your digital presence with enterprise-level infrastructure. From critical domain management to deployment on optimized hosting, I ensure your web platforms load instantly and scale without interruptions."
+                },
+                response: {
+                    title: "Support L2 / L3",
+                    description: "Specialist in technological crisis management and service recovery under pressure. I lead the resolution of complex Level 2 and Level 3 incidents, ensuring the immediate restoration of business continuity and critical service availability through advanced technical diagnostics."
                 },
                 infrastructure: {
                     title: "Data Center Infrastructure",
                     description: "I guarantee your hardware's integrity from the ground up. Technical direction in structured cabling and specialized electrical installations, under strict safety standards, to ensure your data center operates in optimal physical conditions."
-                },
-                hosting: {
-                    title: "Hosting & SEO Management",
-                    description: "I power your digital presence with enterprise-level infrastructure. From critical domain management to deployment on optimized hosting, I ensure your web platforms load instantly and scale without interruptions."
-                },
-                response: {
-                    title: "Critical Support L2 / L3",
-                    description: "Specialist in technological crisis management and service recovery under pressure. I lead the resolution of complex Level 2 and Level 3 incidents, ensuring the immediate restoration of business continuity and critical service availability through advanced technical diagnostics."
                 }
             }
         },
