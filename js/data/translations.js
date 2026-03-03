@@ -9,7 +9,7 @@ const translations = {
             contact: "Contacto",
         },
         profile: {
-            title: "Ingeniero Informático | Asesor IT | GNU/Linux & Ciberseguridad",
+            title: "Ing. Informático | Consultor I&O: Infraestructura y Ops",
             linkTitle: "Haga clic para ver Currículum"
         },
         about: {
@@ -99,7 +99,7 @@ const translations = {
             contact: "Contact",
         },
         profile: {
-            title: "IT Advisor | Linux Systems, Cybersecurity & IoT Solutions",
+            title: "Computer Engineer | I&O Consultant: Infrastructure & Ops",
             linkTitle: "Click to view Résumé"
         },
         about: {
