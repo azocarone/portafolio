@@ -36,7 +36,8 @@ function updateContent(language) {
         '.about__title': 'about.title',
         '.about__description:nth-child(2)': 'about.description1',
         '.about__description:nth-child(3)': 'about.description2',
-
+        '.about__description:nth-child(4)': 'about.description3',
+ 
         // Sección Servicios
         '.services__title': 'services.title',
         '.services__item:nth-child(1) .services__item-title': 'services.items.systems.title',
@@ -89,7 +90,7 @@ function updateContent(language) {
             const text = path.split('.').reduce((obj, key) => obj && obj[key], translation);
             
             if (text) {
-                element.textContent = text;
+                element.innerHTML = text;
             }
         }
     }
