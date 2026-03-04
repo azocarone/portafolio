@@ -38,30 +38,21 @@ const translations = {
         services: {
             title: "Consultor de Infraestructura y Operaciones IT",
             items: {
-                systems: {
-                    title: "Administración Linux",
-                    description: "Transformo la complejidad de los entornos GNU/Linux en estabilidad operativa. Mediante el bastionado (hardening) y la optimización de servidores Debian y Fedora, garantizo que su núcleo tecnológico sea rápido, seguro y esté disponible las 24 horas del día."
-                },
                 networks: {
-                    title: "Arquitectura de Redes",
-                    description: "Diseño infraestructuras de red de alto rendimiento que eliminan los cuellos de botella. Optimizo la latencia y escalabilidad de su red corporativa, asegurando que el flujo de datos sea constante y eficiente, incluso en entornos de alta demanda."
+                    title: "Arquitectura Técnica",
+                    tag: '"Infraestructura de Alto Rendimiento"',
+                    description: "Diseño y despliego redes LAN de baja latencia, supervisando desde el cableado estructurado hasta las instalaciones eléctricas especializadas. <strong>Si el hardware no tiene una base sólida, el software no puede brillar.</strong>"
+                },
+                systems: {
+                    title: "Continuidad de Procesos",
+                    tag: '"Operaciones Críticas"',
+                    description: "Administro entornos GNU/Linux y gestiono el ciclo de vida completo de sus activos digitales. Mi fuerte es la resolución de incidentes Nivel 2 y 3, garantizando que sus servicios permanezcan disponibles cuando más se necesitan."
                 },
                 security: {
-                    title: "Ciberseguridad",
-                    description: "Protejo sus activos digitales frente a amenazas emergentes. Implemento perímetros de seguridad robustos y actúo con precisión quirúrgica en el análisis forense tras incidentes, identificando vulnerabilidades y blindando su infraestructura contra futuros ataques."
-                },
-                hosting: {
-                    title: "Gestión de Hosting",
-                    description: "Potencio su presencia digital con infraestructura de nivel empresarial. Desde la gestión crítica de dominios hasta el despliegue en hostings optimizados, aseguro que sus plataformas web carguen al instante y escalen sin interrupciones."
-                },
-                response: {
-                    title: "Soporte N2 / N3",
-                    description: "Especialista en la gestión de crisis tecnológicas y recuperación de servicios bajo presión. Lidero la resolución de incidentes complejos de segundo y tercer nivel, garantizando el restablecimiento inmediato de la continuidad del negocio y la disponibilidad de servicios críticos mediante diagnósticos técnicos avanzados."
-                },
-                infrastructure: {
-                    title: "Infraestructura Data Center",
-                    description: "Garantizo la integridad de su hardware desde la base. Dirección técnica en cableado estructurado e instalaciones eléctricas especializadas, bajo estrictas normas de seguridad, para asegurar que su centro de datos opere en condiciones físicas óptimas."
-                },
+                    title: "Blindaje del Ecosistema",
+                    tag: '"Ciberseguridad y Resiliencia"',
+                    description: "No solo implemento seguridad perimetral; ejecuto análisis forenses tras incidentes para cerrar brechas y mitigar vulnerabilidades reales mediante un enfoque preventivo y reactivo."
+                }
             }
         },
         projects: {
@@ -129,29 +120,20 @@ const translations = {
         services: {
             title: "IT Infrastructure & Operations Consultant",
             items: {
-                systems: {
-                    title: "Linux Systems Admin",
-                    description: "I transform the complexity of GNU/Linux environments into operational stability. Through server hardening and optimization of Debian and Fedora systems, I ensure your technological core is fast, secure, and available 24/7."
-                },
                 networks: {
-                    title: "Network Architecture",
-                    description: "I design high-performance network infrastructures that eliminate bottlenecks. I optimize the latency and scalability of your corporate network, ensuring a constant and efficient data flow, even in high-demand environments."
+                    title: "Technical Architecture",
+                    tag: '"High-Performance Infrastructure"',
+                    description: "I design and deploy low-latency LAN networks, overseeing everything from structured cabling to specialized electrical installations. <strong>If the hardware lacks a solid foundation, the software cannot shine.</strong>"
+                },
+                systems: {
+                    title: "Process Continuity",
+                    tag: '"Critical Operations"',
+                    description: "I manage GNU/Linux environments and oversee the full lifecycle of your digital assets. My expertise lies in Tier 2 and 3 incident resolution, ensuring your services remain available when they are needed most."
                 },
                 security: {
-                    title: "Cybersecurity",
-                    description: "I protect your digital assets against emerging threats. I implement robust security perimeters and perform surgical-precision forensic analysis following incidents, identifying vulnerabilities and shielding your infrastructure against future attacks."
-                },
-                hosting: {
-                    title: "Hosting Management",
-                    description: "I power your digital presence with enterprise-level infrastructure. From critical domain management to deployment on optimized hosting, I ensure your web platforms load instantly and scale without interruptions."
-                },
-                response: {
-                    title: "Support L2 / L3",
-                    description: "Specialist in technological crisis management and service recovery under pressure. I lead the resolution of complex Level 2 and Level 3 incidents, ensuring the immediate restoration of business continuity and critical service availability through advanced technical diagnostics."
-                },
-                infrastructure: {
-                    title: "Data Center Infrastructure",
-                    description: "I guarantee your hardware's integrity from the ground up. Technical direction in structured cabling and specialized electrical installations, under strict safety standards, to ensure your data center operates in optimal physical conditions."
+                    title: "Ecosystem Shielding",
+                    tag: '"Cybersecurity & Resilience"',
+                    description: "I do more than just implement perimeter security; I perform post-incident forensic analysis to close gaps and mitigate real-world vulnerabilities through both preventive and reactive approaches."
                 }
             }
         },

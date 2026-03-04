@@ -40,18 +40,15 @@ function updateContent(language) {
  
         // Sección Servicios
         '.services__title': 'services.title',
-        '.services__item:nth-child(1) .services__item-title': 'services.items.systems.title',
-        '.services__item:nth-child(1) .services__item-description': 'services.items.systems.description',
-        '.services__item:nth-child(2) .services__item-title': 'services.items.networks.title',
-        '.services__item:nth-child(2) .services__item-description': 'services.items.networks.description',
+        '.services__item:nth-child(1) .services__item-title': 'services.items.networks.title',
+        '.services__item:nth-child(1) .services__item-tagline': 'services.items.networks.tag',
+        '.services__item:nth-child(1) .services__item-description': 'services.items.networks.description',
+        '.services__item:nth-child(2) .services__item-title': 'services.items.systems.title',
+        '.services__item:nth-child(2) .services__item-tagline': 'services.items.systems.tag',
+        '.services__item:nth-child(2) .services__item-description': 'services.items.systems.description',
         '.services__item:nth-child(3) .services__item-title': 'services.items.security.title',
+        '.services__item:nth-child(3) .services__item-tagline': 'services.items.security.tag',
         '.services__item:nth-child(3) .services__item-description': 'services.items.security.description',
-        '.services__item:nth-child(4) .services__item-title': 'services.items.hosting.title',
-        '.services__item:nth-child(4) .services__item-description': 'services.items.hosting.description',
-        '.services__item:nth-child(5) .services__item-title': 'services.items.response.title',
-        '.services__item:nth-child(5) .services__item-description': 'services.items.response.description',
-        '.services__item:nth-child(6) .services__item-title': 'services.items.infrastructure.title',
-        '.services__item:nth-child(6) .services__item-description': 'services.items.infrastructure.description',
       
         // Sección Educación
         '.education__title': 'education.title',

@@ -57,6 +57,14 @@
     color: var(--services-title-color);
 }
 
+.services__item-tagline {
+    font-size: var(--font-size-base);
+    font-style: italic;
+    font-weight: 700;
+    line-height: var(--services-item-line-height);
+    color: var(--services-text-color);
+}
+
 .services__item-description {
     font-size: var(--font-size-base);
     font-weight: 400;
