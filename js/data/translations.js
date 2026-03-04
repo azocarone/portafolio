@@ -18,6 +18,23 @@ const translations = {
             description2: "Mi trayectoria en entornos de alta responsabilidad, como la logística portuaria, me ha demostrado que la excelencia operativa nace de dos pilares independientes pero complementarios: el <strong>Clean Code</strong> para un software mantenible y la <strong>arquitectura física</strong> ejecutada con precisión técnica.",
             description3: "Sobre esta base de rigor operativo, mi valor diferencial reside en la capacidad de incorporar la versatilidad del <strong>IoT</strong> para dotar de inteligencia a la infraestructura convencional, diseñando soluciones a medida en escenarios donde las herramientas tradicionales resultan insuficientes.",
         },
+        education: {
+            title: "Formación Académica",
+            items: {
+                uc3m: {
+                    degree: "Máster en Comercio Electrónico",
+                    institution: 'Universidad "Carlos III de Madrid"'
+                },
+                uah: {
+                    degree: "Ingeniería en Informática",
+                    institution: 'Universidad "Alejandro de Humboldt"' 
+                },
+                iunp: {
+                    degree: "Técnico Superior en Computación",
+                    institution: 'Instituto Universitario de "Nuevas Profesiones"'
+                },
+            }
+        },
         services: {
             title: "Consultor de Infraestructura y Operaciones IT",
             items: {
@@ -44,23 +61,6 @@ const translations = {
                 infrastructure: {
                     title: "Infraestructura Data Center",
                     description: "Garantizo la integridad de su hardware desde la base. Dirección técnica en cableado estructurado e instalaciones eléctricas especializadas, bajo estrictas normas de seguridad, para asegurar que su centro de datos opere en condiciones físicas óptimas."
-                },
-            }
-        },
-        education: {
-            title: "Formación Académica",
-            items: {
-                uc3m: {
-                    degree: "Máster en Comercio Electrónico",
-                    institution: 'Universidad "Carlos III de Madrid"'
-                },
-                uah: {
-                    degree: "Ingeniería en Informática",
-                    institution: 'Universidad "Alejandro de Humboldt"' 
-                },
-                iunp: {
-                    degree: "Técnico Superior en Computación",
-                    institution: 'Instituto Universitario de "Nuevas Profesiones"'
                 },
             }
         },
@@ -108,6 +108,23 @@ const translations = {
             description1: "As a Computer Engineer with a Master’s in e-Commerce, I have dedicated over twenty years of my professional career to transforming technology into a strategic asset. My evolution links the foundations of e-commerce to the management of mission-critical systems in high-responsibility environments, such as the port logistics sector.",
             description2: "In my role as an independent IT Advisor since 2010, I manage GNU/Linux environments, data network architecture and cybersecurity. My unique value lies in convergence: I integrate the robustness of traditional infrastructure with the versatility of IoT hardware, designing bespoke solutions for challenges where generic tools fall short.",
         },
+        education: {
+            title: "Academic Education",
+            items: {
+                uc3m: {
+                    degree: "Master's in E-commerce",
+                    institution: 'University "Carlos III de Madrid"'
+                },
+                uah: {
+                    degree: "Computer Engineering",
+                    institution: 'University "Alejandro de Humboldt"'
+                },
+                iunp: {
+                    degree: "Advanced Technician in Computing",
+                    institution: 'University Institute of "Nuevas Profesiones"'
+                },
+            }
+        },
         services: {
             title: "IT Infrastructure & Operations Consultant",
             items: {
@@ -135,23 +152,6 @@ const translations = {
                     title: "Data Center Infrastructure",
                     description: "I guarantee your hardware's integrity from the ground up. Technical direction in structured cabling and specialized electrical installations, under strict safety standards, to ensure your data center operates in optimal physical conditions."
                 }
-            }
-        },
-        education: {
-            title: "Academic Education",
-            items: {
-                uc3m: {
-                    degree: "Master's in E-commerce",
-                    institution: 'University "Carlos III de Madrid"'
-                },
-                uah: {
-                    degree: "Computer Engineering",
-                    institution: 'University "Alejandro de Humboldt"'
-                },
-                iunp: {
-                    degree: "Advanced Technician in Computing",
-                    institution: 'University Institute of "Nuevas Profesiones"'
-                },
             }
         },
         projects: {
