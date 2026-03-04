@@ -41,17 +41,17 @@ const translations = {
                 networks: {
                     title: "Arquitectura Técnica",
                     tag: '"Infraestructura de Alto Rendimiento"',
-                    description: "Diseño y despliego redes LAN de baja latencia, supervisando desde el cableado estructurado hasta las instalaciones eléctricas especializadas. <strong>Si el hardware no tiene una base sólida, el software no puede brillar.</strong>"
+                    description: "Diseño y despliego <strong>redes LAN</strong> de baja latencia, supervisando desde el <strong>cableado estructurado</strong> hasta las <strong>instalaciones eléctricas especializadas</strong>. Si el hardware no tiene una base sólida, el software no puede brillar."
                 },
                 systems: {
                     title: "Continuidad de Procesos",
                     tag: '"Operaciones Críticas"',
-                    description: "Administro entornos GNU/Linux y gestiono el ciclo de vida completo de sus activos digitales. Mi fuerte es la resolución de incidentes Nivel 2 y 3, garantizando que sus servicios permanezcan disponibles cuando más se necesitan."
+                    description: "Administro entornos <strong>GNU/Linux</strong> y gestiono el ciclo de vida completo de sus <strong>activos digitales</strong>. Mi fuerte es la <strong>resolución de incidentes Nivel 2 y 3</strong>, garantizando que sus servicios permanezcan disponibles cuando más se necesitan."
                 },
                 security: {
                     title: "Blindaje del Ecosistema",
                     tag: '"Ciberseguridad y Resiliencia"',
-                    description: "No solo implemento seguridad perimetral; ejecuto análisis forenses tras incidentes para cerrar brechas y mitigar vulnerabilidades reales mediante un enfoque preventivo y reactivo."
+                    description: "No solo implemento <strong>seguridad perimetral</strong>; ejecuto <strong>análisis forenses</strong> tras incidentes para cerrar brechas y mitigar vulnerabilidades reales mediante un enfoque preventivo y reactivo."
                 }
             }
         },
@@ -123,17 +123,17 @@ const translations = {
                 networks: {
                     title: "Technical Architecture",
                     tag: '"High-Performance Infrastructure"',
-                    description: "I design and deploy low-latency LAN networks, overseeing everything from structured cabling to specialized electrical installations. <strong>If the hardware lacks a solid foundation, the software cannot shine.</strong>"
+                    description: "I design and deploy low-latency <strong>LAN networks</strong>, overseeing everything from <strong>structured cabling</strong> to <strong>specialized electrical installations</strong>. If the hardware lacks a solid foundation, the software cannot shine."
                 },
                 systems: {
                     title: "Process Continuity",
                     tag: '"Critical Operations"',
-                    description: "I manage GNU/Linux environments and oversee the full lifecycle of your digital assets. My expertise lies in Tier 2 and 3 incident resolution, ensuring your services remain available when they are needed most."
+                    description: "I manage <strong>GNU/Linux</strong> environments and oversee the full lifecycle of your <strong>digital assets</strong>. My expertise lies in <strong>Tier 2 and 3 incident resolution</strong>, ensuring your services remain available when they are needed most."
                 },
                 security: {
                     title: "Ecosystem Shielding",
                     tag: '"Cybersecurity & Resilience"',
-                    description: "I do more than just implement perimeter security; I perform post-incident forensic analysis to close gaps and mitigate real-world vulnerabilities through both preventive and reactive approaches."
+                    description: "I do more than just implement <strong>perimeter security</strong>; I perform post-incident <strong>forensic analysis</strong> to close gaps and mitigate real-world vulnerabilities through both preventive and reactive approaches."
                 }
             }
         },
