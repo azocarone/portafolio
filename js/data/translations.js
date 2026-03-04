@@ -105,8 +105,9 @@ const translations = {
         },
         about: {
             title: "Professional profile",
-            description1: "As a Computer Engineer with a Master’s in e-Commerce, I have dedicated over twenty years of my professional career to transforming technology into a strategic asset. My evolution links the foundations of e-commerce to the management of mission-critical systems in high-responsibility environments, such as the port logistics sector.",
-            description2: "In my role as an independent IT Advisor since 2010, I manage GNU/Linux environments, data network architecture and cybersecurity. My unique value lies in convergence: I integrate the robustness of traditional infrastructure with the versatility of IoT hardware, designing bespoke solutions for challenges where generic tools fall short.",
+            description1: "I am a Computer Science Engineer with a Master’s in e-Commerce, possessing a professional identity defined by a passion for infrastructure and a hands-on approach to operational challenges. Over more than twenty years, I have transformed technology into a strategic asset, evolving from the foundations of e-commerce and critical systems management into independent consulting, established in 2010.",
+            description2: "My experience in high-stakes environments, such as port logistics, has demonstrated that operational excellence is built upon two independent yet complementary pillars: Clean Code for maintainable software and physical architecture executed with technical precision.",
+            description3: "Building on this foundation of operational rigor, my unique value lies in the ability to integrate the versatility of IoT to bring intelligence to conventional infrastructure, designing bespoke solutions for scenarios where standard tools fall short.",
         },
         education: {
             title: "Academic Education",
