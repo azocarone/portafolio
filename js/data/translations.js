@@ -3,8 +3,8 @@ const translations = {
         nav: {
             title: "Portafolio",
             about: "Perfil",
-            services: "Consultoría",
             education: "Formación",
+            services: "Consultoría",
             projects: "Desarrollo",
             contact: "Contacto",
         },
@@ -94,8 +94,8 @@ const translations = {
         nav: {
             title: "Portfolio",
             about: "Profile",
-            services: "Consulting",
             education: "Education",
+            services: "Consulting",
             projects: "Development",
             contact: "Contact",
         },

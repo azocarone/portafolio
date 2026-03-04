@@ -23,8 +23,8 @@ function updateContent(language) {
         // Sección Navegación
         '#site-title': 'nav.title',
         'a[href="#about"]': 'nav.about',
-        'a[href="#services"]': 'nav.services',
         'a[href="#education"]': 'nav.education',
+        'a[href="#services"]': 'nav.services',
         'a[href="#projects"]': 'nav.projects',
         'a[href="#contact"]': 'nav.contact',
 
