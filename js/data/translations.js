@@ -3,22 +3,23 @@ const translations = {
         nav: {
             title: "Portafolio",
             about: "Perfil",
-            services: "Asesoría",
+            services: "Consultoría",
             education: "Formación",
             projects: "Desarrollo",
             contact: "Contacto",
         },
         profile: {
-            title: "Ing. Informático | Consultor I&O: Infraestructura y Ops",
+            title: "Ing. Informático | Consultor I&O: Infraestructura y Ops.",
             linkTitle: "Haga clic para ver Currículum"
         },
         about: {
-            title: "Perfil",
-            description1: "Ingeniero en Informática y Máster en e-Commerce, he dedicado más de veinte años de trayectoria profesional a transformar la tecnología en un activo estratégico. Mi evolución vincula los fundamentos del comercio electrónico y la gestión de sistemas críticos en entornos de alta responsabilidad, tales como el sector de la logística portuaria.",
-            description2: "En mi labor de asesor IT independiente iniciada en 2010, gestiono entornos GNU/Linux, arquitectura de redes de datos y ciberseguridad. Mi valor diferencial reside en la convergencia: integro la robustez de la infraestructura convencional y la versatilidad del hardware IoT, diseñando soluciones a la medida ante desafíos donde las herramientas genéricas resultan insuficientes.",
+            title: "Perfil Profesional",
+            description1: "Soy <strong>Ingeniero en Informática y Máster en e-Commerce</strong>, con una identidad profesional definida por la pasión hacia la infraestructura y el hábito de trabajar sobre el terreno operacional. Durante más de veinte años, he transformado la tecnología en un activo estratégico, evolucionando desde los fundamentos del comercio electrónico y la gestión de sistemas críticos hacia la consultoría independiente iniciada en 2010.",
+            description2: "Mi trayectoria en entornos de alta responsabilidad, como la logística portuaria, me ha demostrado que la excelencia operativa nace de dos pilares independientes pero complementarios: el <strong>Clean Code</strong> para un software mantenible y la <strong>arquitectura física</strong> ejecutada con precisión técnica.",
+            description3: "Sobre esta base de rigor operativo, mi valor diferencial reside en la capacidad de incorporar la versatilidad del <strong>IoT</strong> para dotar de inteligencia a la infraestructura convencional, diseñando soluciones a medida en escenarios donde las herramientas tradicionales resultan insuficientes.",
         },
         services: {
-            title: "Asesor de Infraestructura Tecnológica",
+            title: "Consultor de Infraestructura y Operaciones IT",
             items: {
                 systems: {
                     title: "Administración Linux",
@@ -64,7 +65,7 @@ const translations = {
             }
         },
         projects: {
-            title: "Desarrollo",
+            title: "Desarrollo Web",
             items: {
                 resume: {
                     title: "Currículum",
@@ -93,22 +94,22 @@ const translations = {
         nav: {
             title: "Portfolio",
             about: "Profile",
-            services: "Advisory",
+            services: "Consulting",
             education: "Education",
             projects: "Development",
             contact: "Contact",
         },
         profile: {
-            title: "Computer Engineer | I&O Consultant: Infrastructure & Ops",
+            title: "Computer Engineer | I&O Consultant: Infrastructure & Ops.",
             linkTitle: "Click to view Résumé"
         },
         about: {
-            title: "Profile",
+            title: "Professional profile",
             description1: "As a Computer Engineer with a Master’s in e-Commerce, I have dedicated over twenty years of my professional career to transforming technology into a strategic asset. My evolution links the foundations of e-commerce to the management of mission-critical systems in high-responsibility environments, such as the port logistics sector.",
             description2: "In my role as an independent IT Advisor since 2010, I manage GNU/Linux environments, data network architecture and cybersecurity. My unique value lies in convergence: I integrate the robustness of traditional infrastructure with the versatility of IoT hardware, designing bespoke solutions for challenges where generic tools fall short.",
         },
         services: {
-            title: "IT Infrastructure Advisor",
+            title: "IT Infrastructure & Operations Consultant",
             items: {
                 systems: {
                     title: "Linux Systems Admin",
@@ -154,7 +155,7 @@ const translations = {
             }
         },
         projects: {
-            title: "Development",
+            title: "Web Development",
             items: {
                 resume: {
                     title: "Curriculum",
