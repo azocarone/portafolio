@@ -38,10 +38,10 @@ export function initLanguages() {
 
         // Traducir Placeholders
         document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-        const path = element.getAttribute('data-i18n-placeholder');
-        const value = getTranslationValue(translation, path);
-        if (value) element.placeholder = value;
-    });
+            const path = element.getAttribute('data-i18n-placeholder');
+            const value = getTranslationValue(translation, path);
+            if (value) element.placeholder = value;
+        });
     }
 
     // Evento para cambiar el idioma
