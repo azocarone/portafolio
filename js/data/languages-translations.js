@@ -73,10 +73,22 @@ export const translations = {
             promo1: "¿Necesita un especialista en Tecnologías de la Información para su próximo proyecto?",
             promo2: "Le invito a completar el formulario. A la brevedad, me comunicaré con usted para concertar una entrevista.",
             form: {
-                name: "Nombre",
-                email: "e-mail",
-                subject: "Asunto",
-                message: "Mensaje",
+                name: {
+                    label: "Nombre",
+                    placeholder: "Nombre completo."
+                },
+                email: {
+                    label: "e-mail",
+                    placeholder: "Dirección de correo."
+                },
+                subject: {
+                    label: "Asunto",
+                    placeholder: "Motivo de su contacto."
+                },
+                message: {
+                    label: "Mensaje",
+                    placeholder: "Escriba su mensaje..."
+                },
                 submit: "Enviar a WhatsApp"
             }
         }
@@ -155,10 +167,22 @@ export const translations = {
             promo1: "Do you need an Information Technology specialist for your next project?",
             promo2: "I invite you to complete the form. I will contact you shortly to arrange an interview.",
             form: {
-                name: "Name",
-                email: "e-mail",
-                subject: "Subject",
-                message: "Message",
+                name: {
+                    label: "Name",
+                    placeholder: "Full name."
+                },
+                email: {
+                    label: "e-mail",
+                    placeholder: "Email address."
+                },
+                subject: {
+                    label: "Subject",
+                    placeholder: "Reason for your contact."
+                },
+                message: {
+                    label: "Message",
+                    placeholder: "Write your message..."
+                },
                 submit: "Send to WhatsApp"
             }
         }

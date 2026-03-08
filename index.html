@@ -68,23 +68,23 @@
     <!-- Header - Navbar -->
     <header class="header" aria-labelledby="site-title">
         <div class="header__container">
-            <h1 class="header__title" id="site-title"></h1>
+            <h1 class="header__title" id="site-title" data-i18n="nav.title"></h1>
             <nav class="header__nav" aria-label="Navegación principal">
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#about"></a>
+                        <a class="header__menu-link" href="#about" data-i18n="nav.about"></a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#education"></a>
+                        <a class="header__menu-link" href="#education" data-i18n="nav.education"></a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#services"></a>
+                        <a class="header__menu-link" href="#services" data-i18n="nav.services"></a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#projects"></a>
+                        <a class="header__menu-link" href="#projects" data-i18n="nav.projects"></a>
                     </li>
                     <li class="header__menu-item header__menu-item--contact">
-                        <a class="header__menu-link" href="#contact"></a>
+                        <a class="header__menu-link" href="#contact" data-i18n="nav.contact"></a>
                     </li>
                 </ul>
             </nav>
@@ -95,15 +95,14 @@
         <!-- Perfil -->
         <section class="main__section profile" data-aos="fade-down" aria-labelledby="profile-name">
             <div class="profile__container">
-                <img class="profile__image" src="./assets/img/logos/azocarone.svg" alt="José Antonio Azócar Marcano"
-                    aria-hidden="true">
+                <img class="profile__image" src="./assets/img/logos/azocarone.svg" alt="José Antonio Azócar Marcano" aria-hidden="true">
                 <div class="profile__content">
                     <h2 id="profile-name" class="profile__name">José Antonio Azócar Marcano</h2>
-                    <h3 class="profile__title"></h3>
+                    <h3 class="profile__title" data-i18n="profile.title"></h3>
                     <ul class="profile__links">
                         <li>
                             <a class="profile__link" href="https://curriculum.joseazocar.pro/" target="_blank" rel="noopener noreferrer"
-                                aria-label="Ver currículum de José Antonio Azócar Marcano">
+                                data-i18n="profile.linkTitle">
                             </a>
                         </li>
                     </ul>
@@ -113,44 +112,41 @@
 
         <!-- About -->
         <section class="main__section about" id="about" data-aos="fade-up" aria-labelledby="about-title">
-            <h2 id="about-title" class="about__title"></h2>
-            <p class="about__description"></p>
-            <p class="about__description"></p>
-            <p class="about__description"></p>
+            <h2 id="about-title" class="about__title" data-i18n="about.title"></h2>
+            <p class="about__description" data-i18n="about.description1"></p>
+            <p class="about__description" data-i18n="about.description2"></p>
+            <p class="about__description" data-i18n="about.description3"></p>
         </section>
 
         <!-- Education -->
         <section class="main__section education" id="education" data-aos="fade-up" aria-labelledby="education-title">
-            <h2 id="education-title" class="education__title"></h2>
+            <h2 id="education-title" class="education__title" data-i18n="education.title"></h2>
             <ul class="education__list">
                 <li class="education__item" data-item-id="uc3m">
                     <div class="education__logo" data-logo-id="uc3m">
-                        <img class="education__logo-image" src="./assets/img/logos/uc3m.png"
-                            alt="Logo Universidad Carlos III de Madrid">
+                        <img class="education__logo-image" src="./assets/img/logos/uc3m.png" alt="Logo Universidad Carlos III de Madrid">
                     </div>
-                    <h3 class="education__degree"></h3>
-                    <a class="education__institution" href="https://www.uc3m.es/postgrado/inicio" target="_blank"
-                        rel="noopener noreferrer" aria-label='Univ. "Carlos III de Madrid - Másters"'>
+                    <h3 class="education__degree" data-i18n="education.items.uc3m.degree"></h3>
+                    <a class="education__institution" href="https://www.uc3m.es/postgrado/inicio" target="_blank" rel="noopener noreferrer"
+                        data-i18n="education.items.uc3m.institution">
                     </a>
                 </li>
                 <li class="education__item" data-item-id="uah">
                     <div class="education__logo" data-logo-id="uah">
-                        <img class="education__logo-image" src="./assets/img/logos/uah.png"
-                            alt="Logo Universidad Alejandro de Humboldt">
+                        <img class="education__logo-image" src="./assets/img/logos/uah.png" alt="Logo Universidad Alejandro de Humboldt">
                     </div>
-                    <h3 class="education__degree"></h3>
-                    <a class="education__institution" href="https://unihumboldt.edu.ve/" target="_blank"
-                        rel="noopener noreferrer" aria-label='Univ. "Alejandro de Humboldt" - Grupo Humboldt'>
+                    <h3 class="education__degree" data-i18n="education.items.uah.degree"></h3>
+                    <a class="education__institution" href="https://unihumboldt.edu.ve/" target="_blank" rel="noopener noreferrer"
+                        data-i18n="education.items.uah.institution">
                     </a>
                 </li>
                 <li class="education__item" data-item-id="iunp">
                     <div class="education__logo" data-logo-id="iunp">
-                        <img class="education__logo-image" src="./assets/img/logos/iunp.png"
-                            alt="Logo Instituto Universitario de Nuevas Profesiones">
+                        <img class="education__logo-image" src="./assets/img/logos/iunp.png" alt="Logo Instituto Universitario de Nuevas Profesiones">
                     </div>
-                    <h3 class="education__degree"></h3>
-                    <a class="education__institution" href="https://www.iunp.edu.ve/" target="_blank"
-                        rel="noopener noreferrer" aria-label='Inst. Univ. de "Nuevas Profesiones" - Grupo Humboldt'>
+                    <h3 class="education__degree" data-i18n="education.items.iunp.degree"></h3>
+                    <a class="education__institution" href="https://www.iunp.edu.ve/" target="_blank" rel="noopener noreferrer"
+                        data-i18n="education.items.iunp.institution">
                     </a>
                 </li>
             </ul>
@@ -158,25 +154,25 @@
 
         <!-- Services -->
         <section class="main__section services" id="services" data-aos="fade-up" aria-labelledby="services-title">
-            <h2 id="services-title" class="services__title"></h2>
+            <h2 id="services-title" class="services__title" data-i18n="services.title"></h2>
             <ul class="services__list">
                 <li class="services__item" data-aos="flip-left">
                     <i class="services__item-icon fas fa-network-wired fa-2x" aria-hidden="true"></i>
-                    <h3 class="services__item-title"></h3>
-                    <p class="services__item-tagline"></p>
-                    <p class="services__item-description"></p>
+                    <h3 class="services__item-title" data-i18n="services.items.networks.title"></h3>
+                    <p class="services__item-tagline" data-i18n="services.items.networks.tag"></p>
+                    <p class="services__item-description" data-i18n="services.items.networks.description"></p>
                 </li>
                 <li class="services__item" data-aos="flip-left">
                     <i class="services__item-icon fas fa-gears fa-2x" aria-hidden="true"></i>
-                    <h3 class="services__item-title"></h3>
-                    <p class="services__item-tagline"></p>
-                    <p class="services__item-description"></p>
+                    <h3 class="services__item-title" data-i18n="services.items.systems.title"></h3>
+                    <p class="services__item-tagline" data-i18n="services.items.systems.tag"></p>
+                    <p class="services__item-description" data-i18n="services.items.systems.description"></p>
                 </li>
                 <li class="services__item" data-aos="flip-left">
                     <i class="services__item-icon fas fa-shield-halved fa-2x" aria-hidden="true"></i>
-                    <h3 class="services__item-title"></h3>
-                    <p class="services__item-tagline"></p>
-                    <p class="services__item-description"></p>
+                    <h3 class="services__item-title" data-i18n="services.items.security.title"></h3>
+                    <p class="services__item-tagline" data-i18n="services.items.security.tag"></p>
+                    <p class="services__item-description" data-i18n="services.items.security.description"></p>
                 </li>
             </ul>
         </section>
@@ -185,15 +181,15 @@
         <section class="main__section projects" id="projects" data-aos="fade-up" aria-labelledby="projects-title">
             <h2 id="projects-title" class="projects__title"></h2>
             <ul class="projects__list">
+                
                 <!-- Currículum -->
                 <li class="projects__item">
                     <div class="projects__item-header">
-                        <h3 class="projects__item-title"></h3>
-                        <img class="projects__item-image" src="./assets/img/projects/curriculum.png"
-                        alt="Currículum - CV digital: Estilo Harvard, multilingüe, JS">
+                        <h3 class="projects__item-title" data-i18n="projects.items.resume.title"></h3>
+                        <img class="projects__item-image" src="./assets/img/projects/curriculum.png" alt="CV digital">
                     </div>
                     <div class="projects__item-info">
-                        <p class="projects__item-description"></p>
+                        <p class="projects__item-description" data-i18n="projects.items.resume.description"></p>
                         <div class="projects__item-keypad">
                             <a class="projects__item-button" href="https://github.com/azocarone/curriculum/" target="_blank"
                                 rel="noopener noreferrer" aria-label="Ver código en GitHub">
@@ -210,18 +206,17 @@
                 <!-- Portafolio -->
                 <li class="projects__item">
                     <div class="projects__item-header">
-                        <h3 class="projects__item-title"></h3>
+                        <h3 class="projects__item-title" data-i18n="projects.items.portfolio.title"></h3>
                         <img class="projects__item-image" src="./assets/img/projects/portafolio.png"
                         alt="Portafolio - Vitrina online de un Profesional IT">
                     </div>
                     <div class="projects__item-info">
-                        <p class="projects__item-description"></p>
+                        <p class="projects__item-description" data-i18n="projects.items.portfolio.description"></p>
                         <div class="projects__item-keypad">
                             <a class="projects__item-button" href="https://github.com/azocarone/portafolio/" target="_blank"
-                                rel="noopener noreferrer" aria-label="Ver código en GitHub">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a class="projects__item-button" href="https://joseazocar.pro/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Ver código en GitHub"> 
+                                <i class="fab fa-github"></i> GitHub</a>
+                            <a class="projects__item-button" href="https://joseazocar.pro/" target="_blank" 
                                 rel="noopener noreferrer" aria-label="Ver demo del proyecto">
                                 <i class="fas fa-eye"></i> Demo
                             </a>
@@ -234,9 +229,9 @@
         <!-- Contacto -->
         <section class="main__section contact" id="contact" data-aos="fade-up">
             <div class="contact__header">
-                <h2 class="contact__title"></h2>
-                <p class="contact__description"></p>
-                <p class="contact__description"></p>
+                <h2 class="contact__title" data-i18n="contact.title"></h2>
+                <p class="contact__description" data-i18n="contact.promo1"></p>
+                <p class="contact__description" data-i18n="contact.promo2"></p>
                 <img class="contact__image" src="./assets/img/contact/wfh.png" alt="Imagen de contacto - Working from home">
             </div>
             <div class="contact__content">
@@ -244,33 +239,34 @@
                     <fieldset class="contact__fieldset" aria-label="Formulario de Contacto">
                         
                         <div class="contact__field">
-                            <label class="contact__label" for="nombre"></label>
+                            <label class="contact__label" for="nombre" data-i18n="contact.form.name.label"></label>
                             <input class="contact__input" type="text" id="nombre" name="nombre"
-                                placeholder="Nombre completo." required pattern="^(?!\s*$).+" maxlength="50"
-                                data-tipo="nombre">
+                                required pattern="^(?!\s*$).+" maxlength="50"
+                                data-tipo="nombre" data-i18n-placeholder="contact.form.name.placeholder">
                             <span class="contact__error" role="alert"></span>
                         </div>
                         
                         <div class="contact__field">
-                            <label class="contact__label" for="email"></label>
+                            <label class="contact__label" for="email" data-i18n="contact.form.email.label"></label>
                             <input class="contact__input" type="email" id="email" name="email"
-                                placeholder="Dirección de correo." required data-tipo="email">
+                                required data-tipo="email"
+                                data-i18n-placeholder="contact.form.email.placeholder">
                             <span class="contact__error" role="alert"></span>
                         </div>
                         
                         <div class="contact__field">
-                            <label class="contact__label" for="asunto"></label>
+                            <label class="contact__label" for="asunto" data-i18n="contact.form.subject.label"></label>
                             <input class="contact__input" type="text" id="asunto" name="asunto"
-                                placeholder="Motivo de su contacto." required pattern="^(?!\s*$).+" maxlength="50"
-                                data-tipo="asunto">
+                                required pattern="^(?!\s*$).+" maxlength="50"
+                                data-tipo="asunto" data-i18n-placeholder="contact.form.subject.placeholder">
                             <span class="contact__error" role="alert"></span>
                         </div>
                         
                         <div class="contact__field">
-                            <label class="contact__label" for="mensaje"></label>
+                            <label class="contact__label" for="mensaje" data-i18n="contact.form.message.label"></label>
                             <textarea class="contact__input contact__input--textarea" id="mensaje" name="mensaje"
-                                placeholder="Escriba su mensaje." required rows="6" maxlength="300"
-                                data-tipo="mensaje"></textarea>
+                                required rows="6" maxlength="300"
+                                data-tipo="mensaje" data-i18n-placeholder="contact.form.message.placeholder"></textarea>
                             <span class="contact__error" role="alert"></span>
                         </div>
                     </fieldset>
@@ -279,7 +275,7 @@
                         <div class="g-recaptcha" data-sitekey="6LegnwcrAAAAAFCSVxZPSTuVba6f3-tA69p8mnrb" data-callback="onRecaptchaSuccess"
                             data-expired-callback="onRecaptchaExpired">
                         </div>
-                        <button class="contact__button" type="submit" disabled></button>
+                        <button class="contact__button" type="submit" disabled data-i18n="contact.form.submit"></button>
                     </div>
                 </form>
             </div>
