@@ -1,3 +1,5 @@
+import { translations } from "./data/languages-translations.js";
+
 // Crear el selector de idioma
 const languageSelect = document.createElement('select');
 languageSelect.id = 'language-select';
