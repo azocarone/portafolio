@@ -1,7 +1,8 @@
+import { translations } from "./data/languages-translations.js";
 import { actualizarEstadoDeCampo } from "./contact-ui.js";
 
 const validadores = {
-    mensaje: (input) => validarMensaje(input),
+    message: (input) => validarMensaje(input),
 };
 
 export function validarCampos(input) {
@@ -34,13 +35,14 @@ function validarMensaje(input) {
     const mensaje = input.value;
     const esSoloEspacios = mensaje.length > 0 && mensaje.trim() === "";
     
-    let errorMensaje = "";
+    let errorTexto = "";
 
     if (esSoloEspacios) {
-        // Se usa el objeto de errores. Así, si se cambia el texto en el .js de errores, 
-        // se actualiza aquí automáticamente.
-        errorMensaje = mensajesDeError.mensaje.customError;
+        const lang = localStorage.getItem('language') || 'es';
+        // Buscamos el mensaje custom en nuestro objeto unificado
+        errorTexto = translations[lang].contact.form.message.errors.customError;
     }
 
-    input.setCustomValidity(errorMensaje);
+    // Al asignar esto, input.validity.customError se vuelve true
+    input.setCustomValidity(errorTexto);
 }

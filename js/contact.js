@@ -40,15 +40,15 @@ export function initContact() {
     }
 
     function enviarAWhatsApp(datos, targetId) {
-        const { nombre, email, asunto, mensaje } = datos;
+        const { name, email, subject, message } = datos;
         
         // Construcción del mensaje con formato WhatsApp
         const texto =
             `*CONTACTO WEB*%0A%0A` +
-            `*Nombre:* ${encodeURIComponent(nombre)}%0A` +
+            `*Nombre:* ${encodeURIComponent(name)}%0A` +
             `*Email:* ${encodeURIComponent(email)}%0A` +
-            `*Asunto:* ${encodeURIComponent(asunto)}%0A%0A` +
-            `*Mensaje:*%0A${encodeURIComponent(mensaje)}`;
+            `*Asunto:* ${encodeURIComponent(subject)}%0A%0A` +
+            `*Mensaje:*%0A${encodeURIComponent(message)}`;
 
         const url = `https://wa.me/${targetId}?text=${texto}`;
         

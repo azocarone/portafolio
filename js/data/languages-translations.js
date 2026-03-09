@@ -75,19 +75,35 @@ export const translations = {
             form: {
                 name: {
                     label: "Nombre",
-                    placeholder: "Nombre completo."
+                    placeholder: "Nombre completo.",
+                    errors: {
+                        valueMissing: "El nombre no puede estar vacío.",
+                        patternMismatch: "El nombre no puede contener solo espacios."
+                    }
                 },
                 email: {
                     label: "e-mail",
-                    placeholder: "Dirección de correo."
+                    placeholder: "Dirección de correo.",
+                    errors: {
+                        valueMissing: "El e-mail no puede estar vacío.",
+                        typeMismatch: "Ingrese un e-mail válido."
+                    }
                 },
                 subject: {
                     label: "Asunto",
-                    placeholder: "Motivo de su contacto."
+                    placeholder: "Motivo de su contacto.",
+                    errors: {
+                        valueMissing: "El asunto no puede estar vacío.",
+                        patternMismatch: "El asunto no puede contener solo espacios."
+                    }
                 },
                 message: {
                     label: "Mensaje",
-                    placeholder: "Escriba su mensaje..."
+                    placeholder: "Escriba su mensaje...",
+                    errors: {
+                        valueMissing: "El mensaje no puede estar vacío.",
+                        customError: "El mensaje no puede contener solo espacios."
+                    }
                 },
                 submit: "Enviar a WhatsApp"
             }
@@ -169,19 +185,35 @@ export const translations = {
             form: {
                 name: {
                     label: "Name",
-                    placeholder: "Full name."
+                    placeholder: "Full name.",
+                    errors: {
+                        valueMissing: "The name cannot be empty.",
+                        patternMismatch: "The name cannot contain only spaces."
+                    }
                 },
                 email: {
                     label: "e-mail",
-                    placeholder: "Email address."
+                    placeholder: "Email address.",
+                    errors: {
+                        valueMissing: "The e-mail cannot be empty.",
+                        typeMismatch: "Please enter a valid e-mail address."
+                    }
                 },
                 subject: {
                     label: "Subject",
-                    placeholder: "Reason for your contact."
+                    placeholder: "Reason for your contact.",
+                    errors: {
+                        valueMissing: "The subject cannot be empty.",
+                        patternMismatch: "The subject cannot contain only spaces."
+                    }
                 },
                 message: {
                     label: "Message",
-                    placeholder: "Write your message..."
+                    placeholder: "Write your message...",
+                    errors: {
+                        valueMissing: "The message cannot be empty.",
+                        customError: "The message cannot contain only spaces."
+                    }
                 },
                 submit: "Send to WhatsApp"
             }
