@@ -1,4 +1,4 @@
-import { translations } from "./data/languages-translations.js";
+import { translations } from "./data/translations-data.js";
 import { actualizarEstadoDeCampo } from "./contact-ui.js";
 
 const validadores = {
