@@ -8,6 +8,14 @@ const getTranslationValue = (obj, path) => {
 };
 
 /**
+ * Función API: Permite a otros módulos obtener un texto sin importar el JSON
+ */
+export function getTranslatedText(path) {
+    const lang = localStorage.getItem('language') || 'es';
+    return getTranslationValue(translations[lang], path) || "Texto no encontrado";
+}
+
+/**
  * LÓGICA CORE: Traduce los elementos del DOM
  */
 export function updateContent(language) {
