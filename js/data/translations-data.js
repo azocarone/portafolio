@@ -1,3 +1,5 @@
+const author = `&copy; 2022-${new Date().getFullYear()} José Antonio Azócar Marcano.`;
+
 export const translations = {
     es: {
         nav: {
@@ -107,6 +109,9 @@ export const translations = {
                 },
                 submit: "Enviar a WhatsApp"
             }
+        },
+        footer: {
+            copyRight: `${author} Todos los derechos reservados.`
         }
     },
     en: {
@@ -217,6 +222,9 @@ export const translations = {
                 },
                 submit: "Send to WhatsApp"
             }
+        },
+        footer: {
+            copyRight: `${author} All rights reserved.`
         }
     }
 }
