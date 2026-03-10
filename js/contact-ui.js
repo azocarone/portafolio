@@ -1,4 +1,4 @@
-import { translations } from "./data/translations-data.js";
+import { getTranslatedText } from "./languages.js";
 
 const tipoDeErrores = [
     "valueMissing",
@@ -12,27 +12,12 @@ export function actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, 
     input.classList.toggle(campoInvalidoClass, !esValido);
 
     if (!esValido) {
-        // Obtenemos el idioma actual de localStorage (o el que uses por defecto)
-        const currentLang = localStorage.getItem('language') || 'es';
-        errorElement.textContent = obtenerErrorTraducido(input, tipoDeInput, currentLang);
+        const errorType = tipoDeErrores.find((type) => input.validity[type]);
+        // Pedimos la traducción de forma limpia:
+        const path = `contact.form.${tipoDeInput}.errors.${errorType}`;
+        errorElement.textContent = getTranslatedText(path);
     } else {
         errorElement.textContent = "";
-    }
-}
-
-function obtenerErrorTraducido(input, tipoDeInput, lang) {
-    // 1. Identificamos qué tipo de error de validación tiene el input
-    const errorType = tipoDeErrores.find((error) => input.validity[error]);
-    
-    if (!errorType) return "";
-
-    // 2. Navegamos por el objeto de traducciones
-    // Ruta: translations.es.contact.form.name.errors.valueMissing
-    try {
-        return translations[lang].contact.form[tipoDeInput].errors[errorType];
-    } catch (e) {
-        console.warn(`No se encontró traducción para el error ${errorType} en el campo ${tipoDeInput}`);
-        return "Campo inválido"; 
     }
 }
 

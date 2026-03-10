@@ -1,4 +1,4 @@
-import { translations } from "./data/translations-data.js";
+import { getTranslatedText } from "./languages.js";
 import { actualizarEstadoDeCampo } from "./contact-ui.js";
 
 const validadores = {
@@ -32,17 +32,14 @@ export function validarButton(inputs, button) {
 }
 
 function validarMensaje(input) {
+    input.setCustomValidity("");
     const mensaje = input.value;
     const esSoloEspacios = mensaje.length > 0 && mensaje.trim() === "";
-    
-    let errorTexto = "";
 
     if (esSoloEspacios) {
-        const lang = localStorage.getItem('language') || 'es';
-        // Buscamos el mensaje custom en nuestro objeto unificado
-        errorTexto = translations[lang].contact.form.message.errors.customError;
+        // Obtenemos el texto sin importar en qué idioma estemos
+        const errorTexto = getTranslatedText("contact.form.message.errors.customError");
+        // Al asignar esto, input.validity.customError se vuelve true
+        input.setCustomValidity(errorTexto);
     }
-
-    // Al asignar esto, input.validity.customError se vuelve true
-    input.setCustomValidity(errorTexto);
 }
