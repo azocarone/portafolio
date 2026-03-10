@@ -35,6 +35,19 @@ export function updateContent(language) {
         const value = getTranslationValue(translation, path);
         if (value) element.placeholder = value;
     });
+
+    // Actualizar mensajes de error visibles si existen
+    actualizarErroresVisibles();
+}
+
+function actualizarErroresVisibles() {
+    // Buscamos todos los inputs que tienen un error activo en este momento
+    const inputsInvalidados = document.querySelectorAll('.contact__input--invalid');
+    inputsInvalidados.forEach(input => {
+        // Disparamos la validación de nuevo para que contact-ui refresque el texto en el nuevo idioma
+        const event = new Event('input', { bubbles: true });
+        input.dispatchEvent(event);
+    });
 }
 
 /**
