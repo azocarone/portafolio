@@ -62,6 +62,6 @@ Si deseas explorar el código o ejecutar una copia local, sigue estos pasos:
 
 <div align="right">
   <strong>José Antonio Azócar Marcano</strong><br>
-  Desarrollador de Software | Especialista en IT<br>
+  Ing. Informático | Consultor I&O: Infraestructura y Ops.<br>
   <a href="https://github.com/azocarone">@azocarone</a>
 </div>
