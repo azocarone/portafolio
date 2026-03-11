@@ -37,7 +37,7 @@ Si deseas explorar el código o ejecutar una copia local, sigue estos pasos:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/azocarone/portafolio.git](https://github.com/azocarone/portafolio.git)
+    git clone https://github.com/azocarone/portafolio.git
     ```
 2.  **Navegar al directorio:**
     ```bash
