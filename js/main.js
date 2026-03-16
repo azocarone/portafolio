@@ -1,10 +1,10 @@
-import { initLanguages } from './languages.js';
+import { initTranslator } from './translator.js';
 import { initEducation } from './education.js';
 import { initContact } from './contact.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     try {
-        initLanguages();
+        initTranslator();
         initEducation();
         initContact();
         console.log("Módulos inicializados correctamente.");

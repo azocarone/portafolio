@@ -1,4 +1,4 @@
-import { translations } from "./data/translations-data.js";
+import { content } from "./data/content-data.js";
 
 /**
  * HELPER: Navega por el objeto JSON
@@ -12,14 +12,14 @@ const getTranslationValue = (obj, path) => {
  */
 export function getTranslatedText(path) {
     const lang = localStorage.getItem('language') || 'es';
-    return getTranslationValue(translations[lang], path) || "Texto no encontrado";
+    return getTranslationValue(content[lang], path) || "Texto no encontrado";
 }
 
 /**
  * LÓGICA CORE: Traduce los elementos del DOM
  */
 export function updateContent(language) {
-    const translation = translations[language];
+    const translation = content[language];
     if (!translation) return;
 
     // Traducir contenido interno
@@ -74,7 +74,7 @@ function createLanguageSelector(currentLang) {
 /**
  * INICIALIZADOR: Configura todo el módulo
  */
-export function initLanguages() {
+export function initTranslator() {
     const savedLang = localStorage.getItem('language') || 'es';
     
     // 1. Crear el selector

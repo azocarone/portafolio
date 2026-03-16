@@ -1,6 +1,6 @@
 const author = `&copy; 2022-${new Date().getFullYear()} José Antonio Azócar Marcano.`;
 
-export const translations = {
+export const content = {
     es: {
         nav: {
             title: "Portafolio",

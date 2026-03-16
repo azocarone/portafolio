@@ -1,4 +1,4 @@
-import { getTranslatedText } from "./languages.js";
+import { getTranslatedText } from "./translator.js";
 
 const tipoDeErrores = [
     "valueMissing",
