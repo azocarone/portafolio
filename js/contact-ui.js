@@ -1,43 +1,39 @@
 import { getTranslatedText } from "./translator.js";
 
-const tipoDeErrores = [
-    "valueMissing",
-    "patternMismatch",
-    "typeMismatch",
-    "customError",
-];
+export const UI = {
+    // Muestra u oculta errores en los inputs
+    renderizarEstadoCampo: (input, errorType, tipoDeInput) => {
+        const campoInvalidoClass = "contact__input--invalid";
+        const errorElement = input.parentElement.querySelector(".contact__error");
+        
+        const esValido = !errorType;
+        input.classList.toggle(campoInvalidoClass, !esValido);
 
-export function actualizarEstadoDeCampo(input, tipoDeInput, campoInvalidoClass, errorElement) {
-    const esValido = input.validity.valid;
-    input.classList.toggle(campoInvalidoClass, !esValido);
+        if (errorElement) {
+            const path = `contact.form.${tipoDeInput}.errors.${errorType}`;
+            errorElement.textContent = errorType ? getTranslatedText(path) : "";
+        }
+    },
 
-    if (!esValido) {
-        const errorType = tipoDeErrores.find((type) => input.validity[type]);
-        // Pedimos la traducción de forma limpia:
-        const path = `contact.form.${tipoDeInput}.errors.${errorType}`;
-        errorElement.textContent = getTranslatedText(path);
-    } else {
-        errorElement.textContent = "";
-    }
-}
+    // Cambia el estado visual y funcional del botón
+    setEstadoBoton: (button, habilitado) => {
+        button.disabled = !habilitado;
+        button.classList.toggle("contact__button--enabled", habilitado);
+    },
 
-export function reiniciarFormulario(form, inputs, button) {
-    form.reset();
+    // Limpia el formulario y estados visuales
+    resetearFormulario: (form, inputs, button) => {
+        form.reset();
+        if (typeof grecaptcha !== "undefined") grecaptcha.reset();
 
-    if (typeof grecaptcha !== "undefined") {
-        grecaptcha.reset();
-    }
+        inputs.forEach(input => {
+            input.classList.remove("contact__input--invalid");
+            const error = input.parentElement.querySelector(".contact__error");
+            if (error) error.textContent = "";
+        });
 
-    inputs.forEach((input) => {
-        input.classList.remove("contact__input--invalid");
-        const errorSpan = input.parentElement.querySelector(".contact__error");
-        if(errorSpan) errorSpan.textContent = "";
-    });
-    
-    button.disabled = true;
-    button.classList.remove("contact__button--enabled");
-}
+        UI.setEstadoBoton(button, false);
+    },
 
-export function mostrarMensaje(tipo, mensaje) {
-    alert(mensaje);
+    notificar: (mensaje) => alert(mensaje)
 }

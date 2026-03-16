@@ -1,6 +1,7 @@
 import { initTranslator } from './translator.js';
 import { initEducation } from './education.js';
 import { initContact } from './contact.js';
+//import { initContact } from './_contact-controller.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     try {
@@ -11,4 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (error) {
         console.error("Error al inicializar la aplicación:", error);
     }
-});
+})
