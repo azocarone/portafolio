@@ -22,8 +22,8 @@ export function initTranslator() {
 
     // 2. Escuchar cambios de idioma
     if (selector) {
-        selector.addEventListener('change', (e) => {
-            const nuevoLang = e.target.value;
+        selector.addEventListener('change', (event) => {
+            const nuevoLang = event.target.value;
             
             // Orquestación de pasos
             TranslationService.saveLang(nuevoLang);

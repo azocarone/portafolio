@@ -4,17 +4,17 @@ export const TranslationUI = {
     // Traduce etiquetas con data-i18n y placeholders
     renderizarTodo: (traducciones) => {
         // Contenido interno
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const path = el.getAttribute('data-i18n');
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const path = element.getAttribute('data-i18n');
             const value = TranslationService.getDeepValue(traducciones, path);
-            if (value) el.innerHTML = value;
+            if (value) element.innerHTML = value;
         });
 
         // Placeholders
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            const path = el.getAttribute('data-i18n-placeholder');
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const path = element.getAttribute('data-i18n-placeholder');
             const value = TranslationService.getDeepValue(traducciones, path);
-            if (value) el.placeholder = value;
+            if (value) element.placeholder = value;
         });
     },
 
