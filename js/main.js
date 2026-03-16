@@ -1,7 +1,6 @@
 import { initTranslator } from './translator.js';
 import { initEducation } from './education.js';
 import { initContact } from './contact.js';
-//import { initContact } from './_contact-controller.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     try {
