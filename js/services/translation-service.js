@@ -1,4 +1,4 @@
-import { content } from "./data/content-data.js";
+import { Content } from "../data/content-data.js";
 
 export const TranslationService = {
     // Obtiene el idioma guardado o el valor por defecto
@@ -15,10 +15,10 @@ export const TranslationService = {
     // Retorna una traducción específica según el idioma actual
     getText: (path) => {
         const lang = TranslationService.getLang();
-        const translation = content[lang];
+        const translation = Content[lang];
         return TranslationService.getDeepValue(translation, path) || "Texto no encontrado";
     },
 
     // Retorna el objeto completo de traducciones para un idioma
-    getContentByLang: (lang) => content[lang]
+    getContentByLang: (lang) => Content[lang]
 }

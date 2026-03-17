@@ -1,8 +1,6 @@
-import { getTargetId } from "./data/contact-helper.js";
+import { getTargetId } from "../utils/contact-helper.js";
 
-/**
- * Construye la URL y ejecuta la apertura de WhatsApp
- */
+// Construye la URL y ejecuta la apertura de WhatsApp
 export const enviarMensajeWhatsApp = (datos) => {
     const { name, email, subject, message } = datos;
     const targetId = getTargetId();

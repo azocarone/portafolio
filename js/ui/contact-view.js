@@ -1,4 +1,4 @@
-import { getTranslatedText } from "./translator.js";
+import { getTranslatedText } from "../controllers/translation-controller.js";
 
 export const UI = {
     // Muestra u oculta errores en los inputs

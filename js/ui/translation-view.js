@@ -1,4 +1,4 @@
-import { TranslationService } from "./translator-service.js";
+import { TranslationService } from "../services/translation-service.js";
 
 export const TranslationUI = {
     // Traduce etiquetas con data-i18n y placeholders

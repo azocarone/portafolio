@@ -1,4 +1,4 @@
-export const imageData = {
+export const ImageData = {
     uc3m: {
         originalImage: "./assets/img/logos/uc3m.png",
         hoverImage: "./assets/img/education/uc3m.jpeg",
