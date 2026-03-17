@@ -5,6 +5,9 @@
     --header-padding: var(--spacing);
     --header-gap: var(--spacing);
     --header-title-font-size: calc(var(--font-size-base) * 1.2);
+    --header-accent: #3b82f6;
+    --header-glass-bg: rgba(34, 34, 34, 0.85); /* Un poco transparente */
+    --header-border: rgba(255, 255, 255, 0.1);
 }
 
 .header {
@@ -12,9 +15,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--header-background-color);
-    padding: var(--header-padding);
+    background-color: var(--header-glass-bg);
+    backdrop-filter: blur(10px); /* Efecto de cristal */
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0.75rem var(--header-padding); /* Reducimos un poco el alto */
+    border-bottom: 1px solid var(--header-border);
     z-index: 100;
+    transition: all 0.3s ease;
 }
 
 .header__container {
@@ -27,22 +34,25 @@
 }
 
 .header__title {
-    font-size: calc(var(--header-font-size) * 1.2);
+    font-size: var(--header-title-font-size);
     font-weight: 900;
     color: var(--header-text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .header__title::before {
     font-family: "Font Awesome 7 Free";
     content: "\f0f2";
-    opacity: 0.7;
-    margin-right: 0.5rem;
+    color: var(--header-accent); /* Icono con color de acento */
+    opacity: 1;
+    margin-right: 0.75rem;
 }
 
 .header__menu {
     display: flex;
     align-items: center;
-    gap: var(--header-gap);
+    gap: 1.5rem; /* Espaciado más controlado */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -57,14 +67,34 @@
 }
 
 .header__menu-link {
-    font-size: var(--header-font-size);
-    font-weight: 400;
+    font-size: var(--font-size-base);
+    font-weight: 500;
     color: var(--header-text-color);
     text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .header__menu-link:hover {
-    text-decoration: underline;
+    opacity: 1;
+    color: var(--header-accent);
+}
+
+/* Línea animada en hover */
+.header__menu-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--header-accent);
+    transition: width 0.3s ease;
+}
+
+.header__menu-link:hover::after {
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {

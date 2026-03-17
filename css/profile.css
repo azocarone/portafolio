@@ -1,82 +1,139 @@
 :root {
+    /* Variables de diseño consistentes */
     --profile-padding: var(--spacing);
     --profile-gap: var(--spacing);
-    --profile-image-size: calc(var(--spacing) * 7);
-    --profile-name-font-size: calc(var(--font-size-base) * 2.5);
-    --profile-title-font-size: calc(var(--font-size-base) * 1.2);
+    --profile-image-size: calc(var(--spacing) * 8); /* Ligeramente más grande */
+    --profile-name-font-size: calc(var(--font-size-base) * 2.8);
+    --profile-title-font-size: calc(var(--font-size-base) * 1.3);
     --profile-link-font-size: var(--font-size-base);
-    --profile-background-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
-        url("../assets/img/banner.jpg");
+    
+    /* Colores y efectos */
+    --profile-accent: #3b82f6;
+    --profile-glass-bg: rgba(0, 0, 0, 0.45);
+    --profile-border-radius: 1.5rem;
+    --profile-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--profile-background-gradient);
+    justify-content: center;
+    
+    /* Fondo con gradiente optimizado para lectura y efecto fixed */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+                url("../assets/img/banner.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Efecto parallax */
+    
     padding: var(--profile-padding);
+    
+    /* Hereda min-height de .main__section en main.css pero aseguramos que llene la vista */
+    min-height: calc(100vh - var(--header-height)); 
+    width: 100%;
 }
 
 .profile__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
     width: var(--container-width);
     max-width: var(--max-width-container);
+    padding: 3.5rem 2rem;
     margin: 0 auto;
+    
+    /* Efecto Glassmorphism */
+    background: var(--profile-glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: var(--profile-border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--profile-shadow);
 }
 
 .profile__image {
     width: var(--profile-image-size);
-    filter: brightness(0.9);
+    height: var(--profile-image-size);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--profile-accent);
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile__image:hover {
+    transform: scale(1.05) rotate(3deg);
 }
 
 .profile__content {
     display: flex;
     flex-direction: column;
-    gap: var(--profile-gap);
+    gap: 0.75rem;
 }
 
 .profile__name {
     font-size: var(--profile-name-font-size);
     font-weight: 900;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    /* Texto degradado para un look moderno e IT */
+    background: linear-gradient(135deg, #ffffff 60%, var(--profile-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .profile__title {
     font-size: var(--profile-title-font-size);
     font-weight: 400;
-    font-style: italic;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
 }
 
 .profile__links {
     display: flex;
-    gap: var(--profile-gap);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 1.5rem;
 }
 
 .profile__link {
     font-size: var(--profile-link-font-size);
-    font-weight: 700;
-    color: inherit;
+    font-weight: 600;
+    color: #fff;
     text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
 }
 
-.profile__link::after {
-    font-family: "Font Awesome 7 Free";
-    font-weight: 700;
-    margin-left: 0.25rem;
-    content: "\f08e";
-    opacity: 0.4;
+.profile__link:hover {
+    background: var(--profile-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
 }
 
+/* Responsividad Desktop */
 @media screen and (min-width: 1024px) {
     .profile__container {
-        flex-direction: row-reverse;
+        flex-direction: row; /* Foto a la izquierda, texto a la derecha */
+        text-align: left;
+        padding: 4rem;
+        justify-content: space-around;
+    }
+
+    .profile__links {
+        justify-content: flex-start;
     }
 }

@@ -3,20 +3,11 @@
     --about-padding: var(--spacing);
     --about-title-font-size: calc(var(--font-size-base) * 2.5);
     --about-description-font-size: calc(var(--font-size-base) * 1.2)
-
     --about-accent: #3b82f6; /* Consistente con las otras secciones */
     --about-text-highlight: #ffffff;
 } 
 
 .about {
-    display: flex;
-    flex-direction: column;
-    gap: var(--about-gap);
-    padding: var(--about-padding);
-    width: var(--container-width);
-    max-width: var(--max-width-container);
-    margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     gap: calc(var(--about-gap) * 1.5);
@@ -41,9 +32,6 @@
 
 .about__title {
     font-size: var(--about-title-font-size);
-    font-weight: 700;
-
-    font-size: var(--about-title-font-size);
     font-weight: 800; /* Un poco más pesado para impacto visual */
     color: var(--about-accent);
     margin: 0;
@@ -63,12 +51,7 @@
 }
 
 .about__description {
-    font-size: var(--about-description-font-size);
-    font-weight: 400;
-    font-style: italic;
-    line-height: var(--line-height-base);
     margin: 0;
-
     font-size: var(--about-description-font-size);
     font-weight: 400;
     font-style: normal; /* Cambiamos a normal para mejor lectura, usando cursiva solo para énfasis */
@@ -84,3 +67,177 @@
     color: var(--about-text-highlight);
     font-weight: 600;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

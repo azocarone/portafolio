@@ -10,7 +10,6 @@
     --projects-item-title-margin-side: calc(var(--projects-padding) * 0.5);
     --projects-item-keypad-gap: calc(var(--projects-gap) * 0.5);
     --projects-item-button-padding: calc(var(--projects-padding) * 0.2) calc(var(--projects-padding) * 0.8);
-
     --projects-accent: #3b82f6; 
     --projects-shadow-refined: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
     --projects-img-filter: grayscale(20%) brightness(0.9);
@@ -53,11 +52,6 @@
     display: flex;
     flex-direction: column;
     gap: calc(var(--projects-gap) * 0.4);
-    background: #313131;
-    border-radius: 0.25rem;
-    box-shadow: var(--projects-shadow);
-    padding: var(--projects-item-header-padding);
-
     background: #3a3a3a; /* Un tono ligeramente más claro para contraste */
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 0.5rem;
@@ -72,11 +66,7 @@
 }
 
 .projects__item-title {
-    font-size: var(--projects-item-title-font-size);
     font-weight: 700;
-    margin-left: var(--projects-item-title-margin-side);
-    margin-right: var(--projects-item-title-margin-side);
-
     font-size: var(--projects-item-title-font-size);
     color: #ffffff;
     margin: 0; /* Limpiamos márgenes para control total */
@@ -88,7 +78,6 @@
     height: auto;
     border-radius: 0.25rem;
     box-shadow: var(--projects-shadow);
-
     filter: var(--projects-img-filter);
     transition: var(--transition-bounce);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -124,14 +113,10 @@
     justify-content: center;
     align-items: center;
     gap: var(--projects-item-keypad-gap);
-    font-size: var(--font-size-base);
-    font-weight: 400;
     color: #fff;
     border-radius: 0.3125rem;
     padding: var(--projects-item-button-padding);
     cursor: pointer;
-    transition: all 0.3s ease;
-
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.8rem;
@@ -142,22 +127,16 @@
 }
 
 .projects__item-button:hover {
-    filter: brightness(0.7);
-
     filter: brightness(1.2);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .projects__item-button:nth-child(1) {
-    background: var(--projects-button-github-bg);
-
     background: linear-gradient(135deg, #1A7F37 0%, #146c2e 100%);
 }
 
 .projects__item-button:nth-child(2) {
-    background: var(--projects-button-demo-bg);
-
     background: linear-gradient(135deg, #040642 0%, #0a0d6e 100%);
 }
 
@@ -165,7 +144,6 @@
     .projects__item {
         flex-direction: row;
         align-items: center;
-
         gap: 4rem; /* Más espacio entre imagen y texto */
     }
 
@@ -182,7 +160,6 @@
     .projects__item-info {
         align-items: normal;
         flex: 1 0 0;
-
         padding: 1rem;
     }
 

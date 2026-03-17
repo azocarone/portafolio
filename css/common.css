@@ -6,7 +6,6 @@
     --container-width: 90%;
     --max-width-container: 75rem;
     --spacing: clamp(1rem, 2vw, 2rem);
-    
     --accent-color: #3b82f6; /* Un azul profesional, puedes cambiarlo por tu favorito */
     --card-shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.15);
     --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.3);
