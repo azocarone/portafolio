@@ -20,17 +20,17 @@
     align-items: center;
     justify-content: center;
     
-    /* Fondo con gradiente optimizado para lectura y efecto fixed */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
                 url("../assets/img/banner.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Efecto parallax */
+    background-attachment: fixed; 
     
-    padding: var(--profile-padding);
+    /* El padding superior ahora absorbe el espacio del header */
+    padding: calc(var(--header-height) + var(--profile-padding)) var(--profile-padding) var(--profile-padding);
     
-    /* Hereda min-height de .main__section en main.css pero aseguramos que llene la vista */
-    min-height: calc(100vh - var(--header-height)); 
+    /* Ahora la sección mide el 100% de la pantalla para que el fondo cubra todo */
+    min-height: 100vh; 
     width: 100%;
 }
 

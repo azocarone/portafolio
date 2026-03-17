@@ -16,5 +16,5 @@
     font: var(--font-size-base) / var(--line-height-base) "Lato", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
-    margin-top: calc(var(--spacing) * 2.5);
+    margin-top: 0 ;
   }
