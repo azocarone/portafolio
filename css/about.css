@@ -3,6 +3,9 @@
     --about-padding: var(--spacing);
     --about-title-font-size: calc(var(--font-size-base) * 2.5);
     --about-description-font-size: calc(var(--font-size-base) * 1.2)
+
+    --about-accent: #3b82f6; /* Consistente con las otras secciones */
+    --about-text-highlight: #ffffff;
 } 
 
 .about {
@@ -13,11 +16,50 @@
     width: var(--container-width);
     max-width: var(--max-width-container);
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--about-gap) * 1.5);
+    padding: var(--about-padding);
+    width: var(--container-width);
+    max-width: 800px; /* Un poco más estrecho mejora la legibilidad en textos largos */
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Decoración sutil de fondo (opcional) */
+.about::before {
+    content: "{ }";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-family: monospace;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
 }
 
 .about__title {
     font-size: var(--about-title-font-size);
     font-weight: 700;
+
+    font-size: var(--about-title-font-size);
+    font-weight: 800; /* Un poco más pesado para impacto visual */
+    color: var(--about-accent);
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+/* Línea decorativa bajo el título */
+.about__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--about-accent);
+    margin-top: 0.5rem;
+    border-radius: 2px;
 }
 
 .about__description {
@@ -26,4 +68,19 @@
     font-style: italic;
     line-height: var(--line-height-base);
     margin: 0;
+
+    font-size: var(--about-description-font-size);
+    font-weight: 400;
+    font-style: normal; /* Cambiamos a normal para mejor lectura, usando cursiva solo para énfasis */
+    line-height: 1.8; /* Aumentamos para que el texto "respire" */
+    color: #cccccc;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Resaltado para palabras clave dentro de la descripción */
+.about__description strong {
+    color: var(--about-text-highlight);
+    font-weight: 600;
 }

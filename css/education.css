@@ -47,10 +47,20 @@
     box-shadow: 0 1.25rem 2.5rem -0.875rem rgba(0, 0, 0, 0.5);
     padding: var(--education-padding);
     transition: transform 0.3s ease;
+
+    background: rgba(245, 245, 245, 0.95); /* Menos agresivo */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--card-shadow-soft);
+    transition: var(--transition-smooth);
+    overflow: hidden; /* Para que el contenido no desborde */
 }
 
 .education__logo:hover {
     transform: scale(1.05);
+
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow-hover);
+    border-bottom: 3px solid var(--accent-color); /* Indicador visual de interacción */
 }
 
 .education__logo-image {
@@ -67,6 +77,12 @@
     font-size: var(--education-degree-font-size);
     font-weight: 700;
     margin-top: var(--spacing);
+
+    font-size: var(--education-degree-font-size);
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
 }
 
 .education__institution {
@@ -76,8 +92,15 @@
     color: inherit;
     text-decoration: none;
     margin: 0;
+
+    font-size: 0.9rem;
+    color: #a0a0a0; /* Un gris más suave para la institución */
+    transition: var(--transition-smooth);
 }
 
 .education__institution:hover {
     text-decoration: underline;
+
+    color: var(--accent-color);
+    text-decoration: none;
 }

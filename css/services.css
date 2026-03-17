@@ -41,20 +41,42 @@
     box-shadow: var(--services-item-shadow);
     transition: transform 0.3s ease;
     padding: var(--services-gap);
+
+    text-align: left; /* Alineado a la izquierda se siente más profesional para servicios */
+    background: #4d4d4d; /* Un gris ligeramente más claro que el body para generar profundidad */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 4px solid var(--accent-color); /* El toque distintivo */
+    border-radius: 0.75rem;
+    padding: 2.5rem 2rem;
+    box-shadow: var(--card-shadow-soft);
+    transition: var(--transition-smooth);
+    position: relative;
 }
 
 .services__item:hover {
     transform: translateY(-0.625rem);
+
+    transform: translateY(-12px);
+    background: #555555;
+    box-shadow: var(--card-shadow-hover);
 }
 
 .services__item-icon {
     color: var(--services-icon-color);
+
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color); /* El icono resalta */
+    display: block;
 }
 
 .services__item-title {
     font-size: var(--services-item-title-font-size);
     font-weight: 700;
     color: var(--services-title-color);
+
+    color: #ffffff; /* Blanco puro para el título */
+    margin-bottom: 0.75rem;
 }
 
 .services__item-tagline {
@@ -63,6 +85,14 @@
     font-weight: 700;
     line-height: var(--services-item-line-height);
     color: var(--services-text-color);
+
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .services__item-description {
@@ -70,6 +100,9 @@
     font-weight: 400;
     line-height: var(--services-item-line-height);
     color: var(--services-text-color);
+
+    line-height: 1.6;
+    color: #cccccc; /* Gris claro para el cuerpo */
 }
 
 @media screen and (min-width: 768px) {
