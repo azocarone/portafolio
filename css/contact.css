@@ -1,10 +1,10 @@
 :root {
-    --contact-field-bg: #F8F8F8;
-    --contact-input-border: #127765;
-    --contact-error: red;
+    --contact-field-bg: rgba(255, 255, 255, 0.05);
+    --contact-input-border: #3b82f6;
+    --contact-error: #ef4444;
     --contact-button-bg: #1c1e21;
     --contact-button-text: #fefaeb;
-    --contact-shadow: 0 0 10px 5px rgba(28, 32, 31, 0.5), inset 0 0 10px 5px rgba(28, 32, 31, 0.5);
+    --contact-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5), inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .contact {
@@ -76,7 +76,7 @@
 }
 
 .contact__label {
-    color: black;
+    color: var(--contact-input-border);
 }
 
 .contact__error {
@@ -88,7 +88,8 @@
     font-weight: 400;
     border: solid 0.0625rem transparent;
     outline: none;
-    color: black;
+    color: white;
+    background: transparent;
     transition: border-bottom-color 0.3s ease;
 }
 
@@ -98,7 +99,7 @@
 
 .contact__input:focus {
     border-bottom: 2px solid var(--contact-input-border);
-    box-shadow: 0 2px 4px rgba(18, 119, 101, 0.2);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
 }
 
 .contact__button {

@@ -1,7 +1,7 @@
 :root {
     --footer-text-color: #CCCCCC;
     --footer-social-color: #FFFFFF;
-    --footer-bg-color: #343A40;
+    --footer-bg-color: #1c1e21; 
     --footer-gap: calc(var(--spacing) * 0.4);
     --footer-padding: var(--spacing);
     --footer-copyright-font-size: calc(var(--font-size-base) * 0.9);
@@ -23,6 +23,8 @@
     font-weight: 400;
     color: var(--footer-text-color);
     margin: 0;
+    text-align: center; /* Asegura que el texto se centre al reducir la pantalla */
+    width: 100%;        /* Ocupa todo el ancho para que el centrado sea efectivo */
 }
 
 .footer__social-list {
@@ -41,6 +43,6 @@
 }
 
 .footer__social-link:hover {
-    color: #007bff;
+    color: #3b82f6; 
     transform: scale(1.2);
 }
