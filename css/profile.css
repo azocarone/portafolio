@@ -81,7 +81,8 @@
     line-height: 1.1;
     letter-spacing: -1px;
     /* Texto degradado para un look moderno e IT */
-    background: linear-gradient(135deg, #ffffff 60%, var(--profile-accent));
+    background: linear-gradient(135deg, #ffffff 30%, var(--profile-accent));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
