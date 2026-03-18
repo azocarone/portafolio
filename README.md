@@ -5,7 +5,7 @@ Este repositorio contiene el código fuente del portafolio personal de **José A
 El proyecto no solo sirve como carta de presentación, sino como un catálogo interactivo de soluciones técnicas, asesorías especializadas y proyectos de código abierto.
 
 <div align="center">
-  <img src="assets/img/screenshot.gif" alt="Vista previa del Portafolio" width="683" height="384" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="./assets/img/screenshot.gif" alt="Vista previa del Portafolio" width="683" height="384" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 </div>
 
 ---
