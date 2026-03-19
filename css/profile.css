@@ -55,8 +55,8 @@
 }
 
 .profile__image {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     
     /* Efecto de brillo sutil en azul de acento */
@@ -64,7 +64,7 @@
     
     /* Transición suave para interacción */
     transition: transform 0.3s ease, filter 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    /*border: 2px solid rgba(255, 255, 255, 0.2);*/
 }
 
 /* Efecto al pasar el mouse para darle dinamismo */

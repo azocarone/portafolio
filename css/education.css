@@ -44,7 +44,7 @@
     height: auto;
     border-radius: 0.25rem;
     padding: var(--education-padding);
-    background: rgba(245, 245, 245, 0.95); /* Menos agresivo */
+    background: rgba(255, 255, 255, 0.95); /* Menos agresivo */
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: var(--card-shadow-soft);
     transition: var(--transition-smooth);
