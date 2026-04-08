@@ -1,0 +1,23 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Este repositorio alberga el código fuente de mi portafolio profesional, un espacio diseñado para detallar mi trayectoria en el sector tecnológico, exponer un catálogo de servicios especializados y documentar mis contribuciones a diversos proyectos Open Source.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-azocarone:azocarone/portafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.0.7"
+  }
+}
