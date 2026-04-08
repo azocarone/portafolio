@@ -3,9 +3,9 @@ User-agent: *
 Allow: /
 
 # Bloquear el rastreo de carpetas de recursos internos para ahorrar presupuesto de rastreo
+Disallow: /assets/css/
 Disallow: /assets/img/favicon/
-Disallow: /css/
-Disallow: /js/
+Disallow: /src/
 
 # Permitir que los buscadores vean las imágenes (importante para Google Imágenes)
 Allow: /assets/img/
