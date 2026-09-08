@@ -1,9 +1,7 @@
-import { getTargetId } from "../utils/contact-helper.js";
-
 /**
- * Consulta la función serverless de Netlify para validar reCAPTCHA
+ * Envía el token a la Netlify Function y recupera el targetId si es válido
  */
-export const verificarRecaptchaServerless = async (recaptchaToken) => {
+export const validarYObtenerTargetId = async (recaptchaToken) => {
     const response = await fetch("/.netlify/functions/verify-recaptcha", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -13,16 +11,15 @@ export const verificarRecaptchaServerless = async (recaptchaToken) => {
     const data = await response.json();
 
     if (!response.ok || !data.success) {
-        throw new Error(data.error || "Verificación de seguridad fallida.");
+        throw new Error(data.error || "Fallo en la verificación del captcha.");
     }
 
-    return true;
+    return data.targetId; // Retorna el número devuelto por la función
 };
 
-// Construye la URL y ejecuta la apertura de WhatsApp
-export const enviarMensajeWhatsApp = (datos) => {
+// Construye la URL y redirige a WhatsApp
+export const enviarMensajeWhatsApp = (datos, targetId) => {
     const { name, email, subject, message } = datos;
-    const targetId = getTargetId();
     
     const texto =
         `*CONTACTO WEB*%0A%0A` +
