@@ -62,7 +62,6 @@
 
 .projects__item:hover .projects__item-header {
     transform: translateY(-5px);
-    border-color: var(--projects-accent);
 }
 
 .projects__item-title {
@@ -86,8 +85,17 @@
 
 .projects__item:hover .projects__item-image {
     filter: grayscale(0%) brightness(1);
-    transform: scale(1.02) rotate(1deg); /* Un ligero giro da dinamismo */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Transformación para impares */
+.projects__item:nth-child(odd):hover .projects__item-image {
+    transform: scale(1.02) rotate(1deg);
+}
+
+/* Transformación para pares */
+.projects__item:nth-child(even):hover .projects__item-image {
+    transform: scale(1.02) rotate(-1deg);
 }
 
 .projects__item-info {

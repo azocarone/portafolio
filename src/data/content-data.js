@@ -7,7 +7,7 @@ export const Content = {
             about: "Perfil",
             education: "Formación",
             services: "Consultoría",
-            projects: "Desarrollo",
+            projects: "Proyectos",
             contact: "Contacto",
         },
         profile: {
@@ -58,7 +58,7 @@ export const Content = {
             }
         },
         projects: {
-            title: "Desarrollo Web",
+            title: "Soluciones & Proyectos",
             items: {
                 resume: {
                     title: "Currículum",
@@ -66,7 +66,7 @@ export const Content = {
                 },
                 portfolio: {
                     title: "Portafolio",
-                    description: "Vitrina online de un Profesional IT."
+                    description: "Vitrina online - Profesional IT."
                 }
             },
         },
@@ -120,7 +120,7 @@ export const Content = {
             about: "Profile",
             education: "Education",
             services: "Consulting",
-            projects: "Development",
+            projects: "Projects",
             contact: "Contact",
         },
         profile: {
@@ -171,7 +171,7 @@ export const Content = {
             }
         },
         projects: {
-            title: "Web Development",
+            title: "Solutions & Projects",
             items: {
                 resume: {
                     title: "Curriculum",
@@ -179,7 +179,7 @@ export const Content = {
                 },
                 portfolio: {
                     title: "Portfolio",
-                    description: "Online portfolio for an IT Professional."
+                    description: "Online showcase - IT Professional."
                 }
             },
         },
