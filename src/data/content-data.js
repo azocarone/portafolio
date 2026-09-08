@@ -38,7 +38,7 @@ export const Content = {
             }
         },
         services: {
-            title: "Consultor de Infraestructura y Operaciones IT",
+            title: "Consultor de Infraestructura & Operaciones IT",
             items: {
                 networks: {
                     title: "Arquitectura Técnica",
