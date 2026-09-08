@@ -16,9 +16,9 @@ export const Content = {
         },
         about: {
             title: "Perfil Profesional",
-            description1: "Soy <strong>Ingeniero en Informática y Máster en e-Commerce</strong>, con una identidad profesional definida por la pasión hacia la infraestructura y el hábito de trabajar sobre el terreno operacional. Durante más de veinte años, he transformado la tecnología en un activo estratégico, evolucionando desde los fundamentos del comercio electrónico y la gestión de sistemas críticos hacia la consultoría independiente iniciada en 2010.",
-            description2: "Mi trayectoria en entornos de alta responsabilidad, como la logística portuaria, me ha demostrado que la excelencia operativa nace de dos pilares independientes pero complementarios: el <strong>Clean Code</strong> para un software mantenible y la <strong>arquitectura física</strong> ejecutada con precisión técnica.",
-            description3: "Sobre esta base de rigor operativo, mi valor diferencial reside en la capacidad de incorporar la versatilidad del <strong>IoT</strong> para dotar de inteligencia a la infraestructura convencional, diseñando soluciones a medida en escenarios donde las herramientas tradicionales resultan insuficientes.",
+            description1: "Soy <strong>Ingeniero en Informática</strong> y <strong>Máster en e-Commerce</strong>, con una identidad profesional definida por la pasión hacia la <strong>infraestructura</strong> y el hábito de trabajar sobre el <strong>terreno operacional</strong>. A lo largo de mi trayectoria, he transformado la tecnología en un <strong>activo estratégico</strong>, evolucionando desde los fundamentos del <strong>comercio electrónico</strong> y la <strong>gestión de sistemas críticos</strong> hacia la <strong>consultoría independiente</strong>.",
+            description2: "Mi trayectoria en entornos de alta responsabilidad, como la <strong>logística portuaria</strong>, me ha demostrado que la <strong>excelencia operativa</strong> nace de dos pilares independientes pero complementarios: el <strong>Clean Code</strong> para un software mantenible y la <strong>arquitectura física</strong> ejecutada con <strong>precisión técnica</strong>.",
+            description3: "Sobre esta base de <strong>rigor operativo</strong>, mi valor diferencial reside en la capacidad de integrar <strong>nuevas tecnologías</strong> para <strong>conectar el entorno físico</strong> con la <strong>infraestructura convencional</strong>, dotándola de <strong>inteligencia</strong> y diseñando <strong>soluciones a medida</strong> donde las herramientas tradicionales resultan insuficientes.",
         },
         education: {
             title: "Formación Académica",
@@ -129,9 +129,9 @@ export const Content = {
         },
         about: {
             title: "Professional profile",
-            description1: "I am a Computer Science Engineer with a Master’s in e-Commerce, possessing a professional identity defined by a passion for infrastructure and a hands-on approach to operational challenges. Over more than twenty years, I have transformed technology into a strategic asset, evolving from the foundations of e-commerce and critical systems management into independent consulting, established in 2010.",
-            description2: "My experience in high-stakes environments, such as port logistics, has demonstrated that operational excellence is built upon two independent yet complementary pillars: Clean Code for maintainable software and physical architecture executed with technical precision.",
-            description3: "Building on this foundation of operational rigor, my unique value lies in the ability to integrate the versatility of IoT to bring intelligence to conventional infrastructure, designing bespoke solutions for scenarios where standard tools fall short.",
+            description1: "I hold a Bachelor’s degree in <strong>Computer Science</strong> and a Master’s degree in <strong>e-Commerce</strong>, with a professional identity defined by a passion for <strong>infrastructure</strong> and a hands-on <strong>operational approach</strong>. Throughout my career, I have turned technology into a <strong>strategic asset</strong>, evolving from the fundamentals of <strong>e-commerce</strong> and <strong>critical systems management</strong> to <strong>independent consulting</strong>.",
+            description2: "My career in high-responsibility environments, such as <strong>port logistics</strong>, has demonstrated to me that <strong>operational excellence</strong> stems from two independent yet complementary pillars: <strong>Clean Code</strong> for maintainable software and <strong>physical architecture</strong> executed with <strong>technical precision</strong>.",
+            description3: "Building upon this foundation of <strong>operational rigor</strong>, my core value lies in the ability to integrate <strong>emerging technologies</strong> to <strong>bridge the physical environment</strong> with <strong>conventional infrastructure</strong>, adding <strong>intelligence</strong> and designing <strong>tailored solutions</strong> where traditional tools fall short.",
         },
         education: {
             title: "Academic Education",
@@ -228,3 +228,5 @@ export const Content = {
         }
     }
 }
+
+
