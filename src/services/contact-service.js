@@ -1,5 +1,24 @@
 import { getTargetId } from "../utils/contact-helper.js";
 
+/**
+ * Consulta la función serverless de Netlify para validar reCAPTCHA
+ */
+export const verificarRecaptchaServerless = async (recaptchaToken) => {
+    const response = await fetch("/.netlify/functions/verify-recaptcha", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ recaptchaToken })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok || !data.success) {
+        throw new Error(data.error || "Verificación de seguridad fallida.");
+    }
+
+    return true;
+};
+
 // Construye la URL y ejecuta la apertura de WhatsApp
 export const enviarMensajeWhatsApp = (datos) => {
     const { name, email, subject, message } = datos;
