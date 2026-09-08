@@ -1,57 +1,106 @@
 # 📑 Portafolio Profesional - José Azócar
 
-Este repositorio alberga el código fuente de mi portafolio profesional, un espacio diseñado para detallar mi trayectoria en el sector tecnológico, exponer un catálogo de servicios especializados y documentar mis contribuciones a diversos proyectos Open Source.
+<br>
 
-🚀 Explora la versión en vivo: [joseazocar.pro](https://joseazocar.pro)
+Este repositorio de contiene el código fuente del **portafolio profesional** de **José Azócar**, un consultor especializado en infraestructura tecnológica. El sitio funciona como una **vitrina digital** que organiza sus proyectos mediante una **arquitectura de página única** para ofrecer una navegación fluida y eficiente. El desarrollador emplea tecnologías fundamentales como **HTML5**, **CSS3** y **JavaScript**, aplicando la metodología **BEM** para asegurar un código estructurado y escalable. Además de exhibir su experiencia técnica, el portal busca **optimizar la conversión** mediante botones de contacto estratégicos y una total adaptabilidad a dispositivos móviles. Finalmente, el proyecto se distribuye bajo una **licencia MIT**, permitiendo la revisión de su infraestructura mientras protege la propiedad intelectual de su trayectoria personal.
+
+<br>
 
 <div align="center">
-  <img src="./assets/img/screenshot.gif" alt="Vista previa del Portafolio" width="683" height="384" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    <img src="./assets/img/screenshot.gif" alt="Vista previa del Portafolio" width="95%" height="95%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 </div>
 
----
+<div align="right">
+    <p><br>🔗 <a href="https://joseazocar.pro/">Ver el Portafolio.</a></p>
+</div>
+
+<br>
 
 ## ✨ Características del Proyecto
 
-- **Hub de Proyectos (Portfolio Grid)**: Organización modular de trabajos realizados, donde cada elemento actúa como un caso de estudio rápido con enlaces a producción y código.
-- **Arquitectura SPA (Single Page Application)**: Implementación de navegación fluida que elimina las transiciones bruscas entre secciones, mejorando la retención del usuario.
-- **Integración de Marca Personal**: Coherencia visual total (colores, tipografía y tono) que conecta este portal con el currículum digital, creando un ecosistema profesional unificado.
-- **Optimización de Conversión (CTA)**: Presencia estratégica de botones de contacto y enlaces a redes profesionales (LinkedIn/GitHub) para reducir la fricción en la comunicación.
+- **Hub de Proyectos (Portfolio Grid):** Organización modular de trabajos realizados, donde cada elemento actúa como un caso de estudio rápido con enlaces a producción y código.
 
-## 🛠️ Tecnologías y Metodologías
+- **Arquitectura SPA (Single Page Application):** Implementación de navegación fluida que elimina las transiciones bruscas entre secciones, mejorando la retención del usuario.
 
-El stack tecnológico ha sido refinado para garantizar escalabilidad y mantenibilidad:
+- **Integración de Marca Personal:** Coherencia visual total (colores, tipografía y tono) que conecta este portal con el currículum digital, creando un ecosistema profesional unificado.
 
-* **Core**: HTML5 Semántico, CSS3 (Flexbox/Grid), JavaScript (ES6+).
-* **Estilización**: Metodología BEM, Google Fonts, Font Awesome, Animate On Scroll (AOS).  
-* **Infraestructura**: Git, despliegue continuo (CI/CD), SSL/TLS (HTTPS).
+- **Optimización de Conversión (CTA):** Presencia estratégica de botones de contacto y enlaces a redes profesionales (LinkedIn/GitHub) para reducir la fricción en la comunicación.
 
+- **Protección de Datos Sensibles (Zero-Exposure):** Implementación de funciones backend sin servidor para la protección y nula exposición del número telefónico en el frontend.
+
+<br>
+
+## 🛠️ Tecnologías y Técnicas Empleadas
+
+El stack tecnológico y las metodologías han sido refinados meticulosamente para garantizar la escalabilidad, el rendimiento y la mantenibilidad del sitio:
+
+- **Core del Frontend:** HTML5 Semántico, CSS3 (Flexbox/Grid) y JavaScript (ES6+).
+
+- **Estilización y Animación:** Metodología BEM para un CSS modular, Google Fonts, Font Awesome y efectos dinámicos con Animate On Scroll (AOS).
+
+- **Entorno de Construcción (Build Tools):** Vite para la compilación, empaquetado y optimización de recursos, gestionado a través de npm.
+
+- **Backend Serverless:** Netlify Functions para el procesamiento seguro de datos (como la protección de información de contacto) sin exponer credenciales ni datos privados.
+
+- **Optimización en Motores de Búsqueda (SEO):** Archivos `robots.txt` y `sitemap.xml` para optimizar la indexación y visibilidad web.
+
+- **Control de Versiones e Infraestructura:** Git, despliegue continuo (CI/CD) y seguridad mediante cifrado SSL/TLS (HTTPS).
+
+<br>
 
 ## 🎨 Uso y Experiencia de Usuario (UX)
 
-La UX en el portafolio principal está regida por el principio de "Prueba de Concepto", donde la estética apoya la credibilidad del desarrollador.
+La experiencia de usuario en este portafolio está regida por el principio de **"Prueba de Concepto"**, donde la estética apoya directamente la credibilidad técnica del desarrollador:
 
-- **Jerarquía Visual y Escaneo de Proyectos**: La experiencia se centra en la visualización de logros. Se utiliza una cuadrícula limpia donde las miniaturas de los proyectos permiten al usuario identificar el stack tecnológico utilizado antes incluso de leer la descripción, facilitando un reconocimiento técnico inmediato.
+- **Jerarquía Visual y Escaneo de Proyectos:** Estructura centrada en la visualización de logros a través de una cuadrícula limpia. Las miniaturas permiten al usuario identificar el stack tecnológico antes de leer la descripción, facilitando un reconocimiento técnico inmediato.
 
-- **Rendimiento y Fluidez (Performance-First)**: Siguiendo la línea de alta eficiencia, el sitio minimiza el uso de scripts pesados. La navegación entre el portafolio y el currículum está optimizada para ser instantánea, proyectando una imagen de infraestructura web bien gestionada.
+- **Rendimiento y Fluidez (Performance-First):** Minimización en el uso de scripts pesados. La navegación entre el portafolio y el currículum está optimizada para ser instantánea, proyectando una infraestructura web altamente eficiente y bien gestionada.
 
-- **Adaptabilidad Multiplataforma**: El diseño responde con precisión a diferentes breakpoints. En dispositivos móviles, los proyectos se presentan en una lista vertical táctil, asegurando que la navegación por el portafolio sea cómoda y funcional "en la palma de la mano".
+- **Adaptabilidad Multiplataforma (Responsive Design):** Diseño fluido adaptado con precisión a múltiples breakpoints. En dispositivos móviles, los proyectos se reorganizan en una lista vertical táctil, garantizando que la navegación sea cómoda, intuitiva y funcional.
 
-- **Interconectividad del Ecosistema**: La UX destaca por su capacidad de guiar al usuario. Si un visitante llega al portafolio, el diseño lo conduce naturalmente hacia el currículum detallado o hacia el contacto directo, cerrando el ciclo de reclutamiento o negocio de forma intuitiva.
+- **Interconectividad del Ecosistema:** Capacidad de guiar al visitante de forma natural. El diseño conduce al usuario de manera intuitiva hacia el currículum detallado o hacia el contacto directo, cerrando el ciclo de reclutamiento o negocio de forma efectiva.
+
+<br>
 
 ## 💻 Instalación y Configuración Local
 
-Si deseas revisar la estructura del código o realizar pruebas en un entorno local:
+Si deseas revisar la estructura del código, analizar su arquitectura o realizar pruebas en un entorno local, puedes hacerlo siguiendo estos pasos:
 
-1.  **Clonar el repositorio:**
+### Prerrequisitos
+
+Asegúrate de tener instalado [Node.js y npm](https://nodejs.org/) (recomendado para el flujo de trabajo moderno con Vite).
+
+### Paso a Paso
+
+1. **Clonar el repositorio:**
+
     ```bash
     git clone https://github.com/azocarone/portafolio.git
     ```
-2.  **Acceder al directorio:**
+
+2. **Acceder al directorio del proyecto:**
+
     ```bash
     cd portafolio
     ```
-3.  **Ejecución:**
-    Abre el archivo `index.html` empleando el plugin **Live Server** en VS Code para visualizar los cambios instantáneamente.
+
+3. **Instalar dependencias:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Ejecutar el proyecto localmente:**
+
+    - **Opción A (Recomendada - Flujo Vite):** Ejecuta el servidor de desarrollo para aprovechar la recarga rápida de Vite:
+     
+        ```bash
+        npm run dev
+        ```
+   
+   - **Opción B (Legacy / Sin empaquetar):** Abre directamente el archivo `index.html` empleando el plugin **Live Server** en Visual Studio Code para visualizar los cambios instantáneamente.
+
+<br>
 
 ## 📈 Roadmap de Mejoras
 
@@ -59,14 +108,24 @@ Si deseas revisar la estructura del código o realizar pruebas en un entorno loc
 - [x] Migración a hosting de alto rendimiento.
 - [ ] Sección de Blog para artículos técnicos.
 
+<br>
+
 ## ⚖️ Licencia
 
-Este proyecto está bajo la Licencia **MIT**. Siéntete libre de explorar el código, pero recuerda que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Azócar**.
+Este proyecto se encuentra bajo la Licencia **MIT**. Siéntete libre de explorar y utilizar el código, teniendo en cuenta que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Azócar**.
+
+<br>
 
 ---
 
-<div align="right">
-  <strong>José Antonio Azócar Marcano</strong><br>
-  Ing. Informático | Consultor I&O: Infraestructura y Ops.<br>
-  <a href="https://github.com/azocarone">@azocarone</a>
-</div>
+<br>
+
+<p align="center">
+    <img width="40px" src="./assets/img/azocarone.svg" align="right" alt="Logo" />
+    <div align="right">
+        <strong>José Antonio Azócar Marcano</strong><br>
+        Ing. Informático | Consultor I&O: Infraestructura y Ops.<br>
+        ⬆ <a href="#-portafolio-profesional---josé-azócar">Up</a>
+    </div>
+    <br clear="all">
+</p>
