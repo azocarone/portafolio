@@ -2,6 +2,28 @@
 
 <br>
 
+[![HTML5 Semántico](https://img.shields.io/badge/HTML5-Sem%C3%A1ntico-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3 Flexbox & Grid](https://img.shields.io/badge/CSS3-Flexbox%20%26%20Grid-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript ES6+](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+
+[![Metodología BEM](https://img.shields.io/badge/BEM-Metodolog%C3%ADa%20CSS-6332F6?style=flat)](https://en.bem.info/)
+[![Google Fonts](https://img.shields.io/badge/Google%20Fonts-Tipograf%C3%ADas-4285F4?style=flat&logo=googlefonts&logoColor=white)](https://fonts.google.com/)
+[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-Iconos-528DD7?style=flat&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
+[![AOS Animation](https://img.shields.io/badge/AOS-Animate%20On%20Scroll-00C7B7?style=flat)](https://michalsnik.github.io/aos/)
+
+[![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![npm](https://img.shields.io/badge/npm-Gestor%20de%20Paquetes-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/)
+
+[![Netlify Functions](https://img.shields.io/badge/Netlify%20Functions-Serverless-00C7B7?style=flat&logo=netlify&logoColor=white)](https://www.netlify.com/products/functions/)
+
+[![SEO Robots & Sitemap](https://img.shields.io/badge/SEO-robots.txt%20%26%20sitemap.xml-00599C?style=flat)](https://developers.google.com/search)
+
+[![Git](https://img.shields.io/badge/Git-Control%20de%20Versiones-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-Despliegue%20Continuo-2088FF?style=flat)](https://en.wikipedia.org/wiki/CI/CD)
+[![SSL/TLS HTTPS](https://img.shields.io/badge/SSL%2FTLS-HTTPS%20Seguro-008000?style=flat&logo=letsencrypt&logoColor=white)](https://en.wikipedia.org/wiki/HTTPS)
+
+<br>
+
 Este repositorio de contiene el código fuente del **portafolio profesional** de **José Azócar**, un consultor especializado en infraestructura tecnológica. El sitio funciona como una **vitrina digital** que organiza sus proyectos mediante una **arquitectura de página única** para ofrecer una navegación fluida y eficiente. El desarrollador emplea tecnologías fundamentales como **HTML5**, **CSS3** y **JavaScript**, aplicando la metodología **BEM** para asegurar un código estructurado y escalable. Además de exhibir su experiencia técnica, el portal busca **optimizar la conversión** mediante botones de contacto estratégicos y una total adaptabilidad a dispositivos móviles. Finalmente, el proyecto se distribuye bajo una **licencia MIT**, permitiendo la revisión de su infraestructura mientras protege la propiedad intelectual de su trayectoria personal.
 
 <br>
@@ -13,6 +35,17 @@ Este repositorio de contiene el código fuente del **portafolio profesional** de
 <div align="right">
     <p><br>🔗 <a href="https://joseazocar.pro/">Ver el Portafolio.</a></p>
 </div>
+
+<br>
+
+## 📖 Tabla de Contenidos
+
+- ✨ [Características del Proyecto](#-características-del-proyecto)
+- 🛠️ [Tecnologías y Técnicas Empleadas](#️-tecnologías-y-técnicas-empleadas)
+- 🎨 [Uso y Experiencia de Usuario (UX)](#-uso-y-experiencia-de-usuario-ux)
+- 💻 [Instalación y Configuración Local](#-instalación-y-configuración-local)
+- 📈 [Roadmap de Mejoras](#-roadmap-de-mejoras)
+- ⚖️ [Licencia](#️-licencia)
 
 <br>
 
