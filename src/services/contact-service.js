@@ -28,8 +28,6 @@ export const enviarMensajeWhatsApp = (datos, targetId) => {
         `*Asunto:* ${encodeURIComponent(subject)}%0A%0A` +
         `*Mensaje:*%0A${encodeURIComponent(message)}`;
 
-    targetId = "joseazocar.pro"
-
     const url = `https://wa.me/${targetId}?text=${texto}`;
     window.open(url, "_blank");
 };
