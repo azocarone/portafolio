@@ -16,9 +16,18 @@ export const Content = {
         },
         about: {
             title: "Perfil Profesional",
-            description1: "Soy <strong>Ingeniero en Informática</strong> y <strong>Máster en e-Commerce</strong>, con una identidad profesional definida por la pasión hacia la <strong>infraestructura</strong> y el hábito de trabajar sobre el <strong>terreno operacional</strong>. A lo largo de mi trayectoria, he transformado la tecnología en un <strong>activo estratégico</strong>, evolucionando desde los fundamentos del <strong>comercio electrónico</strong> y la <strong>gestión de sistemas críticos</strong> hacia la <strong>consultoría independiente</strong>.",
-            description2: "Mi trayectoria en entornos de alta responsabilidad, como la <strong>logística portuaria</strong>, me ha demostrado que la <strong>excelencia operativa</strong> nace de dos pilares independientes pero complementarios: el <strong>Clean Code</strong> para un software mantenible y la <strong>arquitectura física</strong> ejecutada con <strong>precisión técnica</strong>.",
-            description3: "Sobre esta base de <strong>rigor operativo</strong>, mi valor diferencial reside en la capacidad de integrar <strong>nuevas tecnologías</strong> para <strong>conectar el entorno físico</strong> con la <strong>infraestructura convencional</strong>, dotándola de <strong>inteligencia</strong> y diseñando <strong>soluciones a medida</strong> donde las herramientas tradicionales resultan insuficientes.",
+            description: `
+                <p>¡Hola! 👋 Soy <strong>Profesional de Tecnología de la Información y Sistemas</strong>, apasionado por garantizar la continuidad operativa, la estabilidad de la infraestructura de TI y la optimización de procesos a través de soluciones tecnológicas.</p>
+                <p>A lo largo de mi trayectoria, me he enfocado en liderar la disponibilidad 24/7 de entornos tecnológicos críticos, administrando sistemas ERP, redes y flujos de datos para asegurar que la información estratégica fluya de manera segura e ininterrumpida.</p>
+                <p>🚀 <strong>Mis principales fortalezas incluyen:</strong></p>
+                <ul class="about__list">
+                    <li><strong>Infraestructura y Redes:</strong> Supervisión y mantenimiento de redes, seguridad de redes, monitoreo de plataformas y observabilidad de sistemas.</li>
+                    <li><strong>Sistemas ERP e Integración de Datos:</strong> Administración y parametrización de sistemas ERP, flujos de datos (<em>data pipelines</em>), procesos ETL e integración de APIs.</li>
+                    <li><strong>Gestión de Operaciones y Seguridad:</strong> Implementación de buenas prácticas de seguridad, gestión de accesos (IAM) y soporte técnico a dispositivos en campo.</li>
+                    <li><strong>Gestión de Proyectos y Personas:</strong> Coordinación con partes interesadas (<em>stakeholders</em>), adaptabilidad al cambio y comunicación efectiva con equipos multidisciplinarios.</li>
+                </ul>
+                <p>Me enfoco en conectar la tecnología con la eficiencia operativa del negocio. Si buscas optimizar la infraestructura de TI o implementar proyectos de integración de sistemas, ¡estemos en contacto! 📩</p>
+            `
         },
         education: {
             title: "Formación Académica",
@@ -72,8 +81,10 @@ export const Content = {
         },
         contact: {
             title: "Contacto",
-            promo1: "¿Necesita un especialista en Tecnologías de la Información para su próximo proyecto?",
-            promo2: "Le invito a completar el formulario. A la brevedad, me comunicaré con usted para concertar una entrevista.",
+            promo: `
+                <p><em>¿Necesita un especialista en Tecnologías de la Información para su próximo proyecto?</em></p>
+                <p><em>Le invito a completar el formulario. A la brevedad, me comunicaré con usted para concertar una entrevista.</em></p>
+            `,
             form: {
                 name: {
                     label: "Nombre",
@@ -129,9 +140,18 @@ export const Content = {
         },
         about: {
             title: "Professional profile",
-            description1: "I hold a Bachelor’s degree in <strong>Computer Science</strong> and a Master’s degree in <strong>e-Commerce</strong>, with a professional identity defined by a passion for <strong>infrastructure</strong> and a hands-on <strong>operational approach</strong>. Throughout my career, I have turned technology into a <strong>strategic asset</strong>, evolving from the fundamentals of <strong>e-commerce</strong> and <strong>critical systems management</strong> to <strong>independent consulting</strong>.",
-            description2: "My career in high-responsibility environments, such as <strong>port logistics</strong>, has demonstrated to me that <strong>operational excellence</strong> stems from two independent yet complementary pillars: <strong>Clean Code</strong> for maintainable software and <strong>physical architecture</strong> executed with <strong>technical precision</strong>.",
-            description3: "Building upon this foundation of <strong>operational rigor</strong>, my core value lies in the ability to integrate <strong>emerging technologies</strong> to <strong>bridge the physical environment</strong> with <strong>conventional infrastructure</strong>, adding <strong>intelligence</strong> and designing <strong>tailored solutions</strong> where traditional tools fall short.",
+            description: `
+                <p>Hi! 👋 I am an <strong>Information Technology and Systems Professional</strong>, passionate about ensuring operational continuity, IT infrastructure stability, and process optimization through technology solutions.</p>
+                <p>Throughout my career, I have focused on leading 24/7 availability for critical technology environments, managing ERP systems, networks, and data flows to ensure strategic information flows securely and uninterruptedly.</p>
+                <p>🚀 <strong>Key Strengths & Competencies:</strong></p>
+                <ul class="about__list">
+                    <li><strong>Infrastructure & Networking:</strong> Network supervision and maintenance, network security, platform monitoring, and system observability.</li>
+                    <li><strong>ERP Systems & Data Integration:</strong> ERP administration and parameterization, data pipelines, ETL processes, and API integrations.</li>
+                    <li><strong>Operations & Security Management:</strong> Security best practices implementation, Identity and Access Management (IAM), and technical support for field devices.</li>
+                    <li><strong>Project & Team Leadership:</strong> Stakeholder management, adaptability to change, and effective communication with multidisciplinary teams.</li>
+                </ul>
+                <p>I focus on aligning technology with business operational efficiency. If you are looking to optimize your IT infrastructure or implement system integration projects, let's connect! 📩</p>
+            `
         },
         education: {
             title: "Academic Education",
@@ -185,8 +205,10 @@ export const Content = {
         },
         contact: {
             title: "Contact",
-            promo1: "Do you need an Information Technology specialist for your next project?",
-            promo2: "I invite you to complete the form. I will contact you shortly to arrange an interview.",
+            promo: `
+                <p><em>Do you need an Information Technology specialist for your next project?</em></p>
+                <p><em>I invite you to complete the form. I will contact you shortly to arrange an interview.</em></p>
+            `,
             form: {
                 name: {
                     label: "Name",
@@ -228,5 +250,3 @@ export const Content = {
         }
     }
 }
-
-
