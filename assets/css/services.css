@@ -1,28 +1,62 @@
 :root {
-    --services-gap: var(--spacing);
-    --services-padding: var(--spacing);
-    --services-title-color: #373737;
+    --services-gap: 2rem;
+    --services-padding: 3rem 1rem;
+    --services-title-color: #ffffff; /* Solucionado: Título visible en fondo oscuro */
     --services-text-color: #444444;
-    --services-item-bg: #F5F5F5;
-    --services-item-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    --services-item-bg: linear-gradient(145deg, #3d3d3d, #2a2a2a);
+    --services-item-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --services-icon-color: #222222;
-    --services-title-font-size: calc(var(--font-size-base) * 2);
-    --services-item-title-font-size: calc(var(--font-size-base) * 1.2);
-    --services-item-line-height: calc(var(--line-height-base) * 0.8);
+    --services-title-font-size: calc(var(--font-size-base, 1rem) * 2);
+    --services-subtitle-font-size: calc(var(--font-size-base, 1rem) * 1.35);
+    --services-subtitle-border-color: #575757;
+    --services-item-title-font-size: calc(var(--font-size-base, 1rem) * 1.2);
+    --services-item-line-height: calc(var(--line-height-base, 1.5) * 0.8);
 }
 
 .services {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--services-gap);
+    gap: calc(var(--services-gap) * 1.5);
     padding: var(--services-padding);
+    width: 100%;
 }
 
 .services__title {
     font-size: var(--services-title-font-size);
     font-weight: 700;
     text-align: center;
+    margin-bottom: 1rem;
+    color: var(--services-title-color);
+}
+
+/* Contenedor principal que engloba ambos bloques */
+.services__container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--services-gap) * 2.5);
+    width: var(--container-width, 100%);
+    max-width: var(--max-width-container, 1200px);
+}
+
+/* Subgrupo de cada bloque (IA & Automatización / Infraestructura IT) */
+.services__subgroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--services-gap);
+    width: 100%;
+}
+
+/* Título de cada bloque */
+.services__subtitle {
+    font-size: var(--services-subtitle-font-size);
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    border-left: 4px solid var(--services-subtitle-border-color);
+    border-radius: 2px; /* Suaviza las esquinas de la barrita vertical */
+    padding-left: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .services__list {
@@ -30,39 +64,78 @@
     flex-direction: column;
     gap: var(--services-gap);
     list-style: none;
-    width: var(--container-width);
-    max-width: var(--max-width-container);
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .services__item {
-    text-align: left; /* Alineado a la izquierda se siente más profesional para servicios */
-    background: #4d4d4d; /* Un gris ligeramente más claro que el body para generar profundidad */
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-top: 4px solid var(--accent-color); /* El toque distintivo */
-    border-radius: 0.75rem;
-    padding: 2.5rem 2rem;
-    box-shadow: var(--card-shadow-soft);
-    transition: var(--transition-smooth);
-    position: relative;
+    list-style: none;
+    width: 100%;
 }
 
-.services__item:hover {
-    transform: translateY(-12px);
-    background: #555555;
-    box-shadow: var(--card-shadow-hover);
+/* Tarjeta individual con diseño de alta gama (Dark Tech Aesthetic) */
+.service-card {
+    text-align: left;
+    background: linear-gradient(145deg, #3d3d3d, #2a2a2a);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.4s ease,
+                background 0.4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efecto de destello (glow) sutil en la esquina al hacer hover */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+    opacity: 0;
+    filter: blur(20px);
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.service-card:hover::before {
+    opacity: 0.15;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    background: linear-gradient(145deg, #444444, #313131);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                0 0 25px rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .services__item-icon {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: var(--accent-color); /* El icono resalta */
+    color: var(--accent-color);
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .services__item-icon {
+    transform: scale(1.1);
 }
 
 .services__item-title {
     font-size: var(--services-item-title-font-size);
     font-weight: 700;
-    color: #ffffff; /* Blanco puro para el título */
+    color: #ffffff;
     margin-bottom: 0.75rem;
 }
 
@@ -72,19 +145,22 @@
     font-style: normal;
     text-transform: uppercase;
     font-size: 0.75rem;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     color: var(--accent-color);
     margin-bottom: 1rem;
     display: block;
 }
 
 .services__item-description {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-base, 1rem);
     font-weight: 400;
     line-height: 1.6;
-    color: #cccccc; /* Gris claro para el cuerpo */
+    color: #cccccc;
 }
 
+/* --- Media Queries --- */
+
+/* Tablets (A partir de 768px) */
 @media screen and (min-width: 768px) {
     .services__list {
         flex-direction: row;
@@ -93,12 +169,25 @@
     }
 
     .services__item {
-        flex: 1 1 calc(50% - var(--services-gap));
+        flex: 1 1 calc(50% - (var(--services-gap) / 2));
+    }
+    
+    .services__item:nth-child(3) {
+        flex: 1 1 100%;
     }
 }
 
+/* Pantallas Grandes / Desktops (A partir de 1024px) - Simetría Horizontal Perfecta */
 @media screen and (min-width: 1024px) {
+    .services__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
     .services__item {
-        flex: 1 1 calc(33.333% - var(--services-gap));
+        flex: unset;
+        width: 100%;
+        grid-column: span 1;
     }
 }
