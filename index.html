@@ -74,12 +74,12 @@
                         <a class="header__menu-link" href="#about" data-i18n="nav.about"></a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#education" data-i18n="nav.education"></a>
-                    </li>
-                    <li class="header__menu-item">
                         <a class="header__menu-link" href="#services" data-i18n="nav.services"></a>
                     </li>
                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#education" data-i18n="nav.education"></a>
+                    </li>
+                     <li class="header__menu-item">
                         <a class="header__menu-link" href="#projects" data-i18n="nav.projects"></a>
                     </li>
                     <li class="header__menu-item header__menu-item--contact">
@@ -115,6 +115,87 @@
             <div class="about__description" data-i18n="about.description"></div>
         </section>
 
+        <!-- Services -->
+        <section class="main__section services" id="services" data-aos="fade-up" aria-labelledby="services-title">
+            <!-- 1. Título principal de la sección de Servicios -->
+            <h2 id="services-title" class="services__title" data-i18n="services.title"></h2>
+        
+            <!-- Contenedor principal de las subsecciones (opcional, útil para Flex/Grid) -->
+            <div class="services__container">
+        
+                <!-- 2. PRIMER SUBSERVICIO (Categoría 1) -->
+                <section class="services__subgroup" aria-labelledby="subservice-1-title">
+                    <h3 id="subservice-1-title" class="services__subtitle" data-i18n="services.sub1.title"></h3>
+        
+                    <!-- Lista de servicios de esta categoría -->
+                    <ul class="services__list">
+                        <li class="services__item" data-aos="flip-left">
+                            <article class="service-card">
+                                <i class="services__item-icon fas fa-network-wired fa-2x" aria-hidden="true"></i>
+                                <h4 class="services__item-title" data-i18n="services.sub1.items.agents.title"></h4>
+                                <p class="services__item-tagline" data-i18n="services.sub1.items.agents.tag"></p>
+                                <p class="services__item-description" data-i18n="services.sub1.items.agents.description"></p>
+                            </article>
+                        </li>
+
+                        <li class="services__item" data-aos="flip-left">
+                            <article class="service-card">
+                                <i class="services__item-icon fas fa-network-wired fa-2x" aria-hidden="true"></i>
+                                <h4 class="services__item-title" data-i18n="services.sub1.items.generative.title"></h4>
+                                <p class="services__item-tagline" data-i18n="services.sub1.items.generative.tag"></p>
+                                <p class="services__item-description" data-i18n="services.sub1.items.generative.description"></p>
+                            </article>
+                        </li>
+
+                        <li class="services__item" data-aos="flip-left">
+                            <article class="service-card">
+                                <i class="services__item-icon fas fa-network-wired fa-2x" aria-hidden="true"></i>
+                                <h4 class="services__item-title" data-i18n="services.sub1.items.automation.title"></h4>
+                                <p class="services__item-tagline" data-i18n="services.sub1.items.automation.tag"></p>
+                                <p class="services__item-description" data-i18n="services.sub1.items.automation.description"></p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+        
+                <!-- 3. SEGUNDO SUBSERVICIO (Categoría 2) -->
+                <section class="services__subgroup" aria-labelledby="subservice-2-title">
+                    <h3 id="subservice-2-title" class="services__subtitle" data-i18n="services.sub2.title"></h3>
+        
+                    <!-- Lista de servicios de esta categoría -->
+                    <ul class="services__list">
+                        <li class="services__item" data-aos="flip-left">
+                            <article class="service-card">
+                                <i class="services__item-icon fas fa-network-wired fa-2x" aria-hidden="true"></i>
+                                <h4 class="services__item-title" data-i18n="services.sub2.items.networks.title"></h4>
+                                <p class="services__item-tagline" data-i18n="services.sub2.items.networks.tag"></p>
+                                <p class="services__item-description" data-i18n="services.sub2.items.networks.description"></p>
+                            </article>
+                        </li>
+        
+                        <li class="services__item" data-aos="flip-left">
+                            <article class="service-card">
+                                <i class="services__item-icon fas fa-gears fa-2x" aria-hidden="true"></i>
+                                <h4 class="services__item-title" data-i18n="services.sub2.items.systems.title"></h4>
+                                <p class="services__item-tagline" data-i18n="services.sub2.items.systems.tag"></p>
+                                <p class="services__item-description" data-i18n="services.sub2.items.systems.description"></p>
+                            </article>
+                        </li>
+        
+                        <li class="services__item" data-aos="flip-left">
+                            <article class="service-card">
+                                <i class="services__item-icon fas fa-shield-halved fa-2x" aria-hidden="true"></i>
+                                <h4 class="services__item-title" data-i18n="services.sub2.items.security.title"></h4>
+                                <p class="services__item-tagline" data-i18n="services.sub2.items.security.tag"></p>
+                                <p class="services__item-description" data-i18n="services.sub2.items.security.description"></p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+        
+            </div>
+        </section>
+
         <!-- Education -->
         <section class="main__section education" id="education" data-aos="fade-up" aria-labelledby="education-title">
             <h2 id="education-title" class="education__title" data-i18n="education.title"></h2>
@@ -145,31 +226,6 @@
                     <a class="education__institution" href="https://www.iunp.edu.ve/" target="_blank" rel="noopener noreferrer"
                         data-i18n="education.items.iunp.institution">
                     </a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Services -->
-        <section class="main__section services" id="services" data-aos="fade-up" aria-labelledby="services-title">
-            <h2 id="services-title" class="services__title" data-i18n="services.title"></h2>
-            <ul class="services__list">
-                <li class="services__item" data-aos="flip-left">
-                    <i class="services__item-icon fas fa-network-wired fa-2x" aria-hidden="true"></i>
-                    <h3 class="services__item-title" data-i18n="services.items.networks.title"></h3>
-                    <p class="services__item-tagline" data-i18n="services.items.networks.tag"></p>
-                    <p class="services__item-description" data-i18n="services.items.networks.description"></p>
-                </li>
-                <li class="services__item" data-aos="flip-left">
-                    <i class="services__item-icon fas fa-gears fa-2x" aria-hidden="true"></i>
-                    <h3 class="services__item-title" data-i18n="services.items.systems.title"></h3>
-                    <p class="services__item-tagline" data-i18n="services.items.systems.tag"></p>
-                    <p class="services__item-description" data-i18n="services.items.systems.description"></p>
-                </li>
-                <li class="services__item" data-aos="flip-left">
-                    <i class="services__item-icon fas fa-shield-halved fa-2x" aria-hidden="true"></i>
-                    <h3 class="services__item-title" data-i18n="services.items.security.title"></h3>
-                    <p class="services__item-tagline" data-i18n="services.items.security.tag"></p>
-                    <p class="services__item-description" data-i18n="services.items.security.description"></p>
                 </li>
             </ul>
         </section>

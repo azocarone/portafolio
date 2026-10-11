@@ -5,69 +5,85 @@ export const Content = {
         nav: {
             title: "Portafolio",
             about: "Perfil",
-            education: "Formación",
-            services: "Consultoría",
+            services: "Servicios",
+            education: "Educación",
             projects: "Proyectos",
             contact: "Contacto",
         },
         profile: {
-            title: "Ing. Informático | Consultor I&O: Infraestructura y Ops.",
+            title: "Ing. en Informática | Especialista en Agentes de IA, Cloud & Automatización",
             linkTitle: "Haga clic para ver Currículum"
         },
         about: {
             title: "Perfil Profesional",
             description: `
-                <p>¡Hola! 👋 Soy <strong>Profesional de Tecnología de la Información y Sistemas</strong>, apasionado por garantizar la continuidad operativa, la estabilidad de la infraestructura de TI y la optimización de procesos a través de soluciones tecnológicas.</p>
-                <p>A lo largo de mi trayectoria, me he enfocado en liderar la disponibilidad 24/7 de entornos tecnológicos críticos, administrando sistemas ERP, redes y flujos de datos para asegurar que la información estratégica fluya de manera segura e ininterrumpida.</p>
-                <p>🚀 <strong>Mis principales fortalezas incluyen:</strong></p>
-                <ul class="about__list">
-                    <li><strong>Infraestructura y Redes:</strong> Supervisión y mantenimiento de redes, seguridad de redes, monitoreo de plataformas y observabilidad de sistemas.</li>
-                    <li><strong>Sistemas ERP e Integración de Datos:</strong> Administración y parametrización de sistemas ERP, flujos de datos (<em>data pipelines</em>), procesos ETL e integración de APIs.</li>
-                    <li><strong>Gestión de Operaciones y Seguridad:</strong> Implementación de buenas prácticas de seguridad, gestión de accesos (IAM) y soporte técnico a dispositivos en campo.</li>
-                    <li><strong>Gestión de Proyectos y Personas:</strong> Coordinación con partes interesadas (<em>stakeholders</em>), adaptabilidad al cambio y comunicación efectiva con equipos multidisciplinarios.</li>
-                </ul>
-                <p>Me enfoco en conectar la tecnología con la eficiencia operativa del negocio. Si buscas optimizar la infraestructura de TI o implementar proyectos de integración de sistemas, ¡estemos en contacto! 📩</p>
+                <p>¡Hola! 👋 Bienvenido a mi espacio digital. Soy Ingeniero en Informática con una visión integral que une la ingeniería de software clásica con las tecnologías más disruptivas de la actualidad.</p>
+                <p>Tras años fortaleciendo mis competencias en desarrollo, bases de datos y entornos cloud, mi enfoque principal se centra en la <strong><em>Inteligencia Artificial y la Automatización Avanzada</em></strong>. Como profesional certificado por Oracle, hoy diseño ecosistemas multiagente con LangGraph, integro modelos de lenguaje con LangChain y optimizo flujos operativos complejos utilizando n8n y arquitecturas RAG.</p>
+                <p>Si buscas automatizar procesos, escalar operaciones o potenciar la toma de decisiones con tecnología de punta, estás en el lugar indicado. ¡Me encantará conectar contigo y construir grandes soluciones!</p>
             `
         },
+        services: {
+            title: "Servicios & Especialidades",
+            sub1: {
+                title: "Inteligencia Artificial & Automatización Avanzada",
+                items: {
+                    agents: {
+                        title: "Sistemas Multiagente",
+                        tag: '"Autonomía inteligente"',
+                        description: "Diseño e implementación de sistemas multiagente avanzados con LangGraph que simulan flujos de trabajo colaborativos, optimizando la toma de decisiones complejas y reduciendo la intervención manual en procesos de negocio."
+                    },
+                    generative: {
+                        title: "Arquitectura RAG",
+                        tag: '"Conocimiento conectado"',
+                        description: "Orquestación de Grandes Modelos de Lenguaje (LLMs) mediante LangChain y despliegue de arquitecturas RAG, conectando los datos internos de tu organización con respuestas precisas, contextuales y en tiempo real."
+                    },
+                    automation: {
+                        title: "Workflows Inteligentes",
+                        tag: '"Sincronización continua"',
+                        description: "Automatización integral de procesos operativos y sincronización de plataformas mediante n8n, enlazando bases de datos, APIs y sistemas corporativos para acelerar la productividad y eliminar fricciones operativas."
+                    }
+                }
+            },
+            sub2: {
+                title: "Infraestructura & Operaciones IT",
+                items: {
+                    networks: {
+                        title: "Ingeniería de Redes",
+                        tag: '"Observabilidad total"',
+                        description: "Diseño e implemento redes LAN y cableado estructurado de baja latencia bajo normas técnicas, integrando monitoreo continuo para asegurar la transmisión fluida y segura de tus flujos de datos estratégicos."
+                    },
+                    systems: {
+                        title: "Administración de Sistemas",
+                        tag: '"Eficiencia integrada"',
+                        description: "Optimizo la estabilidad de tus servidores Linux, sistemas ERP e integración de datos, conectando la infraestructura tecnológica con la eficiencia del negocio para acelerar la toma de decisiones."
+                    },
+                    security: {
+                        title: "Ciberseguridad Perimetral",
+                        tag: '"Disponibilidad 24/7"',
+                        description: "Aseguro la continuidad operativa de tu negocio mediante análisis forense, seguridad perimetral y gestión de accesos (IAM), blindando la infraestructura y resolviendo incidentes críticos para garantizar un entorno 100% disponible."
+                    }
+                }
+            }
+        },
         education: {
-            title: "Formación Académica",
+            title: "Educación Académica & Certificaciones",
             items: {
                 uc3m: {
                     degree: "Máster en Comercio Electrónico",
                     institution: 'Universidad "Carlos III de Madrid"'
                 },
                 uah: {
-                    degree: "Ingeniería en Informática",
+                    degree: "Ingeniero en Informática",
                     institution: 'Universidad "Alejandro de Humboldt"' 
                 },
                 iunp: {
-                    degree: "Técnico Superior en Computación",
+                    degree: "TSU en Computación",
                     institution: 'Instituto Universitario de "Nuevas Profesiones"'
                 },
             }
         },
-        services: {
-            title: "Consultor de Infraestructura & Operaciones IT",
-            items: {
-                networks: {
-                    title: "Arquitectura Técnica",
-                    tag: '"Infraestructura de Alto Rendimiento"',
-                    description: "Diseño y despliego <strong>redes LAN</strong> de baja latencia, supervisando desde el <strong>cableado estructurado</strong> hasta las <strong>instalaciones eléctricas especializadas</strong>. Si el hardware no tiene una base sólida, el software no puede brillar."
-                },
-                systems: {
-                    title: "Continuidad de Procesos",
-                    tag: '"Operaciones Críticas"',
-                    description: "Administro entornos <strong>GNU/Linux</strong> y gestiono el ciclo de vida completo de sus <strong>activos digitales</strong>. Mi fuerte es la <strong>resolución de incidentes Nivel 2 y 3</strong>, garantizando que sus servicios permanezcan disponibles cuando más se necesitan."
-                },
-                security: {
-                    title: "Blindaje del Ecosistema",
-                    tag: '"Ciberseguridad y Resiliencia"',
-                    description: "No solo implemento <strong>seguridad perimetral</strong>; ejecuto <strong>análisis forenses</strong> tras incidentes para cerrar brechas y mitigar vulnerabilidades reales mediante un enfoque preventivo y reactivo."
-                }
-            }
-        },
         projects: {
-            title: "Soluciones & Proyectos",
+            title: "Proyectos & Soluciones",
             items: {
                 resume: {
                     title: "Currículum",
@@ -82,8 +98,7 @@ export const Content = {
         contact: {
             title: "Contacto",
             promo: `
-                <p><em>¿Necesita un especialista en Tecnologías de la Información para su próximo proyecto?</em></p>
-                <p><em>Le invito a completar el formulario. A la brevedad, me comunicaré con usted para concertar una entrevista.</em></p>
+                <p>🤝 <em>¿Interesado en conectar o explorar oportunidades de colaboración en IA, Cloud Computing o transformación digital? ¡Escríbeme y conversemos!</em></p>
             `,
             form: {
                 name: {
@@ -129,69 +144,85 @@ export const Content = {
         nav: {
             title: "Portfolio",
             about: "Profile",
+            services: "Services",
             education: "Education",
-            services: "Consulting",
             projects: "Projects",
             contact: "Contact",
         },
         profile: {
-            title: "Computer Engineer | I&O Consultant: Infrastructure & Ops.",
+            title: "Computer Engineer | AI Agent Engineering, Cloud & Automation Specialist",
             linkTitle: "Click to view Résumé"
         },
         about: {
             title: "Professional profile",
             description: `
-                <p>Hi! 👋 I am an <strong>Information Technology and Systems Professional</strong>, passionate about ensuring operational continuity, IT infrastructure stability, and process optimization through technology solutions.</p>
-                <p>Throughout my career, I have focused on leading 24/7 availability for critical technology environments, managing ERP systems, networks, and data flows to ensure strategic information flows securely and uninterruptedly.</p>
-                <p>🚀 <strong>Key Strengths & Competencies:</strong></p>
-                <ul class="about__list">
-                    <li><strong>Infrastructure & Networking:</strong> Network supervision and maintenance, network security, platform monitoring, and system observability.</li>
-                    <li><strong>ERP Systems & Data Integration:</strong> ERP administration and parameterization, data pipelines, ETL processes, and API integrations.</li>
-                    <li><strong>Operations & Security Management:</strong> Security best practices implementation, Identity and Access Management (IAM), and technical support for field devices.</li>
-                    <li><strong>Project & Team Leadership:</strong> Stakeholder management, adaptability to change, and effective communication with multidisciplinary teams.</li>
-                </ul>
-                <p>I focus on aligning technology with business operational efficiency. If you are looking to optimize your IT infrastructure or implement system integration projects, let's connect! 📩</p>
+                <p>Hello! 👋 Welcome to my digital space. I am a Computer Engineer with a comprehensive vision that bridges traditional software engineering with today's most disruptive technologies.</p>
+                <p>After years of strengthening my skills in development, databases, and cloud environments, my main focus centers on <strong><em>Artificial Intelligence and Advanced Automation</em></strong>. As an Oracle-certified professional, I currently design multi-agent ecosystems with LangGraph, integrate language models using LangChain, and optimize complex operational workflows using n8n and RAG architectures.</p>
+                <p>If you are looking to automate processes, scale operations, or enhance decision-making with cutting-edge technology, you are in the right place. I’d love to connect with you and build great solutions together!</p>
             `
         },
+        services: {
+            title: "Services & Specialties",
+            sub1: {
+                title: "AI & Advanced Automation",
+                items: {
+                    agents: {
+                        title: "Multi-Agent Systems",
+                        tag: '"Intelligent autonomy"',
+                        description: "Design and implementation of advanced multi-agent systems using LangGraph that simulate collaborative workflows, optimizing complex decision-making and minimizing manual intervention in business processes."
+                    },
+                    generative: {
+                        title: "RAG Architecture",
+                        tag: '"Connected knowledge"',
+                        description: "Orchestration of Large Language Models (LLMs) via LangChain and deployment of RAG architectures, connecting your organization's internal data with precise, contextual, and real-time responses."
+                    },
+                    automation: {
+                        title: "Intelligent Workflows",
+                        tag: '"Continuous synchronization"',
+                        description: "End-to-end automation of operational processes and platform synchronization using n8n, linking databases, APIs, and enterprise systems to accelerate productivity and eliminate operational friction."
+                    }
+                }
+            },
+            sub2: {
+                title: "IT Infrastructure & Operations",
+                items: {
+                    networks: {
+                        title: "Network Engineering",
+                        tag: '"Total observability"',
+                        description: "Design and implementation of low-latency LAN networks and structured cabling under technical standards, integrating continuous monitoring to ensure the smooth and secure transmission of your strategic data flows."
+                    },
+                    systems: {
+                        title: "Systems Administration",
+                        tag: '"Integrated efficiency"',
+                        description: "Optimization of Linux server stability, ERP systems, and data integration, connecting technological infrastructure with business efficiency to accelerate decision-making."
+                    },
+                    security: {
+                        title: "Perimeter Cybersecurity",
+                        tag: '"24/7 Availability"',
+                        description: "Ensuring business operational continuity through forensic analysis, perimeter security, and Identity and Access Management (IAM), hardening infrastructure and resolving critical incidents to guarantee a 100% available environment."
+                    }
+                }
+            }
+        },       
         education: {
-            title: "Academic Education",
+            title: "Academic Education & Certifications",
             items: {
                 uc3m: {
                     degree: "Master's in E-commerce",
                     institution: 'University "Carlos III de Madrid"'
                 },
                 uah: {
-                    degree: "Computer Engineering",
+                    degree: "B.S. in Computer Engineering",
                     institution: 'University "Alejandro de Humboldt"'
                 },
                 iunp: {
-                    degree: "Advanced Technician in Computing",
+                    degree: "A.S. in Computer Technology",
                     institution: 'University Institute of "Nuevas Profesiones"'
                 },
             }
         },
-        services: {
-            title: "IT Infrastructure & Operations Consultant",
-            items: {
-                networks: {
-                    title: "Technical Architecture",
-                    tag: '"High-Performance Infrastructure"',
-                    description: "I design and deploy low-latency <strong>LAN networks</strong>, overseeing everything from <strong>structured cabling</strong> to <strong>specialized electrical installations</strong>. If the hardware lacks a solid foundation, the software cannot shine."
-                },
-                systems: {
-                    title: "Process Continuity",
-                    tag: '"Critical Operations"',
-                    description: "I manage <strong>GNU/Linux</strong> environments and oversee the full lifecycle of your <strong>digital assets</strong>. My expertise lies in <strong>Tier 2 and 3 incident resolution</strong>, ensuring your services remain available when they are needed most."
-                },
-                security: {
-                    title: "Ecosystem Shielding",
-                    tag: '"Cybersecurity & Resilience"',
-                    description: "I do more than just implement <strong>perimeter security</strong>; I perform post-incident <strong>forensic analysis</strong> to close gaps and mitigate real-world vulnerabilities through both preventive and reactive approaches."
-                }
-            }
-        },
         projects: {
-            title: "Solutions & Projects",
+            title: "Projects & Solutions",
             items: {
                 resume: {
                     title: "Curriculum",
@@ -206,8 +237,7 @@ export const Content = {
         contact: {
             title: "Contact",
             promo: `
-                <p><em>Do you need an Information Technology specialist for your next project?</em></p>
-                <p><em>I invite you to complete the form. I will contact you shortly to arrange an interview.</em></p>
+                <p>🤝 <em>Interested in connecting or collaborating on AI Engineering, Cloud Computing, or Digital Transformation projects? Let's connect!</em></p>
             `,
             form: {
                 name: {
