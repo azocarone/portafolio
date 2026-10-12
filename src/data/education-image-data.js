@@ -1,4 +1,4 @@
-const keys = ["uc3m", "uah", "iunp"];
+const keys = ["uc3m", "uah", "iunp", "oracle"];
 
 export const ImageData = Object.fromEntries(
     keys.map(key => [

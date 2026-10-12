@@ -80,6 +80,10 @@ export const Content = {
                     degree: "TSU en Computación",
                     institution: 'Instituto Universitario de "Nuevas Profesiones"'
                 },
+                oracle: {
+                    degree: "OCI AI Foundations Associate",
+                    institution: 'Universidad de Oracle'
+                }
             }
         },
         projects: {
@@ -219,6 +223,10 @@ export const Content = {
                     degree: "A.S. in Computer Technology",
                     institution: 'University Institute of "Nuevas Profesiones"'
                 },
+                oracle: {
+                    degree: "OCI AI Foundations Associate",
+                    institution: 'Oracle University'
+                }
             }
         },
         projects: {
