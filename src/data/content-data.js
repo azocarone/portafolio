@@ -6,8 +6,9 @@ export const Content = {
             title: "Portafolio",
             about: "Perfil",
             services: "Servicios",
-            education: "Educación",
+            education: "Conocimiento",
             projects: "Proyectos",
+            resume: "Currículum",
             contact: "Contacto",
         },
         profile: {
@@ -66,23 +67,36 @@ export const Content = {
             }
         },
         education: {
-            title: "Educación Académica & Certificaciones",
-            items: {
-                uc3m: {
-                    degree: "Máster en Comercio Electrónico",
-                    institution: 'Universidad "Carlos III de Madrid"'
-                },
-                uah: {
-                    degree: "Ingeniero en Informática",
-                    institution: 'Universidad "Alejandro de Humboldt"' 
-                },
-                iunp: {
-                    degree: "TSU en Computación",
-                    institution: 'Instituto Universitario de "Nuevas Profesiones"'
-                },
-                oracle: {
-                    degree: "OCI AI Foundations Associate",
-                    institution: 'Universidad de Oracle'
+            title: "Estructura de Conocimiento",
+            sub1: {
+                title: "Educación Académica",
+                items: {
+                    uc3m: {
+                        tag: "2005 – 2006 | Posgrado",
+                        degree: "Máster en Comercio Electrónico",
+                        institution: 'Universidad "Carlos III de Madrid"'
+                    },
+                    uah: {
+                        tag: "1999 – 2004 | Grado",
+                        degree: "Ingeniero en Informática",
+                        institution: 'Universidad "Alejandro de Humboldt"' 
+                    },
+                    iunp: {
+                        tag: "1988 – 1992 | Técnico",
+                        degree: "TSU en Computación",
+                        institution: 'Instituto Universitario de "Nuevas Profesiones"'
+                    }
+                }
+            },
+            sub2: {
+                title: "Certificaciones y Formación",
+                items: {
+                    tag: "",
+                    oracle: {
+                        tag: "2026 – 2028 | Certificación | IA",
+                        degree: "OCI AI Foundations Associate",
+                        institution: 'Universidad de Oracle'
+                    }
                 }
             }
         },
@@ -149,13 +163,14 @@ export const Content = {
             title: "Portfolio",
             about: "Profile",
             services: "Services",
-            education: "Education",
+            education: "Knowledge",
             projects: "Projects",
+            resume: "Resume",
             contact: "Contact",
         },
         profile: {
             title: "Computer Engineer | AI Agent Engineering, Cloud & Automation Specialist",
-            linkTitle: "Click to view Résumé"
+            linkTitle: "Click to view Resume"
         },
         about: {
             title: "Professional profile",
@@ -209,23 +224,35 @@ export const Content = {
             }
         },       
         education: {
-            title: "Academic Education & Certifications",
-            items: {
-                uc3m: {
-                    degree: "Master's in E-commerce",
-                    institution: 'University "Carlos III de Madrid"'
-                },
-                uah: {
-                    degree: "B.S. in Computer Engineering",
-                    institution: 'University "Alejandro de Humboldt"'
-                },
-                iunp: {
-                    degree: "A.S. in Computer Technology",
-                    institution: 'University Institute of "Nuevas Profesiones"'
-                },
-                oracle: {
-                    degree: "OCI AI Foundations Associate",
-                    institution: 'Oracle University'
+            title: "Knowledge Structure",
+            sub1: {
+                title: " Academic Education",
+                items: {
+                    uc3m: {
+                        tag: "2005 – 2006 | Postgraduate",
+                        degree: "Master's in E-commerce",
+                        institution: 'University "Carlos III de Madrid"'
+                    },
+                    uah: {
+                        tag: "1999 – 2004 | Grade",
+                        degree: "B.S. in Computer Engineering",
+                        institution: 'University "Alejandro de Humboldt"'
+                    },
+                    iunp: {
+                        tag: "1988 – 1992 | Technician",
+                        degree: "A.S. in Computer Technology",
+                        institution: 'University Institute of "Nuevas Profesiones"'
+                    }
+                }
+            },
+            sub2: {
+                title: "Certifications & Training",
+                items: {
+                    oracle: {
+                        tag: "2026 – 2028 | Certification | IA",
+                        degree: "OCI AI Foundations Associate",
+                        institution: 'Oracle University'
+                    }
                 }
             }
         },

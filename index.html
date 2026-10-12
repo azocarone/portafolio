@@ -82,6 +82,9 @@
                      <li class="header__menu-item">
                         <a class="header__menu-link" href="#projects" data-i18n="nav.projects"></a>
                     </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="https://curriculum.joseazocar.pro/" target="_blank" rel="noopener noreferrer" data-i18n="nav.resume"></a>
+                    </li>
                     <li class="header__menu-item header__menu-item--contact">
                         <a class="header__menu-link" href="#contact" data-i18n="nav.contact"></a>
                     </li>
@@ -193,49 +196,76 @@
         <!-- Education -->
         <section class="main__section education" id="education" data-aos="fade-up" aria-labelledby="education-title">
             <h2 id="education-title" class="education__title" data-i18n="education.title"></h2>
-            <ul class="education__list">
-             
-                <li class="education__item" data-item-id="uc3m">
-                    <div class="education__logo" data-logo-id="uc3m">
-                        <img class="education__logo-image" src="./assets/img/logos/uc3m.png" alt="Logo Universidad Carlos III de Madrid">
-                    </div>
-                    <h3 class="education__degree" data-i18n="education.items.uc3m.degree"></h3>
-                    <a class="education__institution" href="https://www.uc3m.es/postgrado/inicio" target="_blank" rel="noopener noreferrer"
-                        data-i18n="education.items.uc3m.institution">
-                    </a>
-                </li>
-                
-                <li class="education__item" data-item-id="uah">
-                    <div class="education__logo" data-logo-id="uah">
-                        <img class="education__logo-image" src="./assets/img/logos/uah.png" alt="Logo Universidad Alejandro de Humboldt">
-                    </div>
-                    <h3 class="education__degree" data-i18n="education.items.uah.degree"></h3>
-                    <a class="education__institution" href="https://unihumboldt.edu.ve/" target="_blank" rel="noopener noreferrer"
-                        data-i18n="education.items.uah.institution">
-                    </a>
-                </li>
-                
-                <li class="education__item" data-item-id="iunp">
-                    <div class="education__logo" data-logo-id="iunp">
-                        <img class="education__logo-image" src="./assets/img/logos/iunp.png" alt="Logo Instituto Universitario de Nuevas Profesiones">
-                    </div>
-                    <h3 class="education__degree" data-i18n="education.items.iunp.degree"></h3>
-                    <a class="education__institution" href="https://www.iunp.edu.ve/" target="_blank" rel="noopener noreferrer"
-                        data-i18n="education.items.iunp.institution">
-                    </a>
-                </li>
 
-                <li class="education__item" data-item-id="oracle">
-                    <div class="education__logo" data-logo-id="oracle">
-                        <img class="education__logo-image" src="./assets/img/logos/oracle.png" alt="Logo Oracle">
-                    </div>
-                    <h3 class="education__degree" data-i18n="education.items.oracle.degree"></h3>
-                    <a class="education__institution" href="https://mylearn.oracle.com/ou/home" target="_blank" rel="noopener noreferrer"
-                        data-i18n="education.items.oracle.institution">
-                    </a>
-                </li>
-            
-            </ul>
+            <div class="education__container">
+
+                <!-- Subgrupo 1: Formación Académica -->
+                <section class="education__subgroup" aria-labelledby="education-sub1-title">
+                    <h3 id="education-sub1-title" class="education__subtitle" data-i18n="education.sub1.title"></h3>
+
+                    <ul class="education__list">
+                        <li class="education__item" data-aos="flip-left" data-item-id="uc3m">
+                            <article class="education-card">
+                                <div class="education__logo-wrapper">
+                                    <img class="education__logo-image" src="./assets/img/logos/uc3m.png" alt="Logo Universidad Carlos III de Madrid">
+                                </div>
+                                <div class="education__content">
+                                    <span class="education__tagline" data-i18n="education.sub1.items.uc3m.tag"></span>
+                                    <h4 class="education__degree" data-i18n="education.sub1.items.uc3m.degree"></h4>
+                                    <a class="education__institution" href="https://www.uc3m.es/postgrado/inicio" target="_blank" rel="noopener noreferrer" data-i18n="education.sub1.items.uc3m.institution"></a>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="education__item" data-aos="flip-left" data-item-id="uah">
+                            <article class="education-card">
+                                <div class="education__logo-wrapper">
+                                    <img class="education__logo-image" src="./assets/img/logos/uah.png" alt="Logo Universidad Alejandro de Humboldt">
+                                </div>
+                                <div class="education__content">
+                                    <span class="education__tagline" data-i18n="education.sub1.items.uah.tag"></span>
+                                    <h4 class="education__degree" data-i18n="education.sub1.items.uah.degree"></h4>
+                                    <a class="education__institution" href="https://unihumboldt.edu.ve/" target="_blank" rel="noopener noreferrer" data-i18n="education.sub1.items.uah.institution"></a>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="education__item" data-aos="flip-left" data-item-id="iunp">
+                            <article class="education-card">
+                                <div class="education__logo-wrapper">
+                                    <img class="education__logo-image" src="./assets/img/logos/iunp.png" alt="Logo Instituto Universitario de Nuevas Profesiones">
+                                </div>
+                                <div class="education__content">
+                                    <span class="education__tagline" data-i18n="education.sub1.items.iunp.tag"></span>
+                                    <h4 class="education__degree" data-i18n="education.sub1.items.iunp.degree"></h4>
+                                    <a class="education__institution" href="https://www.iunp.edu.ve/" target="_blank" rel="noopener noreferrer" data-i18n="education.sub1.items.iunp.institution"></a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Subgrupo 2: Certificaciones Profesionales -->
+                <section class="education__subgroup" aria-labelledby="education-sub2-title">
+                    <h3 id="education-sub2-title" class="education__subtitle" data-i18n="education.sub2.title"></h3>
+
+                    <ul class="education__list">
+                        <li class="education__item" data-aos="flip-left" data-item-id="oracle">
+                            <article class="education-card">
+                                <div class="education__logo-wrapper">
+                                    <img class="education__logo-image" src="./assets/img/logos/oracle.png" alt="Logo Oracle">
+                                </div>
+                                <div class="education__content">
+                                    <span class="education__tagline" data-i18n="education.sub2.items.oracle.tag"></span>
+                                    <h4 class="education__degree" data-i18n="education.sub2.items.oracle.degree"></h4>
+                                    <a class="education__institution" href="https://mylearn.oracle.com/ou/home" target="_blank" rel="noopener noreferrer" data-i18n="education.sub2.items.oracle.institution"></a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
         </section>
 
         <!-- Proyectos -->
