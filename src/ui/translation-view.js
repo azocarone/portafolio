@@ -26,10 +26,10 @@ export const TranslationUI = {
         });
     },
 
-    // Crea e inserta el elemento <select> en el DOM
+    // Crea e inserta el elemento <select> en el DOM después del enlace del currículum
     inyectarSelector: (currentLang) => {
-        const contactLink = document.querySelector('a[href="#contact"]');
-        if (!contactLink) return null;
+        const resumeLink = document.querySelector('a[data-i18n="nav.resume"]');
+        if (!resumeLink) return null;
 
         const select = document.createElement('select');
         select.id = 'language-select';
@@ -39,7 +39,8 @@ export const TranslationUI = {
         `;
         select.value = currentLang;
 
-        contactLink.parentNode.insertBefore(select, contactLink.nextSibling);
+        // Inserta el <select> justo después del enlace del currículum dentro de su elemento <li>
+        resumeLink.parentNode.insertBefore(select, resumeLink.nextSibling);
         return select;
     }
 }
