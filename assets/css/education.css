@@ -67,7 +67,7 @@
 .education-card {
     background: linear-gradient(145deg, #3d3d3d, #2a2a2a);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-top: 3px solid var(--accent-color);
+    border-top: 3px solid rgba(255, 255, 255, 0.2);
     border-radius: 1rem;
     padding: 2.25rem 1.75rem;
     display: flex;
@@ -106,6 +106,7 @@
     background: linear-gradient(145deg, #444444, #313131);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     border-color: rgba(255, 255, 255, 0.2);
+    border-top: 3px solid var(--accent-color);
 }
 
 /* Contenedor del Logo con proporción óptima (160px) */
