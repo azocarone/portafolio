@@ -326,58 +326,70 @@
         </section>
 
         <!-- Contacto -->
-        <section class="main__section contact" id="contact" data-aos="fade-up">
+        <section class="main__section contact" id="contact" data-aos="fade-up" aria-labelledby="contact-title">
+            
+            <!-- Columna Izquierda: Encabezado, Texto e Imagen -->
             <div class="contact__header">
-                <h2 class="contact__title" data-i18n="contact.title"></h2>
-                <div class="contact__description" data-i18n="contact.promo"></div>
-                <img class="contact__image" src="./assets/img/contact/wfh.webp" alt="Imagen de contacto - Working from home">
+                <h2 id="contact-title" class="contact__title" data-i18n="contact.title">Contacto</h2>
+                <div class="contact__description" data-i18n="contact.promo">
+                    🤝 ¿Interesado en conectar o explorar oportunidades de colaboración en IA, Cloud Computing o transformación digital? ¡Escríbeme y conversemos!
+                </div>
+                <div class="contact__image-wrapper">
+                    <img class="contact__image" src="./assets/img/contact/wfh.webp" alt="Imagen de contacto - José Azócar" loading="lazy">
+                </div>
             </div>
-            <div class="contact__content">
-                <form class="contact__form" id="contactForm" aria-label="Formulario de contacto para WhatsApp">
-                    <fieldset class="contact__fieldset" aria-label="Formulario de Contacto">
-                        
-                        <div class="contact__field">
-                            <label class="contact__label" for="name" data-i18n="contact.form.name.label"></label>
-                            <input class="contact__input" type="text" id="name" name="name"
-                                required pattern="^(?!\s*$).+" maxlength="50"
-                                data-tipo="name" data-i18n-placeholder="contact.form.name.placeholder">
-                            <span class="contact__error" role="alert"></span>
-                        </div>
-                        
-                        <div class="contact__field">
-                            <label class="contact__label" for="email" data-i18n="contact.form.email.label"></label>
-                            <input class="contact__input" type="email" id="email" name="email"
-                                required data-tipo="email"
-                                data-i18n-placeholder="contact.form.email.placeholder">
-                            <span class="contact__error" role="alert"></span>
-                        </div>
-                        
-                        <div class="contact__field">
-                            <label class="contact__label" for="subject" data-i18n="contact.form.subject.label"></label>
-                            <input class="contact__input" type="text" id="subject" name="subject"
-                                required pattern="^(?!\s*$).+" maxlength="50"
-                                data-tipo="subject" data-i18n-placeholder="contact.form.subject.placeholder">
-                            <span class="contact__error" role="alert"></span>
-                        </div>
-                        
-                        <div class="contact__field">
-                            <label class="contact__label" for="message" data-i18n="contact.form.message.label"></label>
-                            <textarea class="contact__input contact__input--textarea" id="message" name="message"
-                                required rows="6" maxlength="300"
-                                data-tipo="message" data-i18n-placeholder="contact.form.message.placeholder"></textarea>
-                            <span class="contact__error" role="alert"></span>
-                        </div>
-                    </fieldset>
 
-                    <div class="contact__recaptcha">
-                        <div class="g-recaptcha"
-                            data-sitekey="6LegnwcrAAAAAFCSVxZPSTuVba6f3-tA69p8mnrb"
-                            data-callback="onRecaptchaSuccess"
-                            data-expired-callback="onRecaptchaExpired">
+            <!-- Columna Derecha: Tarjeta con Formulario e Interacción JS -->
+            <div class="contact__content">
+                <div class="contact-card">
+                    <form class="contact__form" id="contactForm" aria-label="Formulario de contacto para WhatsApp">
+                        <fieldset class="contact__fieldset" aria-label="Formulario de Contacto">
+                            
+                            <div class="contact__field">
+                                <label class="contact__label" for="name" data-i18n="contact.form.name.label">Nombre</label>
+                                <input class="contact__input" type="text" id="name" name="name"
+                                    required pattern="^(?!\s*$).+" maxlength="50"
+                                    data-tipo="name" data-i18n-placeholder="contact.form.name.placeholder">
+                                <span class="contact__error" role="alert"></span>
+                            </div>
+                            
+                            <div class="contact__field">
+                                <label class="contact__label" for="email" data-i18n="contact.form.email.label">e-mail</label>
+                                <input class="contact__input" type="email" id="email" name="email"
+                                    required data-tipo="email"
+                                    data-i18n-placeholder="contact.form.email.placeholder">
+                                <span class="contact__error" role="alert"></span>
+                            </div>
+                            
+                            <div class="contact__field">
+                                <label class="contact__label" for="subject" data-i18n="contact.form.subject.label">Asunto</label>
+                                <input class="contact__input" type="text" id="subject" name="subject"
+                                    required pattern="^(?!\s*$).+" maxlength="50"
+                                    data-tipo="subject" data-i18n-placeholder="contact.form.subject.placeholder">
+                                <span class="contact__error" role="alert"></span>
+                            </div>
+                            
+                            <div class="contact__field">
+                                <label class="contact__label" for="message" data-i18n="contact.form.message.label">Mensaje</label>
+                                <textarea class="contact__input contact__input--textarea" id="message" name="message"
+                                    required rows="5" maxlength="300"
+                                    data-tipo="message" data-i18n-placeholder="contact.form.message.placeholder"></textarea>
+                                <span class="contact__error" role="alert"></span>
+                            </div>
+                        </fieldset>
+
+                        <div class="contact__recaptcha">
+                            <div class="g-recaptcha"
+                                data-sitekey="6LegnwcrAAAAAFCSVxZPSTuVba6f3-tA69p8mnrb"
+                                data-callback="onRecaptchaSuccess"
+                                data-expired-callback="onRecaptchaExpired">
+                            </div>
+                            <button class="contact__button" type="submit" disabled data-i18n="contact.form.submit">
+                                Enviar a WhatsApp
+                            </button>
                         </div>
-                        <button class="contact__button" type="submit" disabled data-i18n="contact.form.submit"></button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
