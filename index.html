@@ -268,53 +268,61 @@
             </div>
         </section>
 
-        <!-- Proyectos -->
+        <!-- Proyectos & Soluciones -->
         <section class="main__section projects" id="projects" data-aos="fade-up" aria-labelledby="projects-title">
-            <h2 id="projects-title" class="projects__title" data-i18n="projects.title"></h2>
-            <ul class="projects__list">
-                
-                <!-- Currículum -->
-                <li class="projects__item">
-                    <div class="projects__item-header">
-                        <h3 class="projects__item-title" data-i18n="projects.items.resume.title"></h3>
-                        <img class="projects__item-image" src="./assets/img/projects/curriculum.png" alt="CV digital">
-                    </div>
-                    <div class="projects__item-info">
-                        <p class="projects__item-description" data-i18n="projects.items.resume.description"></p>
-                        <div class="projects__item-keypad">
-                            <a class="projects__item-button" href="https://github.com/azocarone/curriculum/" target="_blank"
-                                rel="noopener noreferrer" aria-label="Ver código en GitHub">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a class="projects__item-button" href="https://curriculum.joseazocar.pro/" target="_blank"
-                                rel="noopener noreferrer" aria-label="Ver demo del proyecto">
-                                <i class="fas fa-eye"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                
-                <!-- Portafolio -->
-                <li class="projects__item">
-                    <div class="projects__item-header">
-                        <h3 class="projects__item-title" data-i18n="projects.items.portfolio.title"></h3>
-                        <img class="projects__item-image" src="./assets/img/projects/portafolio.png"
-                        alt="Portafolio - Vitrina online de un Profesional IT">
-                    </div>
-                    <div class="projects__item-info">
-                        <p class="projects__item-description" data-i18n="projects.items.portfolio.description"></p>
-                        <div class="projects__item-keypad">
-                            <a class="projects__item-button" href="https://github.com/azocarone/portafolio/" target="_blank"
-                                rel="noopener noreferrer" aria-label="Ver código en GitHub"> 
-                                <i class="fab fa-github"></i> GitHub</a>
-                            <a class="projects__item-button" href="https://joseazocar.pro/" target="_blank" 
-                                rel="noopener noreferrer" aria-label="Ver demo del proyecto">
-                                <i class="fas fa-eye"></i> Demo
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <h2 id="projects-title" class="projects__title" data-i18n="projects.title">Proyectos & Soluciones</h2>
+
+            <div class="projects__container">
+                <ul class="projects__list">
+                    
+                    <!-- Proyecto 1: Currículum -->
+                    <li class="projects__item" data-aos="fade-up">
+                        <article class="project-card">
+                            <div class="project-card__media">
+                                <img class="project-card__image" src="./assets/img/projects/curriculum.png" alt="CV digital - Estilo Harvard" loading="lazy">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title" data-i18n="projects.items.resume.title">Currículum</h3>
+                                <p class="project-card__description" data-i18n="projects.items.resume.description">CV digital: Estilo Harvard, compatible ATS, multilingüe, JS.</p>
+                                <div class="project-card__keypad">
+                                    <a class="project-card__button project-card__button--github" href="https://github.com/azocarone/curriculum/" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a class="project-card__button project-card__button--demo" href="https://curriculum.joseazocar.pro/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo del proyecto">
+                                        <i class="fas fa-eye"></i>
+                                        <span>Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <!-- Proyecto 2: Portafolio -->
+                    <li class="projects__item" data-aos="fade-up">
+                        <article class="project-card">
+                            <div class="project-card__media">
+                                <img class="project-card__image" src="./assets/img/projects/portafolio.png" alt="Portafolio - Vitrina online de un Profesional IT" loading="lazy">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title" data-i18n="projects.items.portfolio.title">Portafolio</h3>
+                                <p class="project-card__description" data-i18n="projects.items.portfolio.description">Vitrina online de un Profesional IT.</p>
+                                <div class="project-card__keypad">
+                                    <a class="project-card__button project-card__button--github" href="https://github.com/azocarone/portafolio/" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub"> 
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a class="project-card__button project-card__button--demo" href="https://joseazocar.pro/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo del proyecto">
+                                        <i class="fas fa-eye"></i>
+                                        <span>Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                </ul>
+            </div>
         </section>
 
         <!-- Contacto -->
