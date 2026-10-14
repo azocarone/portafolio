@@ -20,7 +20,7 @@
     font-weight: 700;
     text-align: center;
     color: var(--services-title-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .services__container {
@@ -43,7 +43,7 @@
     font-weight: 600;
     color: #ffffff;
     text-align: left;
-    border-left: 4px solid var(--services-subtitle-border-color);
+    border-left: 3px solid var(--services-subtitle-border-color);
     border-radius: 2px;
     padding-left: 0.75rem;
     margin-bottom: 0.5rem;
@@ -144,8 +144,6 @@
     line-height: 1.6;
     margin: 0;
 }
-
-/* --- Media Queries --- */
 
 /* Tablets (A partir de 768px) */
 @media screen and (min-width: 768px) {

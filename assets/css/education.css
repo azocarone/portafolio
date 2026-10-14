@@ -28,7 +28,7 @@
     flex-direction: column;
     gap: calc(var(--education-gap) * 2);
     width: var(--container-width, 100%);
-    max-width: var(--max-width-container, 1200px);
+    max-width: var(--max-widthcontainer, 1200px);
 }
 
 .education__subgroup {
@@ -170,8 +170,6 @@
 .education__institution:hover {
     color: var(--accent-color);
 }
-
-/* --- Media Queries --- */
 
 @media screen and (min-width: 768px) {
     .education__list {

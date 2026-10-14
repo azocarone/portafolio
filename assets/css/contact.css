@@ -27,7 +27,7 @@
 }
 
 .contact__title {
-    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
     font-weight: 700;
     color: #ffffff;
     margin: 0;
@@ -207,8 +207,6 @@
     box-shadow: 0 8px 20px rgba(16, 185, 129, 0.45);
     filter: brightness(1.1);
 }
-
-/* --- Media Queries --- */
 
 /* Dispositivos a partir de 768px (Tablets, Laptops y Monitores) */
 @media screen and (min-width: 768px) {

@@ -1,8 +1,9 @@
 :root {
     --about-gap: var(--spacing);
     --about-padding: var(--spacing);
-    --about-title-font-size: clamp(2rem, 3.2vw, 2.8rem);
+    --about-title-font-size: clamp(1.8rem, 3.5vw, 2.6rem);
     --about-description-font-size: clamp(1rem, 1.35vw, 1.2rem);
+    --about-title-color: #ffffff;
     --about-accent: #3b82f6; 
     --about-text-highlight: #ffffff;
 } 
@@ -35,23 +36,12 @@
 .about__title {
     font-size: var(--about-title-font-size);
     font-weight: 800;
-    color: var(--about-accent);
+    color: var(--about-title-color);
     margin: 0;
     position: relative;
     display: inline-block;
     text-align: left;
     width: 100%;
-}
-
-/* Línea decorativa bajo el título */
-.about__title::after {
-    content: "";
-    display: block;
-    width: 65px;
-    height: 4px;
-    background: var(--about-accent);
-    margin-top: 0.5rem;
-    border-radius: 2px;
 }
 
 .about__description {
@@ -61,7 +51,7 @@
     font-style: normal;
     line-height: 1.85;
     color: #cccccc;
-    border-left: 3px solid var(--about-accent);
+    border-left: 3px solid #575757;
     padding-left: 1.75rem;
     margin-top: 0.5rem;
     text-align: left;
