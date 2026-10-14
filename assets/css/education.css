@@ -1,6 +1,6 @@
 :root {
-    --education-gap: 2rem;
-    --education-padding: 3rem 1rem;
+    --education-gap: clamp(1.5rem, 2.5vw, 2.5rem);
+    --education-padding: clamp(4rem, 10vh, 7rem) 1rem;
     --education-title-color: #ffffff;
     --education-subtitle-border-color: #575757;
 }
@@ -9,23 +9,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: calc(var(--education-gap) * 1.5);
+    justify-content: center;
+    gap: calc(var(--education-gap) * 1.2);
     padding: var(--education-padding);
     width: 100%;
 }
 
 .education__title {
-    font-size: calc(var(--font-size-base, 1rem) * 2);
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
     font-weight: 700;
     text-align: center;
     color: var(--education-title-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .education__container {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--education-gap) * 2.5);
+    gap: calc(var(--education-gap) * 2);
     width: var(--container-width, 100%);
     max-width: var(--max-width-container, 1200px);
 }
@@ -38,7 +39,7 @@
 }
 
 .education__subtitle {
-    font-size: calc(var(--font-size-base, 1rem) * 1.35);
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
     font-weight: 600;
     color: #ffffff;
     text-align: left;
@@ -63,13 +64,13 @@
     width: 100%;
 }
 
-/* Tarjeta Credencial Unificada (Dark Tech Aesthetic) */
+/* Tarjeta Credencial Unificada (Dark Tech Aesthetic) con medidas fluidas */
 .education-card {
     background: linear-gradient(145deg, #3d3d3d, #2a2a2a);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-top: 3px solid rgba(255, 255, 255, 0.2);
     border-radius: 1rem;
-    padding: 2.25rem 1.75rem;
+    padding: clamp(1.5rem, 2.5vw, 2.25rem) clamp(1.25rem, 2vw, 1.75rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +83,6 @@
                 border-color 0.4s ease;
 }
 
-/* Efecto de destello sutil en la esquina superior derecha al hacer hover */
 .education-card::before {
     content: '';
     position: absolute;
@@ -109,17 +109,16 @@
     border-top: 3px solid var(--accent-color);
 }
 
-/* Contenedor del Logo con proporción óptima (160px) */
 .education__logo-wrapper {
     width: 100%;
-    height: 160px;
+    height: clamp(130px, 15vw, 160px);
     background: rgba(255, 255, 255, 0.95);
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.25rem;
-    margin-bottom: 1.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     overflow: hidden;
 }
 
@@ -144,23 +143,23 @@
 .education__tagline {
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     letter-spacing: 1.2px;
     color: var(--accent-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     display: block;
 }
 
 .education__degree {
-    font-size: calc(var(--font-size-base, 1rem) * 1.1);
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     line-height: 1.4;
 }
 
 .education__institution {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 400;
     font-style: italic;
     color: #cccccc;
@@ -174,7 +173,6 @@
 
 /* --- Media Queries --- */
 
-/* Tablets (A partir de 768px) */
 @media screen and (min-width: 768px) {
     .education__list {
         flex-direction: row;
@@ -188,7 +186,6 @@
     }
 }
 
-/* Pantallas Grandes / Desktops (A partir de 1024px) - Centrado dinámico por Flexbox */
 @media screen and (min-width: 1024px) {
     .education__list {
         display: flex;

@@ -13,9 +13,35 @@
 .main__section {
     display: flex;
     justify-content: center;
+    align-items: center;
     scroll-margin-top: var(--main-scroll-margin);
-    min-height: calc(100vh - var(--header-height));
+    padding: clamp(3rem, 6vh, 5rem) 1rem;
     width: 100%;
+}
+
+/* PERFIL: Intacta y ajustada a 100vh */
+.main__section.profile {
+    min-height: 100vh;
+    align-items: center;
+    padding-top: calc(var(--header-height) + var(--profile-padding));
+}
+
+/* ABOUT Y PROYECTOS: Ocupan el 100% del alto visible del navegador */
+.main__section.about,
+.main__section.projects {
+    min-height: calc(100vh - var(--header-height));
+    padding: 0 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACTO: Ocupa el 100% del alto visible dejando que contact.css maneje las 2 columnas */
+.main__section.contact {
+    min-height: calc(100vh - var(--header-height));
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__section:nth-child(odd) {

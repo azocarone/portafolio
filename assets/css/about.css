@@ -1,49 +1,53 @@
 :root {
     --about-gap: var(--spacing);
     --about-padding: var(--spacing);
-    --about-title-font-size: calc(var(--font-size-base) * 2.5);
-    --about-description-font-size: calc(var(--font-size-base) * 1.2)
-    --about-accent: #3b82f6; /* Consistente con las otras secciones */
+    --about-title-font-size: clamp(2rem, 3.2vw, 2.8rem);
+    --about-description-font-size: clamp(1rem, 1.35vw, 1.2rem);
+    --about-accent: #3b82f6; 
     --about-text-highlight: #ffffff;
 } 
 
 .about {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--about-gap) * 1.5);
-    padding: var(--about-padding);
+    align-items: flex-start; /* Preserva alineación estricta a la izquierda */
+    gap: 1.75rem;
+    padding: 0 var(--about-padding);
     width: var(--container-width);
-    max-width: 800px; /* Un poco más estrecho mejora la legibilidad en textos largos */
+    max-width: 1000px; /* Ancho óptimo para una lectura descansada y proporcional */
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
 }
 
-/* Decoración sutil de fondo (opcional) */
+/* Decoración sutil de fondo */
 .about::before {
     content: "{ }";
     position: absolute;
-    top: -20px;
-    right: 0;
+    top: -35px;
+    right: 10px;
     font-family: monospace;
-    font-size: 5rem;
+    font-size: clamp(4rem, 7vw, 6rem);
     color: rgba(255, 255, 255, 0.03);
     pointer-events: none;
 }
 
 .about__title {
     font-size: var(--about-title-font-size);
-    font-weight: 800; /* Un poco más pesado para impacto visual */
+    font-weight: 800;
     color: var(--about-accent);
     margin: 0;
     position: relative;
     display: inline-block;
+    text-align: left;
+    width: 100%;
 }
 
 /* Línea decorativa bajo el título */
 .about__title::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 65px;
     height: 4px;
     background: var(--about-accent);
     margin-top: 0.5rem;
@@ -54,15 +58,18 @@
     margin: 0;
     font-size: var(--about-description-font-size);
     font-weight: 400;
-    font-style: normal; /* Cambiamos a normal para mejor lectura, usando cursiva solo para énfasis */
-    line-height: 1.8; /* Aumentamos para que el texto "respire" */
+    font-style: normal;
+    line-height: 1.85;
     color: #cccccc;
-    border-left: 2px solid rgba(255, 255, 255, 0.1);
-    padding-left: 1.5rem;
-    margin-top: 1rem;
+    border-left: 3px solid var(--about-accent);
+    padding-left: 1.75rem;
+    margin-top: 0.5rem;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Resaltado para palabras clave dentro de la descripción */
+/* Resaltado para palabras clave */
 .about__description strong {
     color: var(--about-text-highlight);
     font-weight: 600;
@@ -70,7 +77,7 @@
 
 .about__description .about__list {
     list-style: none;
-    padding-left: 1.5rem; /* Controla la sangría general de la lista */
+    padding-left: 1.5rem;
     margin-top: 1rem;
 }
 
@@ -78,10 +85,11 @@
     position: relative;
     margin-bottom: 0.75rem;
     line-height: 1.5;
+    text-align: left;
 }
 
 .about__description .about__list li::before {
-    content: "• "; /* Símbolo del bullet acompañado de un espacio */
+    content: "• ";
     position: absolute;
-    left: -1.2rem; /* Posiciona el bullet dentro del espacio de la sangría */
+    left: -1.2rem;
 }

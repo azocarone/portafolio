@@ -1,35 +1,41 @@
 :root {
-    --projects-gap: 2rem;
-    --projects-padding: 3rem 1rem;
+    --projects-gap: clamp(1.25rem, 2vw, 2rem);
     --projects-title-color: #ffffff;
 }
 
+/* Espaciado vertical adecuado para móviles y pantallas grandes */
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: calc(var(--projects-gap) * 1.5);
-    padding: var(--projects-padding);
+    justify-content: center;
+    gap: var(--projects-gap);
+    padding: 5rem 1rem 4rem 1rem !important;
     width: 100%;
+    box-sizing: border-box;
+    min-height: calc(100vh - var(--header-height));
 }
 
 .projects__title {
-    font-size: calc(var(--font-size-base, 1rem) * 2);
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
     font-weight: 700;
     text-align: center;
     color: var(--projects-title-color);
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 .projects__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--projects-gap);
     width: var(--container-width, 100%);
-    max-width: var(--max-width-container, 1200px);
+    max-width: var(--max-width-container, 1100px);
 }
 
 .projects__list {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--projects-gap) * 2);
+    gap: var(--projects-gap);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -41,173 +47,143 @@
     width: 100%;
 }
 
-/* Tarjeta Unificada de Proyecto (Dark Tech Aesthetic) */
+/* Tarjeta de Proyecto */
 .project-card {
     background: linear-gradient(145deg, #3d3d3d, #2a2a2a);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-top: 3px solid rgba(255, 255, 255, 0.2);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: clamp(1.25rem, 2vw, 1.75rem);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    height: 100%;
     position: relative;
     overflow: hidden;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
-                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
-                border-color 0.4s ease;
-}
-
-/* Efecto de destello sutil en hover */
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
-    opacity: 0;
-    filter: blur(25px);
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-}
-
-.project-card:hover::before {
-    opacity: 0.15;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .project-card:hover {
     transform: translateY(-6px);
-    background: linear-gradient(145deg, #444444, #313131);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border-color: rgba(255, 255, 255, 0.2);
-    border-top: 3px solid var(--accent-color);
 }
 
-/* Contenedor de la Imagen */
 .project-card__media {
     width: 100%;
     border-radius: 0.5rem;
     overflow: hidden;
+    margin-bottom: 1rem;
     background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-card__image {
     width: 100%;
     height: auto;
+    max-height: clamp(160px, 18vw, 220px);
     object-fit: cover;
     display: block;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.project-card:hover .project-card__image {
-    transform: scale(1.03);
-}
-
-/* Contenido de la Tarjeta */
 .project-card__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Centrado en móviles */
-    text-align: center;   /* Centrado en móviles */
-    gap: 1rem;
+    gap: 0.5rem;
+    flex-grow: 1;
 }
 
 .project-card__title {
-    font-size: calc(var(--font-size-base, 1rem) * 1.35);
+    font-size: clamp(1.1rem, 1.4vw, 1.3rem);
     font-weight: 700;
     color: #ffffff;
     margin: 0;
-    letter-spacing: 0.5px;
 }
 
 .project-card__description {
-    font-size: var(--font-size-base, 1rem);
-    font-weight: 400;
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
     color: #cccccc;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
+    flex-grow: 1;
 }
 
-/* Botonera de Acción (Keypad) - Centrada en móviles */
+/* Botonera de Proyectos: Centrada en móviles */
 .project-card__keypad {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; /* Centrado horizontal en pantallas pequeñas */
-    gap: 1rem;
-    margin-top: 0.5rem;
+    gap: 0.75rem;
+    margin-top: 1rem;
     width: 100%;
 }
 
+/* Botones Proporcionales, Compactos y Sutiles */
 .project-card__button {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    gap: 0.6rem;
-    color: #ffffff;
+    gap: 0.45rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    padding: 0.45rem 0.9rem;
     border-radius: 0.5rem;
-    padding: 0.65rem 1.4rem;
     text-decoration: none;
-    font-family: inherit;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    white-space: nowrap;
+    flex: 1;
+    max-width: 135px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-sizing: border-box;
 }
 
-.project-card__button i {
-    font-size: 1rem;
-    line-height: 1;
-}
-
-.project-card__button span {
-    font-family: inherit;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.project-card__button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-    filter: brightness(1.15);
-}
-
+/* 1. BOTÓN GITHUB (Versión sutil, semi-opaca y integrada) */
 .project-card__button--github {
-    background: linear-gradient(135deg, #1A7F37 0%, #146c2e 100%);
+    background: linear-gradient(135deg, rgba(26, 127, 55, 0.35) 0%, rgba(20, 108, 46, 0.35) 100%) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(26, 127, 55, 0.4) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
 }
 
-.project-card__button--demo {
-    background: linear-gradient(135deg, #040642 0%, #0a0d6e 100%);
+.project-card__button--github:hover {
+    background: linear-gradient(135deg, rgba(26, 127, 55, 0.6) 0%, rgba(20, 108, 46, 0.6) 100%) !important;
+    border-color: rgba(46, 160, 67, 0.8) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* --- Media Queries para Escritorio --- */
-@media screen and (min-width: 1024px) {
-    .project-card {
-        flex-direction: row; /* Imagen siempre a la izquierda, contenido a la derecha */
-        align-items: center;
-        gap: 3.5rem;
-        padding: 2.5rem;
+/* 2. BOTÓN DEMO (Versión sutil, semi-opaca y integrada) */
+.project-card__button--demo,
+a.project-card__button:nth-child(2) {
+    background: linear-gradient(135deg, rgba(4, 6, 66, 0.4) 0%, rgba(10, 13, 110, 0.4) 100%) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.project-card__button--demo:hover,
+a.project-card__button:nth-child(2):hover {
+    background: linear-gradient(135deg, rgba(4, 6, 66, 0.7) 0%, rgba(10, 13, 110, 0.7) 100%) !important;
+    border-color: rgba(96, 165, 250, 0.7) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* --- Media Queries --- */
+@media screen and (min-width: 768px) {
+    .projects {
+        padding: 0 1rem !important;
     }
 
-    .project-card__media {
-        flex: 1 1 55%;
-        max-width: 55%;
+    .projects__list {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .project-card__content {
-        flex: 1 1 45%;
-        max-width: 45%;
-        align-items: flex-start; /* Alineado a la izquierda en desktop */
-        text-align: left;        /* Alineado a la izquierda en desktop */
+    .projects__item {
+        flex: 1 1 calc(50% - (var(--projects-gap) / 2));
+        max-width: calc(50% - (var(--projects-gap) / 2));
     }
 
+    /* Alineación de la botonera a la izquierda en pantallas de escritorio */
     .project-card__keypad {
-        justify-content: flex-start; /* Botones alineados a la izquierda con el texto en desktop */
+        justify-content: flex-start;
     }
 }
