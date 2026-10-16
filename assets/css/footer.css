@@ -1,48 +1,51 @@
+/* ==========================================
+   FOOTER COMPONENT
+   ========================================== */
 :root {
-    --footer-text-color: #CCCCCC;
-    --footer-social-color: #FFFFFF;
-    --footer-bg-color: #1c1e21; 
-    --footer-gap: calc(var(--spacing) * 0.4);
-    --footer-padding: var(--spacing);
-    --footer-copyright-font-size: calc(var(--font-size-base) * 0.9);
-    --footer-social-link-font-size: calc(var(--font-size-base) * 1.2);
+  --footer-text-color: var(--color-neutral-200);
+  --footer-social-color: var(--color-neutral-50);
+  --footer-bg-color: var(--color-neutral-950);
+  --footer-gap: calc(var(--spacing) * 0.4);
+  --footer-padding: var(--spacing);
+  --footer-copyright-font-size: calc(var(--font-size-base) * 0.9);
+  --footer-social-link-font-size: calc(var(--font-size-base) * 1.2);
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--footer-gap);
-    background-color: var(--footer-bg-color);
-    padding: var(--footer-padding);
-}
-
-.footer__copyright {
-    font-size: var(--footer-copyright-font-size);
-    font-weight: 400;
-    color: var(--footer-text-color);
-    margin: 0;
-    text-align: center; /* Asegura que el texto se centre al reducir la pantalla */
-    width: 100%;        /* Ocupa todo el ancho para que el centrado sea efectivo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--footer-gap);
+  background-color: var(--footer-bg-color);
+  padding: var(--footer-padding);
 }
 
 .footer__social-list {
-    display: flex;
-    justify-content: center;
-    gap: var(--footer-gap);
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--footer-gap);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__social-link {
-    font-size: var(--footer-social-link-font-size);
-    color: var(--footer-social-color);
-    transition: transform 0.3s ease, color 0.3s ease;
+  font-size: var(--footer-social-link-font-size);
+  color: var(--footer-social-color);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer__social-link:hover {
-    color: #3b82f6; 
-    transform: scale(1.2);
+  color: var(--color-accent);
+  transform: scale(1.2);
+}
+
+.footer__copyright {
+  font-size: var(--footer-copyright-font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--footer-text-color);
+  margin: 0;
+  text-align: center;
+  width: 100%;
 }

@@ -1,104 +1,103 @@
+/* ==========================================
+   HEADER COMPONENT
+   ========================================== */
 :root {
-    --header-text-color: white;
-    --header-background-color: #222222;
-    --header-height: 4rem;
-    --header-padding: var(--spacing);
-    --header-gap: var(--spacing);
-    --header-title-font-size: calc(var(--font-size-base) * 1.2);
-    --header-accent: #3b82f6;
-    --header-glass-bg: rgba(34, 34, 34, 0.85); /* Un poco transparente */
-    --header-border: rgba(255, 255, 255, 0.1);
+  --header-glass-bg: rgba(34, 34, 34, 0.85);
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--header-glass-bg);
-    backdrop-filter: blur(10px); /* Efecto de cristal */
-    -webkit-backdrop-filter: blur(10px);
-    padding: 0.75rem var(--header-padding); /* Reducimos un poco el alto */
-    border-bottom: 1px solid var(--header-border);
-    z-index: 100;
-    transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--header-glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.75rem var(--spacing);
+  border-bottom: 1px solid var(--border-subtle);
+  z-index: 100;
+  transition: var(--transition-standard);
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: var(--container-width);
-    max-width: var(--max-width-container);
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--container-width);
+  max-width: var(--max-width-container);
+  margin: 0 auto;
 }
 
 .header__title {
-    font-size: var(--header-title-font-size);
-    font-weight: 900;
-    color: var(--header-text-color);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: calc(var(--font-size-base) * 1.2);
+  font-weight: var(--font-weight-black);
+  color: var(--color-neutral-50);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
 .header__title::before {
-    font-family: "Font Awesome 7 Free";
-    content: "\f0f2";
-    color: var(--header-accent); /* Icono con color de acento */
-    opacity: 1;
-    margin-right: 0.75rem;
+  font-family: "Font Awesome 7 Free";
+  content: "\f0f2";
+  color: var(--color-accent);
+  margin-right: 0.75rem;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
 }
 
 .header__menu {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem; /* Espaciado más controlado */
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header__menu-item {
-    display: none;
+  display: none;
 }
 
 .header__menu-item--resume {
-    display: block;
+  display: block;
 }
 
 .header__menu-link {
-    font-size: var(--font-size-base);
-    font-weight: 500;
-    color: var(--header-text-color);
-    text-decoration: none;
-    opacity: 0.8;
-    transition: all 0.3s ease;
-    position: relative;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-50);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: var(--transition-standard);
+  position: relative;
 }
 
 .header__menu-link:hover {
-    opacity: 1;
-    color: var(--header-accent);
+  opacity: 1;
+  color: var(--color-accent);
 }
 
-/* Línea animada en hover */
 .header__menu-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: var(--header-accent);
-    transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
 }
 
 .header__menu-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-    .header__menu-item:nth-child(-n + 6) {
-        display: block;
-    }
+  .header__menu-item:nth-child(-n + 6) {
+    display: block;
+  }
 }

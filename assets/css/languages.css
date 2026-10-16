@@ -1,38 +1,39 @@
+/* ==========================================
+   LANGUAGES SELECTOR COMPONENT
+   ========================================== */
 #language-select {
-    background-color: rgba(255, 255, 255, 0.05); /* Fondo muy sutil */
-    border: 1px solid var(--header-border);
-    border-radius: 0.5rem;
-    padding: 4px 28px 4px 12px; /* Espacio para la flecha a la derecha */
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--header-text-color);
-    appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-    margin-left: 1rem;
-    transition: all 0.3s ease;
-    
-    /* Flecha personalizada más minimalista */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%233b82f6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-    background-size: 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 4px 28px 4px 12px;
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-50);
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: var(--transition-standard);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%233b82f6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 14px;
 }
 
 #language-select:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--header-accent);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent);
 }
 
 #language-select:focus {
-    border-color: #bbb;
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+  border-color: var(--color-neutral-300);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
 }
 
 #language-select option {
-    font-size: 14px;
-    background-color: #222222; /* Color oscuro para coincidir con el header */
-    color: #fff;
-    padding: 10px;
+  font-size: 14px;
+  background-color: #222222;
+  color: var(--color-neutral-50);
+  padding: 10px;
 }

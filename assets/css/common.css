@@ -1,20 +1,17 @@
-:root {
-    --font-size-base: clamp(0.75rem, 2vw, 1rem);
-    --line-height-base: 1.6;
-    --text-color: #FEFAEB;
-    --background-color: #444444;
-    --container-width: 90%;
-    --max-width-container: 75rem;
-    --spacing: clamp(1rem, 2vw, 2rem);
-    --accent-color: #3b82f6;
-    --card-shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.15);
-    --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.3);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  body {
-    font: var(--font-size-base) / var(--line-height-base) "Lato", sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    margin-top: 0 ;
-  }
+/* ==========================================
+   COMMON / BASE STYLES
+   ========================================== */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-body);
+  margin-top: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
