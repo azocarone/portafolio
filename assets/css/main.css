@@ -1,5 +1,5 @@
 /* ==========================================
-   MAIN LAYOUT STYLES
+   MAIN LAYOUT STYLES (Optimized)
    ========================================== */
 :root {
   --main-bg-color-odd: var(--color-neutral-800);
@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
   scroll-margin-top: var(--main-scroll-margin);
-  padding: clamp(3rem, 6vh, 5rem) 1rem;
+  padding: clamp(2.5rem, 5vh, 5rem) 1rem;
   width: 100%;
 }
 
@@ -30,20 +30,28 @@
 
 .main__section.about,
 .main__section.projects {
-  min-height: calc(100vh - var(--header-height));
-  padding: 0 1rem;
+  min-height: auto;
+  padding: clamp(3rem, 6vh, 5rem) 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .main__section.contact {
-  min-height: calc(100vh - var(--header-height));
-  padding: 0 1rem;
+  min-height: auto;
+  padding: clamp(3rem, 6vh, 5rem) 1rem;
   justify-content: center;
   align-items: center;
 }
 
 .main__section:nth-child(odd) {
   background-color: var(--main-bg-color-odd);
+}
+
+@media screen and (min-width: 1024px) {
+  .main__section.about,
+  .main__section.projects,
+  .main__section.contact {
+    min-height: calc(100vh - var(--header-height));
+  }
 }

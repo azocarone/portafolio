@@ -1,11 +1,11 @@
 /* ==========================================
-   ABOUT COMPONENT
+   ABOUT COMPONENT (Optimized)
    ========================================== */
 .about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.75rem;
+  gap: clamp(1.2rem, 2vw, 1.75rem);
   padding: 0 var(--spacing);
   width: var(--container-width);
   max-width: 1000px;
@@ -20,13 +20,13 @@
   top: -35px;
   right: 10px;
   font-family: monospace;
-  font-size: clamp(4rem, 7vw, 6rem);
+  font-size: clamp(3.5rem, 6vw, 6rem);
   color: rgba(255, 255, 255, 0.03);
   pointer-events: none;
 }
 
 .about__title {
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
   font-weight: 800;
   color: var(--color-neutral-50);
   margin: 0;
@@ -38,12 +38,12 @@
 
 .about__description {
   margin: 0 0 0.5rem 0;
-  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  font-size: clamp(0.95rem, 1.2vw, 1.2rem);
   font-weight: var(--font-weight-regular);
-  line-height: 1.85;
+  line-height: 1.75;
   color: var(--color-neutral-200);
   border-left: 3px solid var(--color-neutral-600);
-  padding-left: 1.75rem;
+  padding-left: 1.5rem;
   text-align: left;
   width: 100%;
 }
@@ -56,13 +56,13 @@
 .about__description .about__list {
   list-style: none;
   padding-left: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 .about__description .about__list li {
   position: relative;
-  margin-bottom: 0.75rem;
-  line-height: 1.5;
+  margin-bottom: 0.6rem;
+  line-height: 1.45;
   text-align: left;
 }
 

@@ -1,23 +1,23 @@
 /* ==========================================
-   LANGUAGES SELECTOR COMPONENT
+   LANGUAGES SELECTOR COMPONENT (Optimized)
    ========================================== */
 #language-select {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 4px 28px 4px 12px;
-  font-size: 0.85rem;
+  padding: 3px 26px 3px 10px;
+  font-size: clamp(0.75rem, 0.85vw, 0.85rem);
   font-weight: var(--font-weight-semibold);
   color: var(--color-neutral-50);
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 0.75rem;
   transition: var(--transition-standard);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%233b82f6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 8px center;
-  background-size: 14px;
+  background-position: right 6px center;
+  background-size: 12px;
 }
 
 #language-select:hover {
@@ -32,8 +32,8 @@
 }
 
 #language-select option {
-  font-size: 14px;
+  font-size: 13px;
   background-color: #222222;
   color: var(--color-neutral-50);
-  padding: 10px;
+  padding: 8px;
 }

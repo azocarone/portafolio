@@ -1,5 +1,5 @@
 /* ==========================================
-   HEADER COMPONENT
+   HEADER COMPONENT (Optimized)
    ========================================== */
 :root {
   --header-glass-bg: rgba(34, 34, 34, 0.85);
@@ -13,7 +13,7 @@
   background-color: var(--header-glass-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 0.75rem var(--spacing);
+  padding: clamp(0.5rem, 1vw, 0.75rem) var(--spacing);
   border-bottom: 1px solid var(--border-subtle);
   z-index: 100;
   transition: var(--transition-standard);
@@ -29,11 +29,11 @@
 }
 
 .header__title {
-  font-size: calc(var(--font-size-base) * 1.2);
+  font-size: clamp(0.95rem, 1.3vw, 1.2rem);
   font-weight: var(--font-weight-black);
   color: var(--color-neutral-50);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   margin: 0;
 }
 
@@ -41,7 +41,7 @@
   font-family: "Font Awesome 7 Free";
   content: "\f0f2";
   color: var(--color-accent);
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
 
 .header__nav {
@@ -52,7 +52,7 @@
 .header__menu {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: clamp(1rem, 1.5vw, 1.5rem);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -67,11 +67,11 @@
 }
 
 .header__menu-link {
-  font-size: var(--font-size-base);
+  font-size: clamp(0.85rem, 0.95vw, 1rem);
   font-weight: var(--font-weight-medium);
   color: var(--color-neutral-50);
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: var(--transition-standard);
   position: relative;
 }

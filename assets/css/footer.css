@@ -1,14 +1,14 @@
 /* ==========================================
-   FOOTER COMPONENT
+   FOOTER COMPONENT (Optimized)
    ========================================== */
 :root {
   --footer-text-color: var(--color-neutral-200);
   --footer-social-color: var(--color-neutral-50);
   --footer-bg-color: var(--color-neutral-950);
-  --footer-gap: calc(var(--spacing) * 0.4);
-  --footer-padding: var(--spacing);
-  --footer-copyright-font-size: calc(var(--font-size-base) * 0.9);
-  --footer-social-link-font-size: calc(var(--font-size-base) * 1.2);
+  --footer-gap: clamp(0.6rem, 1.2vw, 1rem);
+  --footer-padding: clamp(1.25rem, 2.5vw, 2rem) var(--spacing);
+  --footer-copyright-font-size: clamp(0.75rem, 0.85vw, 0.9rem);
+  --footer-social-link-font-size: clamp(1.1rem, 1.4vw, 1.3rem);
 }
 
 .footer {
@@ -24,7 +24,7 @@
 .footer__social-list {
   display: flex;
   justify-content: center;
-  gap: var(--footer-gap);
+  gap: clamp(1rem, 1.8vw, 1.5rem);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -38,7 +38,7 @@
 
 .footer__social-link:hover {
   color: var(--color-accent);
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .footer__copyright {
