@@ -1,148 +1,173 @@
 # 📑 Portafolio Profesional - José Azócar
 
-<br>
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
+![Google reCAPTCHA](https://img.shields.io/badge/Google-reCAPTCHA-4285F4?style=flat&logo=recaptcha&logoColor=white)
+![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
-[![HTML5 Semántico](https://img.shields.io/badge/HTML5-Sem%C3%A1ntico-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS3 Flexbox & Grid](https://img.shields.io/badge/CSS3-Flexbox%20%26%20Grid-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
-[![JavaScript ES6+](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
-[![Metodología BEM](https://img.shields.io/badge/BEM-Metodolog%C3%ADa%20CSS-6332F6?style=flat)](https://en.bem.info/)
-[![Google Fonts](https://img.shields.io/badge/Google%20Fonts-Tipograf%C3%ADas-4285F4?style=flat&logo=googlefonts&logoColor=white)](https://fonts.google.com/)
-[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-Iconos-528DD7?style=flat&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
-[![AOS Animation](https://img.shields.io/badge/AOS-Animate%20On%20Scroll-00C7B7?style=flat)](https://michalsnik.github.io/aos/)
-[![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![npm](https://img.shields.io/badge/npm-Gestor%20de%20Paquetes-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/)
-[![Netlify Functions](https://img.shields.io/badge/Netlify%20Functions-Serverless-00C7B7?style=flat&logo=netlify&logoColor=white)](https://www.netlify.com/products/functions/)
-[![SEO Robots & Sitemap](https://img.shields.io/badge/SEO-robots.txt%20%26%20sitemap.xml-00599C?style=flat)](https://developers.google.com/search)
-[![Git](https://img.shields.io/badge/Git-Control%20de%20Versiones-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-Despliegue%20Continuo-2088FF?style=flat)](https://en.wikipedia.org/wiki/CI/CD)
-[![SSL/TLS HTTPS](https://img.shields.io/badge/SSL%2FTLS-HTTPS%20Seguro-008000?style=flat&logo=letsencrypt&logoColor=white)](https://en.wikipedia.org/wiki/HTTPS)
-
-<br>
-
-Este repositorio de contiene el código fuente del **portafolio profesional** de **José Azócar**, un consultor especializado en infraestructura tecnológica. El sitio funciona como una **vitrina digital** que organiza sus proyectos mediante una **arquitectura de página única** para ofrecer una navegación fluida y eficiente. El desarrollador emplea tecnologías fundamentales como **HTML5**, **CSS3** y **JavaScript**, aplicando la metodología **BEM** para asegurar un código estructurado y escalable. Además de exhibir su experiencia técnica, el portal busca **optimizar la conversión** mediante botones de contacto estratégicos y una total adaptabilidad a dispositivos móviles. Finalmente, el proyecto se distribuye bajo una **licencia MIT**, permitiendo la revisión de su infraestructura mientras protege la propiedad intelectual de su trayectoria personal.
-
-<br>
+Vitrina digital y hub de servicios profesionales para **José Azócar**, Ing. en Informática | Especialista en Agentes de IA, Cloud & Automatización. La plataforma está desarrollada bajo una arquitectura **Single Page Application (SPA)** de alto rendimiento con capacidades **Serverless**, diseñada para ofrecer una navegación ágil, adaptativa y totalmente segura.
 
 <div align="center">
     <img src="./assets/img/screenshot.gif" alt="Vista previa del Portafolio" width="95%" height="95%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 </div>
 
-<div align="right">
-    <p><br>🔗 <a href="https://joseazocar.pro/">Ver el Portafolio.</a></p>
-</div>
+🌐 **Sitio Web en Producción:** [joseazocar.pro](https://joseazocar.pro/)
 
-<br>
+---
 
-## 📖 Tabla de Contenidos
+## 📋 Tabla de Contenidos
 
-- ✨ [Características del Proyecto](#-características-del-proyecto)
-- 🛠️ [Tecnologías y Técnicas Empleadas](#️-tecnologías-y-técnicas-empleadas)
-- 🎨 [Uso y Experiencia de Usuario (UX)](#-uso-y-experiencia-de-usuario-ux)
-- 💻 [Instalación y Configuración Local](#-instalación-y-configuración-local)
-- 📈 [Roadmap de Mejoras](#-roadmap-de-mejoras)
-- ⚖️ [Licencia](#️-licencia)
+- [Propósito y Visión General](#-propósito-y-visión-general)
+- [Arquitectura y Estructura de Directorios](#-arquitectura-y-estructura-de-directorios)
+- [Stack Tecnológico y Dependencias Clave](#-stack-tecnológico-y-dependencias-clave)
+- [Patrones de Diseño y Decisiones Técnicas](#-patrones-de-diseño-y-decisiones-técnicas)
+- [Análisis de Netlify Functions y Variables de Entorno](#-análisis-de-netlify-functions-y-variables-de-entorno)
+- [Puntos de Entrada y Ciclo de Ejecución](#-puntos-de-entrada-y-ciclo-de-ejecución)
+- [Instalación y Configuración Local](#-instalación-y-configuración-local)
+- [Licencia y Propiedad Intelectual](#-licencia-y-propiedad-intelectual)
 
-<br>
+---
 
-## ✨ Características del Proyecto
+## 🎯 Propósito y Visión General
 
-- **Hub de Proyectos (Portfolio Grid):** Organización modular de trabajos realizados, donde cada elemento actúa como un caso de estudio rápido con enlaces a producción y código.
+Esta plataforma web actúa como la vitrina profesional principal de **José Azócar**, diseñada para proyectar su especialización técnica y facilitar la contratación de servicios o el contacto profesional directo.
 
-- **Arquitectura SPA (Single Page Application):** Implementación de navegación fluida que elimina las transiciones bruscas entre secciones, mejorando la retención del usuario.
+### Problema que Resuelve y Caso de Uso
+* **Oferta Integral de Servicios:** Presenta de forma clara las áreas de especialidad en Ingeniería de Software, desarrollo de **Agentes de IA**, arquitectura **Cloud** y **Automatización de Procesos**, junto con el catálogo de proyectos ejecutados.
+* **Canal de Contacto Directo y Seguro:** Permite a potenciales clientes y reclutadores iniciar una conversación directa vía WhatsApp sin exponer datos sensibles del propietario ni permitir tráfico automatizado no deseado (spam).
+* **Experiencia de Usuario Continua:** Reemplaza la navegación web tradicional por una interfaz responsiva de página única (SPA), eliminando las recargas de página y garantizando tiempos de respuesta inmediatos.
 
-- **Integración de Marca Personal:** Coherencia visual total (colores, tipografía y tono) que conecta este portal con el currículum digital, creando un ecosistema profesional unificado.
+### Objetivos Clave
+* **Showcase de Servicios y Proyectos:** Exposición modular de competencias técnicas, soluciones desarrolladas y demostraciones interactivas.
+* **Seguridad y Privacidad (Zero-Exposure):** Protección total de datos de contacto mediante funciones serverless backend que intermedian la conexión a WhatsApp tras validar un desafío antispam (**Google reCAPTCHA**).
+* **Posicionamiento y Rendimiento:** Estructura web optimizada para motores de búsqueda (SEO mediante `robots.txt` y `sitemap.xml`) con carga acelerada mediante Vite.
 
-- **Optimización de Conversión (CTA):** Presencia estratégica de botones de contacto y enlaces a redes profesionales (LinkedIn/GitHub) para reducir la fricción en la comunicación.
+---
 
-- **Protección de Datos Sensibles (Zero-Exposure):** Implementación de funciones backend sin servidor para la protección y nula exposición del número telefónico en el frontend.
+## 📁 Arquitectura y Estructura de Directorios
 
-<br>
+```text
+portafolio/
+├── assets/             # Recursos estáticos adicionales e imágenes
+├── docs/
+│   └── prompts/        # Documentación técnica y artefactos de contexto
+├── netlify/
+│   └── functions/      # Backend Serverless (Node.js) para validación de reCAPTCHA y proxy de WhatsApp
+├── src/                # Módulos fuente principales (JavaScript ES6+, lógica, estilos)
+├── .gitignore          # Reglas de exclusión para Git
+├── index.html          # Punto de entrada HTML5 y orquestador del DOM
+├── LICENSE             # Términos de la licencia MIT
+├── package.json        # Configuración del proyecto, scripts npm y dependencias
+├── package-lock.json   # Árbol de dependencias congelado
+├── README.md           # Documentación principal del repositorio
+├── robots.txt          # Reglas de indexación para web crawlers
+└── sitemap.xml         # Mapa del sitio para motores de búsqueda
+```
 
-## 🛠️ Tecnologías y Técnicas Empleadas
+---
 
-El stack tecnológico y las metodologías han sido refinados meticulosamente para garantizar la escalabilidad, el rendimiento y la mantenibilidad del sitio:
+## 🛠 Stack Tecnológico y Dependencias Clave
 
-- **Core del Frontend:** HTML5 Semántico, CSS3 (Flexbox/Grid) y JavaScript (ES6+).
+### Distribución del Código Base
+* **CSS3:** 34.1%
+* **JavaScript (ES6+):** 33.8%
+* **HTML5:** 32.1%
 
-- **Estilización y Animación:** Metodología BEM para un CSS modular, Google Fonts, Font Awesome y efectos dinámicos con Animate On Scroll (AOS).
+### Herramientas y Frameworks
+* **Build Tooling:** [Vite](https://vitejs.dev/) para compilación, servidor de desarrollo local (`npm run dev`) y empaquetado optimizado gestionado por `npm`.
+* **Backend Runtime & Security:** [Netlify Functions](https://www.netlify.com/products/functions/) (Node.js) para ejecución de lógica serverless, **Google reCAPTCHA** para validación antispam y proxy seguro hacia WhatsApp.
+* **Estilización y Diseño:** Metodología **BEM (Block Element Modifier)** para CSS modular, Google Fonts, Font Awesome y efectos dinámicos con Animate On Scroll (AOS).
 
-- **Entorno de Construcción (Build Tools):** Vite para la compilación, empaquetado y optimización de recursos, gestionado a través de npm.
+---
 
-- **Backend Serverless:** Netlify Functions para el procesamiento seguro de datos (como la protección de información de contacto) sin exponer credenciales ni datos privados.
+## 🏛 Patrones de Diseño y Decisiones Técnicas
 
-- **Optimización en Motores de Búsqueda (SEO):** Archivos `robots.txt` y `sitemap.xml` para optimizar la indexación y visibilidad web.
+1. **Patrón Serverless Proxy (Zero-Exposure):** Las funciones en `/netlify/functions/` evitan exponer el número telefónico de WhatsApp o credenciales en el HTML/JS del cliente. El frontend realiza una petición enviando el token de reCAPTCHA; la función lo valida con Google y procesa la interacción utilizando las variables de entorno almacenadas privadamente en Netlify.
+2. **Validación Antispam Server-Side:** Handshake en servidor con la API de Google reCAPTCHA antes de procesar cualquier acción de contacto.
+3. **Arquitectura SPA (Single Page Application):** Manejo de navegación en el cliente para evitar recargas completas del navegador, garantizando fluidez UX.
+4. **Metodología BEM (Block Element Modifier):** Desacoplamiento estricto de reglas CSS mediante nombres estructurados, previniendo colisiones de estilos.
+5. **Estrategia Performance-First & Mobile-First:** Maquetación adaptativa mediante Flexbox/Grid con optimización de tiempos de carga mediante el bundling de Vite.
 
-- **Control de Versiones e Infraestructura:** Git, despliegue continuo (CI/CD) y seguridad mediante cifrado SSL/TLS (HTTPS).
+---
 
-<br>
+## 🔐 Análisis de Netlify Functions y Variables de Entorno
 
-## 🎨 Uso y Experiencia de Usuario (UX)
+Las credenciales y datos privados no se almacenan en el repositorio de código. Se configuran centralizadamente en el panel de **Netlify** (*Site configuration > Environment variables*):
 
-La experiencia de usuario en este portafolio está regida por el principio de **"Prueba de Concepto"**, donde la estética apoya directamente la credibilidad técnica del desarrollador:
+| Variable de Entorno | Ámbito | Descripción y Uso |
+| :--- | :--- | :--- |
+| `PHONE_NUMBER` / `TEL_NUMBER` | Serverless (Backend) | Número telefónico de destino para mensajes de WhatsApp. Almacenado exclusivamente en Netlify para garantizar **Zero-Exposure** en el cliente. |
+| `RECAPTCHA_SECRET_KEY` | Serverless (Backend) | Clave privada de Google reCAPTCHA utilizada por la función en `/netlify/functions/` para validar los tokens antispam. |
+| `VITE_RECAPTCHA_SITE_KEY` | Frontend (Client) | Clave pública inyectada por Vite en el navegador para solicitar la verificación al usuario. |
 
-- **Jerarquía Visual y Escaneo de Proyectos:** Estructura centrada en la visualización de logros a través de una cuadrícula limpia. Las miniaturas permiten al usuario identificar el stack tecnológico antes de leer la descripción, facilitando un reconocimiento técnico inmediato.
+### Configuración para Desarrollo Local
 
-- **Rendimiento y Fluidez (Performance-First):** Minimización en el uso de scripts pesados. La navegación entre el portafolio y el currículum está optimizada para ser instantánea, proyectando una infraestructura web altamente eficiente y bien gestionada.
+1. Crear un archivo `.env` en la raíz del proyecto (incluido en `.gitignore`):
+   ```env
+   PHONE_NUMBER=584XXXXXXXXX
+   RECAPTCHA_SECRET_KEY=tu_clave_secreta_local
+   VITE_RECAPTCHA_SITE_KEY=tu_clave_publica_local
+   ```
+2. Ejecutar el entorno de desarrollo emulado con Netlify CLI:
+   ```bash
+   npx netlify dev
+   ```
 
-- **Adaptabilidad Multiplataforma (Responsive Design):** Diseño fluido adaptado con precisión a múltiples breakpoints. En dispositivos móviles, los proyectos se reorganizan en una lista vertical táctil, garantizando que la navegación sea cómoda, intuitiva y funcional.
+---
 
-- **Interconectividad del Ecosistema:** Capacidad de guiar al visitante de forma natural. El diseño conduce al usuario de manera intuitiva hacia el currículum detallado o hacia el contacto directo, cerrando el ciclo de reclutamiento o negocio de forma efectiva.
+## 🔄 Puntos de Entrada y Ciclo de Ejecución
 
-<br>
+1. **Inicialización Frontend:**
+   * El navegador carga `index.html`. Vite compila e inyecta los módulos fuente desde `/src`.
+2. **Interacción y Desafío de Seguridad:**
+   * Al hacer clic en el botón de contacto/WhatsApp, el cliente solicita un token a Google reCAPTCHA mediante `VITE_RECAPTCHA_SITE_KEY`.
+3. **Procesamiento Serverless (Zero-Exposure):**
+   * El cliente envía el token a la Netlify Function alojada en `/netlify/functions/`.
+   * La función valida el token con la API de Google usando `RECAPTCHA_SECRET_KEY`.
+   * Tras la validación exitosa, la función lee la variable `PHONE_NUMBER` almacenada en el entorno de Netlify y construye o ejecuta la redirección hacia la API de WhatsApp, retornándola al cliente sin revelar el número en el código fuente.
+
+---
 
 ## 💻 Instalación y Configuración Local
 
-Si deseas revisar la estructura del código, analizar su arquitectura o realizar pruebas en un entorno local, puedes hacerlo siguiendo estos pasos:
-
 ### Prerrequisitos
+* [Node.js](https://nodejs.org/) (v16+ recomendado) y `npm` instalados en el entorno local.
 
-Asegúrate de tener instalado [Node.js y npm](https://nodejs.org/) (recomendado para el flujo de trabajo moderno con Vite).
-
-### Paso a Paso
+### Pasos de Ejecución
 
 1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/azocarone/portafolio.git
+   cd portafolio
+   ```
 
-    ```bash
-    git clone https://github.com/azocarone/portafolio.git
-    ```
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
 
-2. **Acceder al directorio del proyecto:**
+3. **Ejecutar el servidor de desarrollo:**
+   * **Opción A (Recomendada con Serverless + WhatsApp + reCAPTCHA):**
+     ```bash
+     npx netlify dev
+     ```
+   * **Opción B (Solo Frontend Vite):**
+     ```bash
+     npm run dev
+     ```
 
-    ```bash
-    cd portafolio
-    ```
+   *Opción alternativa (Legacy):* Abrir el archivo `index.html` utilizando la extensión **Live Server** en VS Code.
 
-3. **Instalar dependencias:**
+---
 
-    ```bash
-    npm install
-    ```
+## ⚖ Licencia y Propiedad Intelectual
 
-4. **Ejecutar el proyecto localmente:**
-
-    - **Opción A (Recomendada - Flujo Vite):** Ejecuta el servidor de desarrollo para aprovechar la recarga rápida de Vite:
-     
-        ```bash
-        npm run dev
-        ```
-   
-   - **Opción B (Legacy / Sin empaquetar):** Abre directamente el archivo `index.html` empleando el plugin **Live Server** en Visual Studio Code para visualizar los cambios instantáneamente.
-
-<br>
-
-## 📈 Roadmap de Mejoras
-
-- [x] Implementación de dominio personalizado (.pro).
-- [x] Migración a hosting de alto rendimiento.
-- [ ] Sección de Blog para artículos técnicos.
-
-<br>
-
-## ⚖️ Licencia
-
-Este proyecto se encuentra bajo la Licencia **MIT**. Siéntete libre de explorar y utilizar el código, teniendo en cuenta que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Azócar**.
-
-<br>
+Este proyecto se distribuye bajo la **Licencia MIT**. La infraestructura de código es de libre exploración y uso, mientras que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Azócar**.
 
 ---
 
@@ -152,7 +177,7 @@ Este proyecto se encuentra bajo la Licencia **MIT**. Siéntete libre de explorar
     <img width="40px" src="./assets/img/azocarone.svg" align="right" alt="Logo" />
     <div align="right">
         <strong>José Antonio Azócar Marcano</strong><br>
-        Ing. Informático | Consultor I&O: Infraestructura y Ops.<br>
+        Ing. Informático | Especialista en Agentes de IA, Cloud & Automatización.<br>
         ⬆ <a href="#-portafolio-profesional---josé-azócar">Up</a>
     </div>
     <br clear="all">
