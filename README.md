@@ -14,7 +14,7 @@ Vitrina digital y hub de servicios profesionales para **José Azócar**, Ing. en
 
 <div align="center">
     <img src="./assets/img/screenshot.gif" alt="Vista previa del Portafolio" width="95%" height="95%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-</div>
+</div><br>
 
 🌐 **Sitio Web en Producción:** [joseazocar.pro](https://joseazocar.pro/)
 
@@ -171,9 +171,7 @@ Este proyecto se distribuye bajo la **Licencia MIT**. La infraestructura de cód
 
 ---
 
-<br>
-
-<p align="center">
+<br><p align="center">
     <img width="40px" src="./assets/img/azocarone.svg" align="right" alt="Logo" />
     <div align="right">
         <strong>José Antonio Azócar Marcano</strong><br>
