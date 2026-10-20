@@ -1,14 +1,15 @@
 # 📑 Portafolio Profesional - José Azócar
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
-![Google reCAPTCHA](https://img.shields.io/badge/Google-reCAPTCHA-4285F4?style=flat&logo=recaptcha&logoColor=white)
-![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)](https://www.netlify.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![Vite](https://img.shields.io/badge/Vite-6.x-646CDF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Google reCAPTCHA](https://img.shields.io/badge/Google-reCAPTCHA-4285F4?style=flat&logo=recaptcha&logoColor=white)](https://developers.google.com/recaptcha/docs/display)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat&logo=whatsapp&logoColor=white)](https://faq.whatsapp.com/5913398998672934)
+[![Status](https://img.shields.io/badge/Status-Production-success?style=flat&logo=github&logoColor=white)](https://joseazocar.pro/)
 
 Vitrina digital y hub de servicios profesionales para **José Azócar**, Ing. en Informática | Especialista en Agentes de IA, Cloud & Automatización. La plataforma está desarrollada bajo una arquitectura **Single Page Application (SPA)** de alto rendimiento con capacidades **Serverless**, diseñada para ofrecer una navegación ágil, adaptativa y totalmente segura.
 
@@ -38,14 +39,16 @@ Vitrina digital y hub de servicios profesionales para **José Azócar**, Ing. en
 Esta plataforma web actúa como la vitrina profesional principal de **José Azócar**, diseñada para proyectar su especialización técnica y facilitar la contratación de servicios o el contacto profesional directo.
 
 ### Problema que Resuelve y Caso de Uso
-* **Oferta Integral de Servicios:** Presenta de forma clara las áreas de especialidad en Ingeniería de Software, desarrollo de **Agentes de IA**, arquitectura **Cloud** y **Automatización de Procesos**, junto con el catálogo de proyectos ejecutados.
-* **Canal de Contacto Directo y Seguro:** Permite a potenciales clientes y reclutadores iniciar una conversación directa vía WhatsApp sin exponer datos sensibles del propietario ni permitir tráfico automatizado no deseado (spam).
-* **Experiencia de Usuario Continua:** Reemplaza la navegación web tradicional por una interfaz responsiva de página única (SPA), eliminando las recargas de página y garantizando tiempos de respuesta inmediatos.
+
+- **Oferta Integral de Servicios:** Presenta de forma clara las áreas de especialidad en Ingeniería de Software, desarrollo de **Agentes de IA**, arquitectura **Cloud** y **Automatización de Procesos**, junto con el catálogo de proyectos ejecutados.
+- **Canal de Contacto Directo y Seguro:** Permite a potenciales clientes y reclutadores iniciar una conversación directa vía WhatsApp sin exponer datos sensibles del propietario ni permitir tráfico automatizado no deseado (spam).
+- **Experiencia de Usuario Continua:** Reemplaza la navegación web tradicional por una interfaz responsiva de página única (SPA), eliminando las recargas de página y garantizando tiempos de respuesta inmediatos.
 
 ### Objetivos Clave
-* **Showcase de Servicios y Proyectos:** Exposición modular de competencias técnicas, soluciones desarrolladas y demostraciones interactivas.
-* **Seguridad y Privacidad (Zero-Exposure):** Protección total de datos de contacto mediante funciones serverless backend que intermedian la conexión a WhatsApp tras validar un desafío antispam (**Google reCAPTCHA**).
-* **Posicionamiento y Rendimiento:** Estructura web optimizada para motores de búsqueda (SEO mediante `robots.txt` y `sitemap.xml`) con carga acelerada mediante Vite.
+
+- **Showcase de Servicios y Proyectos:** Exposición modular de competencias técnicas, soluciones desarrolladas y demostraciones interactivas.
+- **Seguridad y Privacidad (Zero-Exposure):** Protección total de datos de contacto mediante funciones serverless backend que intermedian la conexión a WhatsApp tras validar un desafío antispam (**Google reCAPTCHA**).
+- **Posicionamiento y Rendimiento:** Estructura web optimizada para motores de búsqueda (SEO mediante `robots.txt` y `sitemap.xml`) con carga acelerada mediante Vite.
 
 ---
 
@@ -74,18 +77,20 @@ portafolio/
 ## 🛠 Stack Tecnológico y Dependencias Clave
 
 ### Distribución del Código Base
-* **CSS3:** 34.1%
-* **JavaScript (ES6+):** 33.8%
-* **HTML5:** 32.1%
+
+- **CSS3:** 34.1%
+- **JavaScript (ES6+):** 33.8%
+- **HTML5:** 32.1%
 
 ### Herramientas y Frameworks
-* **Build Tooling:** [Vite](https://vitejs.dev/) para compilación, servidor de desarrollo local (`npm run dev`) y empaquetado optimizado gestionado por `npm`.
-* **Backend Runtime & Security:** [Netlify Functions](https://www.netlify.com/products/functions/) (Node.js) para ejecución de lógica serverless, **Google reCAPTCHA** para validación antispam y proxy seguro hacia WhatsApp.
-* **Estilización y Diseño:** Metodología **BEM (Block Element Modifier)** para CSS modular, Google Fonts, Font Awesome y efectos dinámicos con Animate On Scroll (AOS).
+
+- **Build Tooling:** [Vite](https://vitejs.dev/) para compilación, servidor de desarrollo local (`npm run dev`) y empaquetado optimizado gestionado por `npm`.
+- **Backend Runtime & Security:** [Netlify Functions](https://www.netlify.com/products/functions/) (Node.js) para ejecución de lógica serverless, **Google reCAPTCHA** para validación antispam y proxy seguro hacia WhatsApp.
+- **Estilización y Diseño:** Metodología **BEM (Block Element Modifier)** para CSS modular, Google Fonts, Font Awesome y efectos dinámicos con Animate On Scroll (AOS).
 
 ---
 
-## 🏛 Patrones de Diseño y Decisiones Técnicas
+## 📐 Patrones de Diseño y Decisiones Técnicas
 
 1. **Patrón Serverless Proxy (Zero-Exposure):** Las funciones en `/netlify/functions/` evitan exponer el número telefónico de WhatsApp o credenciales en el HTML/JS del cliente. El frontend realiza una petición enviando el token de reCAPTCHA; la función lo valida con Google y procesa la interacción utilizando las variables de entorno almacenadas privadamente en Netlify.
 2. **Validación Antispam Server-Side:** Handshake en servidor con la API de Google reCAPTCHA antes de procesar cualquier acción de contacto.
@@ -123,40 +128,46 @@ Las credenciales y datos privados no se almacenan en el repositorio de código. 
 ## 🔄 Puntos de Entrada y Ciclo de Ejecución
 
 1. **Inicialización Frontend:**
-   * El navegador carga `index.html`. Vite compila e inyecta los módulos fuente desde `/src`.
+   - El navegador carga `index.html`. Vite compila e inyecta los módulos fuente desde `/src`.
 2. **Interacción y Desafío de Seguridad:**
-   * Al hacer clic en el botón de contacto/WhatsApp, el cliente solicita un token a Google reCAPTCHA mediante `VITE_RECAPTCHA_SITE_KEY`.
+   - Al hacer clic en el botón de contacto/WhatsApp, el cliente solicita un token a Google reCAPTCHA mediante `VITE_RECAPTCHA_SITE_KEY`.
 3. **Procesamiento Serverless (Zero-Exposure):**
-   * El cliente envía el token a la Netlify Function alojada en `/netlify/functions/`.
-   * La función valida el token con la API de Google usando `RECAPTCHA_SECRET_KEY`.
-   * Tras la validación exitosa, la función lee la variable `PHONE_NUMBER` almacenada en el entorno de Netlify y construye o ejecuta la redirección hacia la API de WhatsApp, retornándola al cliente sin revelar el número en el código fuente.
+   - El cliente envía el token a la Netlify Function alojada en `/netlify/functions/`.
+   - La función valida el token con la API de Google usando `RECAPTCHA_SECRET_KEY`.
+   - Tras la validación exitosa, la función lee la variable `PHONE_NUMBER` almacenada en el entorno de Netlify y construye o ejecuta la redirección hacia la API de WhatsApp, retornándola al cliente sin revelar el número en el código fuente.
 
 ---
 
 ## 💻 Instalación y Configuración Local
 
 ### Prerrequisitos
-* [Node.js](https://nodejs.org/) (v16+ recomendado) y `npm` instalados en el entorno local.
+
+- [Node.js](https://nodejs.org/) (v16+ recomendado) y `npm` instalados en el entorno local.
 
 ### Pasos de Ejecución
 
 1. **Clonar el repositorio:**
+
    ```bash
    git clone https://github.com/azocarone/portafolio.git
    cd portafolio
    ```
 
 2. **Instalar dependencias:**
+
    ```bash
    npm install
    ```
 
 3. **Ejecutar el servidor de desarrollo:**
-   * **Opción A (Recomendada con Serverless + WhatsApp + reCAPTCHA):**
+   
+   - **Opción A (Recomendada con Serverless + WhatsApp + reCAPTCHA):**
+
      ```bash
      npx netlify dev
      ```
-   * **Opción B (Solo Frontend Vite):**
+   - **Opción B (Solo Frontend Vite):**
+   
      ```bash
      npm run dev
      ```
@@ -167,7 +178,7 @@ Las credenciales y datos privados no se almacenan en el repositorio de código. 
 
 ## ⚖ Licencia y Propiedad Intelectual
 
-Este proyecto se distribuye bajo la **Licencia MIT**. La infraestructura de código es de libre exploración y uso, mientras que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Azócar**.
+Este proyecto se distribuye bajo la **Licencia MIT**. La infraestructura de código es de libre exploración y uso, mientras que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Antonio Azócar Marcano**.
 
 ---
 
