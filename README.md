@@ -61,6 +61,7 @@ portafolio/
 │   └── prompts/        # Documentación técnica y artefactos de contexto
 ├── netlify/
 │   └── functions/      # Backend Serverless (Node.js) para validación de reCAPTCHA y proxy de WhatsApp
+├── public/             # Recursos estáticos que se copian tal cual al directorio raiz de la compilación (`dist/`)
 ├── src/                # Módulos fuente principales (JavaScript ES6+, lógica, estilos)
 ├── .gitignore          # Reglas de exclusión para Git
 ├── index.html          # Punto de entrada HTML5 y orquestador del DOM
