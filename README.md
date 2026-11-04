@@ -179,7 +179,7 @@ Las credenciales y datos privados no se almacenan en el repositorio de código. 
 
 ## ⚖ Licencia y Propiedad Intelectual
 
-Este proyecto se distribuye bajo la **Licencia MIT**. La infraestructura de código es de libre exploración y uso, mientras que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Antonio Azócar Marcano**.
+Este proyecto se distribuye bajo la **Licencia MIT**, permitiendo la libre exploración, uso y redistribución de su infraestructura de código conforme a sus términos, mientras que la totalidad del contenido personal, la trayectoria profesional y la información descrita pertenecen exclusivamente a la propiedad intelectual de su autor, **José Antonio Azócar Marcano**.
 
 ---
 
