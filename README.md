@@ -187,7 +187,7 @@ Este proyecto se distribuye bajo la **Licencia MIT**, permitiendo la libre explo
     <img width="40px" src="./assets/img/azocarone.svg" align="right" alt="Logo" />
     <div align="right">
         <strong>José Antonio Azócar Marcano</strong><br>
-        Ing. Informático | Especialista en Agentes de IA, Cloud & Automatización.<br>
+        Ing. Informático | Agentes de IA, Cloud & Automatización.<br>
         ⬆ <a href="#-portafolio-profesional---josé-azócar">Up</a>
     </div>
     <br clear="all">

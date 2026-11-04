@@ -12,7 +12,7 @@ export const Content = {
             contact: "Contacto",
         },
         profile: {
-            title: "Ing. en Informática | Especialista en Agentes de IA, Cloud & Automatización",
+            title: "Ing. en Informática | Agentes de IA, Cloud & Automatización",
             linkTitle: "Haga clic para ver Currículum"
         },
         about: {
@@ -173,7 +173,7 @@ export const Content = {
             contact: "Contact",
         },
         profile: {
-            title: "Computer Engineer | AI Agent Engineering, Cloud & Automation Specialist",
+            title: "Computer Engineer | AI Agent Engineering, Cloud & Automation",
             linkTitle: "Click to view Resume"
         },
         about: {
