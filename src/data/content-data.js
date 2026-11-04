@@ -103,6 +103,10 @@ export const Content = {
         projects: {
             title: "Proyectos & Soluciones",
             items: {
+                aiCargoOps: {
+                    title: "AI Cargo Ops",
+                    description: "Agente de IA para Consultas de Operaciones y Logística Marítima."
+                },
                 resume: {
                     title: "Currículum",
                     description: "CV digital: Estilo Harvard, compatible ATS, multilingüe, JS."
@@ -259,6 +263,10 @@ export const Content = {
         projects: {
             title: "Projects & Solutions",
             items: {
+                aiCargoOps: {
+                    title: "AI Cargo Ops",
+                    description: "Maritime Cargo Operations AI Inquiry Agent"
+                },
                 resume: {
                     title: "Curriculum",
                     description: "Digital CV: Harvard style, ATS-friendly, multilingual, JS."

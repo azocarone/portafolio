@@ -61,6 +61,7 @@ portafolio/
 │   └── prompts/        # Documentación técnica y artefactos de contexto
 ├── netlify/
 │   └── functions/      # Backend Serverless (Node.js) para validación de reCAPTCHA y proxy de WhatsApp
+├── public/             # Recursos estáticos que se copian tal cual al directorio raiz de la compilación (`dist/`)
 ├── src/                # Módulos fuente principales (JavaScript ES6+, lógica, estilos)
 ├── .gitignore          # Reglas de exclusión para Git
 ├── index.html          # Punto de entrada HTML5 y orquestador del DOM
@@ -178,7 +179,7 @@ Las credenciales y datos privados no se almacenan en el repositorio de código. 
 
 ## ⚖ Licencia y Propiedad Intelectual
 
-Este proyecto se distribuye bajo la **Licencia MIT**. La infraestructura de código es de libre exploración y uso, mientras que el contenido personal y la trayectoria profesional son propiedad intelectual de **José Antonio Azócar Marcano**.
+Este proyecto se distribuye bajo la **Licencia MIT**, permitiendo la libre exploración, uso y redistribución de su infraestructura de código conforme a sus términos, mientras que la totalidad del contenido personal, la trayectoria profesional y la información descrita pertenecen exclusivamente a la propiedad intelectual de su autor, **José Antonio Azócar Marcano**.
 
 ---
 
